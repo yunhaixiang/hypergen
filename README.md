@@ -4,10 +4,12 @@
 
 ```text
 cpp/                              C++ source and CMake file
+legacy/python_prototype/           frozen old Python prototype, reference only
 results/p3_enumerate_batch/        generated SQLite data through genus 8
 ```
 
-The Python prototype is not part of this repository. This copy is intended to be the C++ runner plus generated data.
+The Python prototype is kept only as a legacy snapshot and is not updated. The
+active implementation is the C++ runner under `cpp/`.
 
 ## Build
 
@@ -76,7 +78,7 @@ If `--out` is omitted, single-genus runs write under `results/`. If `--out-dir` 
 
 `--enumeration-mode enumerate` deterministically enumerates squarefree branch divisors by factorization pattern and irreducible-factor choices. It includes both normalized degree `2g+1` and degree `2g+2` models. Degree `2g+2` branch patterns with an `F_p`-linear factor are skipped because they are represented by odd-degree models.
 
-`--enumeration-mode random` samples random factorized branch divisors for higher-genus sparse search. If `--limit` is omitted, it runs until interrupted.
+`--enumeration-mode random` samples random factorized branch divisors for higher-genus sparse search. It first builds feasible factorization-pattern strata, capped by `--random-max-factors`, then adaptively gives more samples to patterns whose previous samples produced sparse curves. If `--limit` is omitted, it runs until interrupted.
 
 `--limit N` has mode-dependent meaning:
 
@@ -84,6 +86,8 @@ If `--out` is omitted, single-genus runs write under `results/`. If `--out-dir` 
 - in `random` mode, sample `N` random candidates
 
 Both modes use Hasse-Witt filtering before exact point counts when `--max-sparsity` is supplied. Exact L-polynomial coefficients are computed by point counting over extension fields and Newton identities.
+
+Random-mode progress includes a `random_patterns` line showing the number of active strata and the currently best observed pattern by sparse-hit rate.
 
 ## Memory Budget
 
@@ -134,7 +138,6 @@ results/p3_enumerate_batch/
 Summary:
 
 ```text
-g=1  total=60        sparse_presentations=60    sparse_classes=12
 g=2  total=560       sparse_presentations=538   sparse_classes=69
 g=3  total=5124      sparse_presentations=1652  sparse_classes=140
 g=4  total=46296     sparse_presentations=3789  sparse_classes=340

@@ -6,6 +6,7 @@
 #include <algorithm>
 #include <array>
 #include <chrono>
+#include <cmath>
 #include <cstdint>
 #include <cstdlib>
 #include <filesystem>
@@ -90,6 +91,18 @@ struct Stats {
     std::uint64_t canonicalized = 0;
     cpp_int total_presentations = -1;
     cpp_int sparse_presentations = 0;
+};
+
+struct RandomPatternState {
+    int model = 0;
+    int total_degree = 0;
+    bool infinity_branch = false;
+    std::vector<int> pattern;
+    int factor_count = 0;
+    std::uint64_t leading_count = 1;
+    cpp_int presentations = 0;
+    std::uint64_t attempts = 0;
+    std::uint64_t sparse_hits = 0;
 };
 
 unsigned long mod_pow(unsigned long base, unsigned long exponent, unsigned long p) {
@@ -1445,6 +1458,106 @@ cpp_int total_branch_divisor_presentations(const Context& ctx) {
     return total;
 }
 
+int pattern_factor_count(const std::vector<int>& pattern) {
+    int total = 0;
+    for (int multiplicity : pattern) total += multiplicity;
+    return total;
+}
+
+std::vector<RandomPatternState> build_random_pattern_states(const Context& ctx) {
+    if (ctx.opts.random_max_factors < 1) {
+        throw std::runtime_error("--random-max-factors must be positive");
+    }
+
+    std::vector<RandomPatternState> states;
+    for (int model = 0; model < 2; ++model) {
+        int total_degree = model == 0 ? 2 * ctx.opts.genus + 1 : 2 * ctx.opts.genus + 2;
+        bool skip_linear = model == 1;
+        bool infinity_branch = model == 0;
+        std::uint64_t leading_count = model == 0 ? 1 : 2;
+        for (const auto& pattern : factorization_patterns(total_degree, skip_linear)) {
+            int factors = pattern_factor_count(pattern);
+            if (factors < 1 || factors > ctx.opts.random_max_factors) continue;
+            cpp_int presentations = branch_pattern_presentation_count(ctx, pattern, leading_count);
+            if (presentations == 0) continue;
+            RandomPatternState state;
+            state.model = model;
+            state.total_degree = total_degree;
+            state.infinity_branch = infinity_branch;
+            state.pattern = pattern;
+            state.factor_count = factors;
+            state.leading_count = leading_count;
+            state.presentations = std::move(presentations);
+            states.push_back(std::move(state));
+        }
+    }
+    if (states.empty()) {
+        throw std::runtime_error("no feasible random factorization patterns; increase --random-max-factors");
+    }
+    return states;
+}
+
+std::string random_pattern_label(const RandomPatternState& state) {
+    std::ostringstream out;
+    out << (state.infinity_branch ? "odd" : "even") << ":";
+    bool first = true;
+    for (int degree = 1; degree < static_cast<int>(state.pattern.size()); ++degree) {
+        int multiplicity = state.pattern[static_cast<std::size_t>(degree)];
+        if (multiplicity == 0) continue;
+        if (!first) out << ",";
+        first = false;
+        out << degree;
+        if (multiplicity > 1) out << "^" << multiplicity;
+    }
+    if (first) out << "empty";
+    return out.str();
+}
+
+std::string random_pattern_progress_summary(const std::vector<RandomPatternState>& states) {
+    const RandomPatternState* best = nullptr;
+    for (const auto& state : states) {
+        if (state.attempts == 0) continue;
+        if (!best) {
+            best = &state;
+            continue;
+        }
+        double lhs = static_cast<double>(state.sparse_hits) / static_cast<double>(state.attempts);
+        double rhs = static_cast<double>(best->sparse_hits) / static_cast<double>(best->attempts);
+        if (lhs > rhs || (lhs == rhs && state.sparse_hits > best->sparse_hits)) best = &state;
+    }
+    std::ostringstream out;
+    out << states.size();
+    if (best) {
+        out << " best=" << random_pattern_label(*best)
+            << " attempts=" << best->attempts
+            << " sparse=" << best->sparse_hits;
+    }
+    return out.str();
+}
+
+std::size_t choose_random_pattern(
+    const std::vector<RandomPatternState>& states,
+    std::uint64_t total_attempts,
+    std::mt19937_64& rng
+) {
+    std::vector<double> weights;
+    weights.reserve(states.size());
+    double log_scale = std::log(static_cast<double>(total_attempts + states.size() + 2));
+    for (const auto& state : states) {
+        double attempts = static_cast<double>(state.attempts);
+        double sparse_hits = static_cast<double>(state.sparse_hits);
+        double factor_prior = 1.0 / static_cast<double>(state.factor_count * state.factor_count);
+        double smoothed_hit_rate = (sparse_hits + 0.25) / (attempts + 8.0);
+        double exploration = std::sqrt(log_scale / (attempts + 1.0));
+        double hit_boost = state.sparse_hits == 0
+            ? 1.0
+            : 1.0 + std::min(20.0, 4.0 * std::sqrt(sparse_hits));
+        weights.push_back(factor_prior * (0.02 + smoothed_hit_rate + 0.20 * exploration) * hit_boost);
+    }
+    std::discrete_distribution<std::size_t> dist(weights.begin(), weights.end());
+    return dist(rng);
+}
+
 int sparsity_without_last(const std::vector<int>& coeffs) {
     int sparsity = 0;
     for (std::size_t i = 0; i + 1 < coeffs.size(); ++i) {
@@ -1661,81 +1774,67 @@ void enumerate_mode(Context& ctx, SqliteWriter& writer, Stats& stats) {
     }
 }
 
-std::vector<int> random_composition(int total, int parts, int minimum, std::mt19937_64& rng) {
-    int remaining = total - parts * minimum;
-    std::vector<int> slots(static_cast<std::size_t>(parts), minimum);
-    for (int i = 0; i < remaining; ++i) {
-        std::uniform_int_distribution<int> dist(0, parts - 1);
-        slots[static_cast<std::size_t>(dist(rng))]++;
-    }
-    return slots;
-}
+BranchCandidate random_candidate_from_pattern(
+    Context& ctx,
+    const RandomPatternState& state,
+    std::mt19937_64& rng
+) {
+    std::vector<Poly> factors;
+    std::vector<FactorId> factor_ids;
+    factors.reserve(static_cast<std::size_t>(state.factor_count));
+    factor_ids.reserve(static_cast<std::size_t>(state.factor_count));
 
-BranchCandidate random_candidate(Context& ctx, std::mt19937_64& rng) {
-    while (true) {
-        std::uniform_int_distribution<int> model_dist(0, 1);
-        int model = model_dist(rng);
-        int degree = model == 0 ? 2 * ctx.opts.genus + 1 : 2 * ctx.opts.genus + 2;
-        int minimum = model == 0 ? 1 : 2;
-        int max_factors = std::min(ctx.opts.random_max_factors, degree / minimum);
-        std::vector<double> weights;
-        for (int r = 1; r <= max_factors; ++r) weights.push_back(1.0 / (r * r));
-        std::discrete_distribution<int> factor_count_dist(weights.begin(), weights.end());
-        int factor_count = factor_count_dist(rng) + 1;
-        auto degrees = random_composition(degree, factor_count, minimum, rng);
-        std::map<int, int> multiplicities;
-        for (int d : degrees) multiplicities[d]++;
-        bool feasible = true;
-        for (auto [d, m] : multiplicities) {
-            if (static_cast<std::uint64_t>(m) > ctx.irreducible_count(d)) {
-                feasible = false;
-                break;
+    for (int degree = 1; degree < static_cast<int>(state.pattern.size()); ++degree) {
+        int multiplicity = state.pattern[static_cast<std::size_t>(degree)];
+        if (multiplicity == 0) continue;
+        if (ctx.irreducible_materialized[static_cast<std::size_t>(degree)]) {
+            const auto& pool = ctx.irreducibles[static_cast<std::size_t>(degree)];
+            const auto& pool_ids = ctx.irreducible_ids[static_cast<std::size_t>(degree)];
+            std::unordered_set<std::size_t> selected_indices;
+            std::uniform_int_distribution<std::size_t> dist(0, pool.size() - 1);
+            while (static_cast<int>(selected_indices.size()) < multiplicity) {
+                selected_indices.insert(dist(rng));
             }
-        }
-        if (!feasible) continue;
-
-        std::vector<Poly> factors;
-        std::vector<FactorId> factor_ids;
-        std::vector<int> pattern(static_cast<std::size_t>(degree + 1), 0);
-        for (auto [d, m] : multiplicities) {
-            pattern[static_cast<std::size_t>(d)] = m;
+            for (std::size_t index : selected_indices) {
+                factors.push_back(pool[index]);
+                factor_ids.push_back(pool_ids[index]);
+            }
+        } else {
             std::unordered_set<std::string> seen;
-            for (int i = 0; i < m; ++i) {
-                while (true) {
-                    auto [factor, id] = ctx.random_irreducible_factor(d, rng);
-                    std::string key = key_poly(factor);
-                    if (!seen.insert(key).second) continue;
-                    factors.push_back(std::move(factor));
-                    factor_ids.push_back(id);
-                    break;
-                }
+            while (static_cast<int>(seen.size()) < multiplicity) {
+                auto [factor, id] = ctx.random_irreducible_factor(degree, rng);
+                std::string key = key_poly(factor);
+                if (!seen.insert(key).second) continue;
+                factors.push_back(std::move(factor));
+                factor_ids.push_back(id);
             }
         }
-        std::vector<std::size_t> order(factors.size());
-        std::iota(order.begin(), order.end(), 0);
-        std::shuffle(order.begin(), order.end(), rng);
-        std::vector<Poly> shuffled_factors;
-        std::vector<FactorId> shuffled_factor_ids;
-        shuffled_factors.reserve(factors.size());
-        shuffled_factor_ids.reserve(factor_ids.size());
-        for (std::size_t index : order) {
-            shuffled_factors.push_back(std::move(factors[index]));
-            shuffled_factor_ids.push_back(factor_ids[index]);
-        }
-        factors = std::move(shuffled_factors);
-        factor_ids = std::move(shuffled_factor_ids);
-        unsigned long leading = 1;
-        if (model == 1) {
-            std::uniform_int_distribution<int> leading_dist(0, 1);
-            leading = leading_dist(rng) == 0 ? 1 : smallest_nonsquare(ctx.opts.p);
-        }
-        return BranchCandidate{leading, factors, model == 0, pattern, factor_ids};
     }
+
+    std::vector<std::size_t> order(factors.size());
+    std::iota(order.begin(), order.end(), 0);
+    std::shuffle(order.begin(), order.end(), rng);
+    std::vector<Poly> shuffled_factors;
+    std::vector<FactorId> shuffled_factor_ids;
+    shuffled_factors.reserve(factors.size());
+    shuffled_factor_ids.reserve(factor_ids.size());
+    for (std::size_t index : order) {
+        shuffled_factors.push_back(std::move(factors[index]));
+        shuffled_factor_ids.push_back(factor_ids[index]);
+    }
+
+    unsigned long leading = 1;
+    if (!state.infinity_branch) {
+        std::uniform_int_distribution<int> leading_dist(0, static_cast<int>(state.leading_count) - 1);
+        leading = leading_dist(rng) == 0 ? 1 : smallest_nonsquare(ctx.opts.p);
+    }
+    return BranchCandidate{leading, std::move(shuffled_factors), state.infinity_branch, state.pattern, std::move(shuffled_factor_ids)};
 }
 
 void random_mode(Context& ctx, SqliteWriter& writer, Stats& stats) {
     auto started = std::chrono::steady_clock::now();
     std::mt19937_64 rng(ctx.opts.random_seed);
+    std::vector<RandomPatternState> patterns = build_random_pattern_states(ctx);
     std::uint64_t steps = ctx.opts.limit;
     if (!steps) steps = std::numeric_limits<std::uint64_t>::max();
     stats.total_presentations = steps == std::numeric_limits<std::uint64_t>::max()
@@ -1749,10 +1848,18 @@ void random_mode(Context& ctx, SqliteWriter& writer, Stats& stats) {
               << "progress: 0/" << total_label << "\n"
               << "sparse_presentations: 0\n"
               << "sparse_isomorphism_classes: 0\n"
-              << "canonicalized_isomorphism_classes: 0\n-\n";
+              << "canonicalized_isomorphism_classes: 0\n"
+              << "random_patterns: " << random_pattern_progress_summary(patterns) << "\n-\n";
     for (std::uint64_t step = 0; step < steps; ++step) {
-        BranchCandidate candidate = random_candidate(ctx, rng);
+        std::size_t pattern_index = choose_random_pattern(patterns, stats.processed, rng);
+        RandomPatternState& pattern_state = patterns[pattern_index];
+        BranchCandidate candidate = random_candidate_from_pattern(ctx, pattern_state, rng);
+        std::uint64_t sparse_before = stats.sparse;
         process_candidate(ctx, writer, candidate, stats);
+        ++pattern_state.attempts;
+        if (stats.sparse > sparse_before) {
+            pattern_state.sparse_hits += stats.sparse - sparse_before;
+        }
         ++stats.processed;
         if (ctx.opts.progress_interval > 0 && stats.processed % static_cast<std::uint64_t>(ctx.opts.progress_interval) == 0) {
             double elapsed = std::chrono::duration<double>(std::chrono::steady_clock::now() - started).count();
@@ -1761,7 +1868,8 @@ void random_mode(Context& ctx, SqliteWriter& writer, Stats& stats) {
                       << "progress: " << stats.processed << "/" << total_label << "\n"
                       << "sparse_presentations: " << stats.sparse_presentations << "\n"
                       << "sparse_isomorphism_classes: " << stats.sparse << "\n"
-                      << "canonicalized_isomorphism_classes: " << stats.canonicalized << "\n-\n";
+                      << "canonicalized_isomorphism_classes: " << stats.canonicalized << "\n"
+                      << "random_patterns: " << random_pattern_progress_summary(patterns) << "\n-\n";
             writer.write_progress(stats, elapsed);
         }
     }

@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+cache/
+irreducibles/
+*.sqlite-shm
+*.sqlite-wal
+**/*.sqlite-shm
+**/*.sqlite-wal
