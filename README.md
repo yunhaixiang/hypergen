@@ -99,6 +99,23 @@ Irreducible-factor tables are materialized only while the estimated memory use s
 
 The default is `1024` MB. Higher degrees beyond the budget are streamed in `enumerate` mode or sampled directly in `random` mode.
 
+## Sparsity
+
+For a genus `g` curve, the runner computes the stored part of the L-polynomial
+
+```text
+1 + a_1 T + a_2 T^2 + ... + a_g T^g + ...
+```
+
+and records only `a_1, ..., a_g`; the remaining coefficients are determined by
+Poincare duality. The `sparsity` of a curve is the number of nonzero entries
+among `a_1, ..., a_g`.
+
+`--max-sparsity N` keeps only curves with sparsity at most `N`. The value used
+for a run is recorded in `enumeration_summary.max_sparsity`, while each stored
+curve has its actual value in `sparse_curves.sparsity`. If `--max-sparsity` is
+omitted, no sparsity filter is applied and `max_sparsity` is stored as `NULL`.
+
 ## Progress Output
 
 The runner prints progress blocks of the form:
