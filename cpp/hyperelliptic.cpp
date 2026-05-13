@@ -2011,10 +2011,12 @@ void run_one(Options opts) {
     auto started = std::chrono::steady_clock::now();
     Stats stats;
     SqliteWriter writer(opts.out);
-    Context ctx(opts);
-    if (!stop_requested()) {
-        if (opts.mode == "enumerate") enumerate_mode(ctx, writer, stats);
-        else random_mode(ctx, writer, stats);
+    {
+        Context ctx(opts);
+        if (!stop_requested()) {
+            if (opts.mode == "enumerate") enumerate_mode(ctx, writer, stats);
+            else random_mode(ctx, writer, stats);
+        }
     }
     double elapsed = std::chrono::duration<double>(std::chrono::steady_clock::now() - started).count();
     writer.write_summary(opts, stats, elapsed);
