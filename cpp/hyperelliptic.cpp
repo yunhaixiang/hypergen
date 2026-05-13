@@ -59,7 +59,7 @@ struct Options {
     int random_max_factors = 5;
     std::uint64_t irreducible_memory_budget_mb = 1024;
     std::filesystem::path out;
-    std::filesystem::path out_dir = std::filesystem::path("data_gen") / "results";
+    std::filesystem::path out_dir = std::filesystem::path("results");
 };
 
 struct BranchCandidate {
@@ -1770,7 +1770,7 @@ void random_mode(Context& ctx, SqliteWriter& writer, Stats& stats) {
 
 std::filesystem::path default_out_path(const Options& opts) {
     std::string sparsity = opts.max_sparsity < 0 ? "all" : "s_" + std::to_string(opts.max_sparsity);
-    return std::filesystem::path("data_gen") / "results" /
+    return std::filesystem::path("results") /
         ("p" + std::to_string(opts.p) + "_g" + std::to_string(opts.genus) + "_" + sparsity + "_cpp.sqlite");
 }
 

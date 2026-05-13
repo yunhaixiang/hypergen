@@ -1,0 +1,9 @@
+# Build artifacts
+cpp/build/
+
+# Local OS/editor files
+.DS_Store
+
+# SQLite transient sidecar files
+*.sqlite-shm
+*.sqlite-wal
