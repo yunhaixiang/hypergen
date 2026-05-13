@@ -1,5 +1,6 @@
 # Build artifacts
 cpp/build/
+cpp/build-release/
 
 # Local OS/editor files
 .DS_Store

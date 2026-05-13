@@ -54,7 +54,6 @@ struct Options {
     std::uint64_t limit = 0;
     int progress_interval = 1000;
     std::string mode = "enumerate";
-    std::uint64_t random_steps = 0;
     unsigned long random_seed = 1;
     int random_max_factors = 5;
     std::uint64_t irreducible_memory_budget_mb = 1024;
@@ -1737,7 +1736,7 @@ BranchCandidate random_candidate(Context& ctx, std::mt19937_64& rng) {
 void random_mode(Context& ctx, SqliteWriter& writer, Stats& stats) {
     auto started = std::chrono::steady_clock::now();
     std::mt19937_64 rng(ctx.opts.random_seed);
-    std::uint64_t steps = ctx.opts.random_steps ? ctx.opts.random_steps : ctx.opts.limit;
+    std::uint64_t steps = ctx.opts.limit;
     if (!steps) steps = std::numeric_limits<std::uint64_t>::max();
     stats.total_presentations = steps == std::numeric_limits<std::uint64_t>::max()
         ? cpp_int(-1)
@@ -1791,7 +1790,6 @@ Options parse_args(int argc, char** argv) {
         else if (arg == "--limit") opts.limit = std::stoull(need("--limit"));
         else if (arg == "--progress-interval") opts.progress_interval = std::stoi(need("--progress-interval"));
         else if (arg == "--enumeration-mode") opts.mode = need("--enumeration-mode");
-        else if (arg == "--random-steps") opts.random_steps = std::stoull(need("--random-steps"));
         else if (arg == "--random-seed") opts.random_seed = std::stoul(need("--random-seed"));
         else if (arg == "--random-max-factors") opts.random_max_factors = std::stoi(need("--random-max-factors"));
         else if (arg == "--irreducible-memory-budget-mb") opts.irreducible_memory_budget_mb = std::stoull(need("--irreducible-memory-budget-mb"));

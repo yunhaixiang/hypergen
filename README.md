@@ -4,7 +4,7 @@
 
 ```text
 cpp/                              C++ source and CMake file
-results/p3_enumerate_batch/        generated SQLite data through genus 7
+results/p3_enumerate_batch/        generated SQLite data through genus 8
 ```
 
 The Python prototype is not part of this repository. This copy is intended to be the C++ runner plus generated data.
@@ -20,15 +20,17 @@ Requirements:
 
 From the repository root:
 
+Use a release build for actual runs:
+
 ```bash
-cmake -S cpp -B cpp/build
-cmake --build cpp/build -j
+cmake -S cpp -B cpp/build-release -DCMAKE_BUILD_TYPE=Release
+cmake --build cpp/build-release -j
 ```
 
-The executable is:
+The release executable is:
 
 ```text
-cpp/build/hyperelliptic_cpp
+cpp/build-release/hyperelliptic_cpp
 ```
 
 ## Run
@@ -36,7 +38,7 @@ cpp/build/hyperelliptic_cpp
 Deterministic branch-divisor enumeration:
 
 ```bash
-cpp/build/hyperelliptic_cpp \
+cpp/build-release/hyperelliptic_cpp \
   --p 3 \
   --genus 7 \
   --enumeration-mode enumerate \
@@ -47,7 +49,7 @@ cpp/build/hyperelliptic_cpp \
 Batch run over a genus range:
 
 ```bash
-cpp/build/hyperelliptic_cpp \
+cpp/build-release/hyperelliptic_cpp \
   --p 3 \
   --genus-start 7 \
   --genus-end 10 \
@@ -59,12 +61,12 @@ cpp/build/hyperelliptic_cpp \
 Random sparse search:
 
 ```bash
-cpp/build/hyperelliptic_cpp \
+cpp/build-release/hyperelliptic_cpp \
   --p 5 \
   --genus 11 \
   --enumeration-mode random \
   --max-sparsity 1 \
-  --random-steps 10000 \
+  --limit 10000 \
   --out results/p5_g11_s_1_random.sqlite
 ```
 
@@ -74,7 +76,12 @@ If `--out` is omitted, single-genus runs write under `results/`. If `--out-dir` 
 
 `--enumeration-mode enumerate` deterministically enumerates squarefree branch divisors by factorization pattern and irreducible-factor choices. It includes both normalized degree `2g+1` and degree `2g+2` models. Degree `2g+2` branch patterns with an `F_p`-linear factor are skipped because they are represented by odd-degree models.
 
-`--enumeration-mode random` samples random factorized branch divisors for higher-genus sparse search. If neither `--random-steps` nor `--limit` is supplied, it runs until interrupted.
+`--enumeration-mode random` samples random factorized branch divisors for higher-genus sparse search. If `--limit` is omitted, it runs until interrupted.
+
+`--limit N` has mode-dependent meaning:
+
+- in `enumerate` mode, stop after processing `N` deterministic candidates
+- in `random` mode, sample `N` random candidates
 
 Both modes use Hasse-Witt filtering before exact point counts when `--max-sparsity` is supplied. Exact L-polynomial coefficients are computed by point counting over extension fields and Newton identities.
 
@@ -134,6 +141,7 @@ g=4  total=46296     sparse_presentations=3789  sparse_classes=340
 g=5  total=416972    sparse_presentations=2858  sparse_classes=255
 g=6  total=3753216   sparse_presentations=5911  sparse_classes=763
 g=7  total=33779604  sparse_presentations=7878  sparse_classes=1022
+g=8  total=304017320 sparse_presentations=12554 sparse_classes=1542
 ```
 
 ## Useful Inspection Commands
