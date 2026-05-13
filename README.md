@@ -78,7 +78,7 @@ If `--out` is omitted, single-genus runs write under `results/`. If `--out-dir` 
 
 `--enumeration-mode enumerate` deterministically enumerates squarefree branch divisors by factorization pattern and irreducible-factor choices. It includes both normalized degree `2g+1` and degree `2g+2` models. Degree `2g+2` branch patterns with an `F_p`-linear factor are skipped because they are represented by odd-degree models.
 
-`--enumeration-mode random` samples random factorized branch divisors for higher-genus sparse search. It first builds feasible factorization-pattern strata, capped by `--random-max-factors`, then adaptively gives more samples to patterns whose previous samples produced sparse curves. If `--limit` is omitted, it runs until interrupted.
+`--enumeration-mode random` samples random factorized branch divisors for higher-genus sparse search. It first builds all feasible factorization-pattern strata, then adaptively gives more samples to patterns whose previous samples produced sparse curves. The optional `--random-max-factors N` restricts this to patterns with at most `N` irreducible factors; if omitted, there is no hard factor-count cap. Even without a cap, the sampling weights strongly favor patterns with fewer irreducible factors. If `--limit` is omitted, random mode runs until interrupted.
 
 `--limit N` has mode-dependent meaning:
 
@@ -143,6 +143,10 @@ Each generated SQLite file is intentionally lean and keeps only sparse output pl
 - `enumeration_progress`: progress snapshots at the print interval.
 
 The output database does not store all candidates, all duplicates, all Hasse-Witt failures, or all orbit-cache rows.
+
+On normal completion or graceful interrupt, the runner writes the summary row,
+checkpoints SQLite, switches the database back to `DELETE` journal mode, and
+removes transient `*.sqlite-wal` and `*.sqlite-shm` sidecar files.
 
 ## Included Data
 

@@ -3,7 +3,7 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 BIN="${BIN:-$ROOT/cpp/build-release/hyperelliptic_cpp}"
-OUT_ROOT="${OUT_ROOT:-$ROOT/results/prime_sweep}"
+OUT_ROOT="${OUT_ROOT:-$ROOT/results}"
 MAX_SPARSITY="${MAX_SPARSITY:-1}"
 PROGRESS_INTERVAL="${PROGRESS_INTERVAL:-10000}"
 IRREDUCIBLE_MEMORY_BUDGET_MB="${IRREDUCIBLE_MEMORY_BUDGET_MB:-1024}"
@@ -51,10 +51,8 @@ run_one() {
   local g="$2"
   local dir="$OUT_ROOT/p${p}_enumerate"
   local out="$dir/p${p}_g${g}_${SPARSITY_LABEL}.sqlite"
-  local log_dir="$OUT_ROOT/logs"
-  local log="$log_dir/p${p}_g${g}_${SPARSITY_LABEL}.log"
 
-  mkdir -p "$dir" "$log_dir"
+  mkdir -p "$dir"
 
   if [[ "$SKIP_COMPLETE" == "1" ]] && is_complete_sqlite "$out"; then
     echo "skip complete: $out"
@@ -77,8 +75,7 @@ run_one() {
     --max-sparsity "$MAX_SPARSITY" \
     --progress-interval "$PROGRESS_INTERVAL" \
     --irreducible-memory-budget-mb "$IRREDUCIBLE_MEMORY_BUDGET_MB" \
-    --out "$out" \
-    2>&1 | tee "$log"
+    --out "$out"
 }
 
 run_range() {

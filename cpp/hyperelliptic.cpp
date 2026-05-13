@@ -9,6 +9,7 @@
 #include <cmath>
 #include <cstdint>
 #include <cstdlib>
+#include <csignal>
 #include <filesystem>
 #include <functional>
 #include <iostream>
@@ -35,6 +36,16 @@ using BranchKey = std::vector<std::uint32_t>;
 
 namespace {
 
+volatile std::sig_atomic_t stop_requested_flag = 0;
+
+void request_stop(int) {
+    stop_requested_flag = 1;
+}
+
+bool stop_requested() {
+    return stop_requested_flag != 0;
+}
+
 struct VectorHash {
     std::size_t operator()(const BranchKey& values) const {
         std::size_t seed = values.size();
@@ -56,7 +67,7 @@ struct Options {
     int progress_interval = 1000;
     std::string mode = "enumerate";
     unsigned long random_seed = 1;
-    int random_max_factors = 5;
+    int random_max_factors = 0;
     std::uint64_t irreducible_memory_budget_mb = 1024;
     std::filesystem::path out;
     std::filesystem::path out_dir = std::filesystem::path("results");
@@ -590,11 +601,12 @@ public:
 class SqliteWriter {
 public:
     sqlite3* db = nullptr;
+    std::filesystem::path db_path;
     bool in_transaction = false;
     int pending_writes = 0;
     static constexpr int write_batch_size = 100;
 
-    explicit SqliteWriter(const std::filesystem::path& path) {
+    explicit SqliteWriter(const std::filesystem::path& path) : db_path(path) {
         std::filesystem::create_directories(path.parent_path());
         if (sqlite3_open(path.string().c_str(), &db) != SQLITE_OK) {
             throw std::runtime_error("failed to open sqlite output");
@@ -650,14 +662,23 @@ public:
     }
 
     ~SqliteWriter() {
-        if (db) {
-            if (in_transaction) {
-                char* error = nullptr;
-                sqlite3_exec(db, "COMMIT;", nullptr, nullptr, &error);
-                sqlite3_free(error);
-            }
-            sqlite3_close(db);
+        try {
+            close();
+        } catch (...) {
         }
+    }
+
+    void close() {
+        if (!db) return;
+        if (in_transaction) commit(true);
+        exec("PRAGMA wal_checkpoint(TRUNCATE);");
+        exec("PRAGMA journal_mode=DELETE;");
+        sqlite3_close(db);
+        db = nullptr;
+
+        std::error_code ignored;
+        std::filesystem::remove(db_path.string() + "-wal", ignored);
+        std::filesystem::remove(db_path.string() + "-shm", ignored);
     }
 
     void exec(const std::string& sql) {
@@ -779,11 +800,15 @@ public:
     }
 
     void write_summary(const Options& opts, const Stats& stats, double elapsed) {
+        std::string status_label = stop_requested()
+            ? "interrupted"
+            : (stats.total_presentations >= 0 && cpp_int(stats.processed) >= stats.total_presentations ? "complete" : "partial");
         std::ostringstream status;
         status << "{\"duplicate\":" << stats.duplicate
                << ",\"rejected_exact\":" << stats.rejected_exact
                << ",\"rejected_hasse_witt_uncanonicalized\":" << stats.rejected_hasse_witt
-               << ",\"sparse\":" << stats.sparse << "}";
+               << ",\"sparse\":" << stats.sparse
+               << ",\"run_status\":\"" << status_label << "\"}";
         std::ostringstream sql;
         sql << "INSERT OR REPLACE INTO enumeration_summary ("
             << "id,"
@@ -821,12 +846,12 @@ public:
     }
 };
 
-void for_combinations(
+bool for_combinations(
     int n,
     int k,
     int start,
     std::vector<int>& current,
-    const std::function<void(const std::vector<int>&)>& callback
+    const std::function<bool(const std::vector<int>&)>& callback
 );
 
 class Context {
@@ -1147,6 +1172,7 @@ public:
         std::cout << "irreducible_load: 0/" << D
                   << " budget_mb=" << opts.irreducible_memory_budget_mb << std::endl;
         for (int degree = 1; degree <= D; ++degree) {
+            if (stop_requested()) break;
             std::uint64_t count = irreducible_count_formula(opts.p, degree);
             irreducible_counts[static_cast<std::size_t>(degree)] = count;
             std::uint64_t estimated_bytes = estimated_irreducible_degree_bytes(degree, count);
@@ -1157,6 +1183,7 @@ public:
                 irreducible_ids[static_cast<std::size_t>(degree)].reserve(static_cast<std::size_t>(count));
                 std::uint64_t total = monic_polynomial_count(degree);
                 for (std::uint64_t index = 0; index < total; ++index) {
+                    if (stop_requested()) break;
                     Poly poly = monic_polynomial_from_index(degree, index);
                     if (is_irreducible_flint(poly, opts.p)) {
                         FactorId id = register_factor(poly, true);
@@ -1164,8 +1191,14 @@ public:
                         irreducible_ids[static_cast<std::size_t>(degree)].push_back(id);
                     }
                 }
-                irreducible_materialized[static_cast<std::size_t>(degree)] = true;
-                used = saturating_add(used, estimated_bytes);
+                if (stop_requested()) {
+                    irreducibles[static_cast<std::size_t>(degree)].clear();
+                    irreducible_ids[static_cast<std::size_t>(degree)].clear();
+                    materialize = false;
+                } else {
+                    irreducible_materialized[static_cast<std::size_t>(degree)] = true;
+                    used = saturating_add(used, estimated_bytes);
+                }
             }
             double seconds = std::chrono::duration<double>(std::chrono::steady_clock::now() - started).count();
             std::cout << "irreducible_load: " << degree << "/" << D
@@ -1217,8 +1250,8 @@ public:
             const auto& pool_ids = irreducible_ids[static_cast<std::size_t>(degree)];
             std::vector<int> combo;
             bool keep_going = true;
-            for_combinations(static_cast<int>(pool.size()), multiplicity, 0, combo, [&](const std::vector<int>& indices) {
-                if (!keep_going) return;
+            keep_going = for_combinations(static_cast<int>(pool.size()), multiplicity, 0, combo, [&](const std::vector<int>& indices) {
+                if (!keep_going || stop_requested()) return false;
                 std::vector<Poly> factors;
                 std::vector<FactorId> ids;
                 factors.reserve(indices.size());
@@ -1228,6 +1261,7 @@ public:
                     ids.push_back(pool_ids[static_cast<std::size_t>(idx)]);
                 }
                 keep_going = callback(factors, ids);
+                return keep_going && !stop_requested();
             });
             return keep_going;
         }
@@ -1465,8 +1499,8 @@ int pattern_factor_count(const std::vector<int>& pattern) {
 }
 
 std::vector<RandomPatternState> build_random_pattern_states(const Context& ctx) {
-    if (ctx.opts.random_max_factors < 1) {
-        throw std::runtime_error("--random-max-factors must be positive");
+    if (ctx.opts.random_max_factors < 0) {
+        throw std::runtime_error("--random-max-factors must be nonnegative");
     }
 
     std::vector<RandomPatternState> states;
@@ -1477,7 +1511,8 @@ std::vector<RandomPatternState> build_random_pattern_states(const Context& ctx) 
         std::uint64_t leading_count = model == 0 ? 1 : 2;
         for (const auto& pattern : factorization_patterns(total_degree, skip_linear)) {
             int factors = pattern_factor_count(pattern);
-            if (factors < 1 || factors > ctx.opts.random_max_factors) continue;
+            if (factors < 1) continue;
+            if (ctx.opts.random_max_factors > 0 && factors > ctx.opts.random_max_factors) continue;
             cpp_int presentations = branch_pattern_presentation_count(ctx, pattern, leading_count);
             if (presentations == 0) continue;
             RandomPatternState state;
@@ -1492,7 +1527,7 @@ std::vector<RandomPatternState> build_random_pattern_states(const Context& ctx) 
         }
     }
     if (states.empty()) {
-        throw std::runtime_error("no feasible random factorization patterns; increase --random-max-factors");
+        throw std::runtime_error("no feasible random factorization patterns");
     }
     return states;
 }
@@ -1546,7 +1581,9 @@ std::size_t choose_random_pattern(
     for (const auto& state : states) {
         double attempts = static_cast<double>(state.attempts);
         double sparse_hits = static_cast<double>(state.sparse_hits);
-        double factor_prior = 1.0 / static_cast<double>(state.factor_count * state.factor_count);
+        double factor_prior = 1.0 / static_cast<double>(
+            state.factor_count * state.factor_count * state.factor_count
+        );
         double smoothed_hit_rate = (sparse_hits + 0.25) / (attempts + 8.0);
         double exploration = std::sqrt(log_scale / (attempts + 1.0));
         double hit_boost = state.sparse_hits == 0
@@ -1646,22 +1683,32 @@ bool process_candidate(Context& ctx, SqliteWriter& writer, const BranchCandidate
     return true;
 }
 
-void for_combinations(
+std::string run_status(const Stats& stats) {
+    if (stop_requested()) return "interrupted";
+    if (stats.total_presentations >= 0 && cpp_int(stats.processed) >= stats.total_presentations) {
+        return "complete";
+    }
+    return "partial";
+}
+
+bool for_combinations(
     int n,
     int k,
     int start,
     std::vector<int>& current,
-    const std::function<void(const std::vector<int>&)>& callback
+    const std::function<bool(const std::vector<int>&)>& callback
 ) {
+    if (stop_requested()) return false;
     if (static_cast<int>(current.size()) == k) {
-        callback(current);
-        return;
+        return callback(current);
     }
     for (int i = start; i <= n - (k - static_cast<int>(current.size())); ++i) {
         current.push_back(i);
-        for_combinations(n, k, i + 1, current, callback);
+        bool keep_going = for_combinations(n, k, i + 1, current, callback);
         current.pop_back();
+        if (!keep_going) return false;
     }
+    return true;
 }
 
 bool enumerate_factor_choices_rec(
@@ -1678,9 +1725,11 @@ bool enumerate_factor_choices_rec(
     const std::string& total_label,
     const std::chrono::steady_clock::time_point& started
 ) {
+    if (stop_requested()) return false;
     if (ctx.opts.limit && stats.processed >= ctx.opts.limit) return false;
     if (index == active.size()) {
         for (unsigned long leading : leading_coefficients) {
+            if (stop_requested()) return false;
             if (ctx.opts.limit && stats.processed >= ctx.opts.limit) return false;
             BranchCandidate candidate{leading, selected, infinity_branch, pattern, selected_ids};
             process_candidate(ctx, writer, candidate, stats);
@@ -1739,6 +1788,7 @@ void enumerate_mode(Context& ctx, SqliteWriter& writer, Stats& stats) {
               << "canonicalized_isomorphism_classes: 0\n-\n";
 
     for (int model = 0; model < 2; ++model) {
+        if (stop_requested()) return;
         int total_degree = model == 0 ? 2 * ctx.opts.genus + 1 : 2 * ctx.opts.genus + 2;
         bool infinity_branch = model == 0;
         bool skip_linear = model == 1;
@@ -1746,6 +1796,7 @@ void enumerate_mode(Context& ctx, SqliteWriter& writer, Stats& stats) {
             ? std::vector<unsigned long>{1}
             : std::vector<unsigned long>{1, smallest_nonsquare(ctx.opts.p)};
         for (const auto& pattern : factorization_patterns(total_degree, skip_linear)) {
+            if (stop_requested()) return;
             std::vector<std::pair<int, int>> active;
             for (int degree = 1; degree < static_cast<int>(pattern.size()); ++degree) {
                 if (pattern[static_cast<std::size_t>(degree)] > 0) {
@@ -1850,7 +1901,7 @@ void random_mode(Context& ctx, SqliteWriter& writer, Stats& stats) {
               << "sparse_isomorphism_classes: 0\n"
               << "canonicalized_isomorphism_classes: 0\n"
               << "random_patterns: " << random_pattern_progress_summary(patterns) << "\n-\n";
-    for (std::uint64_t step = 0; step < steps; ++step) {
+    for (std::uint64_t step = 0; step < steps && !stop_requested(); ++step) {
         std::size_t pattern_index = choose_random_pattern(patterns, stats.processed, rng);
         RandomPatternState& pattern_state = patterns[pattern_index];
         BranchCandidate candidate = random_candidate_from_pattern(ctx, pattern_state, rng);
@@ -1916,13 +1967,16 @@ void run_one(Options opts) {
     if (opts.genus < 1) throw std::runtime_error("--genus must be positive");
     if (opts.out.empty()) opts.out = default_out_path(opts);
     auto started = std::chrono::steady_clock::now();
-    Context ctx(opts);
-    SqliteWriter writer(opts.out);
     Stats stats;
-    if (opts.mode == "enumerate") enumerate_mode(ctx, writer, stats);
-    else random_mode(ctx, writer, stats);
+    SqliteWriter writer(opts.out);
+    Context ctx(opts);
+    if (!stop_requested()) {
+        if (opts.mode == "enumerate") enumerate_mode(ctx, writer, stats);
+        else random_mode(ctx, writer, stats);
+    }
     double elapsed = std::chrono::duration<double>(std::chrono::steady_clock::now() - started).count();
     writer.write_summary(opts, stats, elapsed);
+    writer.close();
     std::cout << "output: " << opts.out << "\n"
               << "stats: processed=" << stats.processed
               << " sparse_presentations=" << stats.sparse_presentations
@@ -1930,12 +1984,15 @@ void run_one(Options opts) {
               << " duplicate=" << stats.duplicate
               << " rejected_hasse_witt=" << stats.rejected_hasse_witt
               << " rejected_exact=" << stats.rejected_exact << "\n"
+              << "run_status: " << run_status(stats) << "\n"
               << "elapsed_seconds: " << elapsed << std::endl;
 }
 
 }  // namespace
 
 int main(int argc, char** argv) {
+    std::signal(SIGINT, request_stop);
+    std::signal(SIGTERM, request_stop);
     try {
         Options opts = parse_args(argc, argv);
         if (opts.genus_start >= 0 || opts.genus_end >= 0) {
@@ -1949,9 +2006,11 @@ int main(int argc, char** argv) {
                 one.out = one.out_dir / ("p" + std::to_string(one.p) + "_g" + std::to_string(g) + "_" + sparsity + "_cpp.sqlite");
                 std::cout << "batch: p=" << one.p << " genus=" << g << " out=" << one.out << std::endl;
                 run_one(one);
+                if (stop_requested()) return 130;
             }
         } else {
             run_one(opts);
+            if (stop_requested()) return 130;
         }
         return 0;
     } catch (const std::exception& exc) {
