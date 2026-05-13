@@ -124,13 +124,16 @@ The runner prints progress blocks of the form:
 prime: p
 genus: g
 progress: processed/total
+progress_percent: P%
+elapsed: Dd HHh MMm SSs
+estimated_remaining: Dd HHh MMm SSs
 sparse_presentations: N
 sparse_isomorphism_classes: M
 canonicalized_isomorphism_classes: K
 -
 ```
 
-`total` is the actual deterministic branch-divisor presentation count in `enumerate` mode, even if `--limit` is used.
+`total` is the actual deterministic branch-divisor presentation count in `enumerate` mode, even if `--limit` is used. In unbounded `random` mode, `total`, `progress_percent`, and `estimated_remaining` are printed as `?`.
 
 `sparse_presentations` is the sum of normalized enumerated orbit sizes for sparse isomorphism classes.
 

@@ -12,6 +12,7 @@
 #include <csignal>
 #include <filesystem>
 #include <functional>
+#include <iomanip>
 #include <iostream>
 #include <limits>
 #include <map>
@@ -1691,6 +1692,69 @@ std::string run_status(const Stats& stats) {
     return "partial";
 }
 
+std::string format_duration(double seconds) {
+    if (!std::isfinite(seconds) || seconds < 0) return "?";
+    std::uint64_t total = static_cast<std::uint64_t>(seconds + 0.5);
+    std::uint64_t days = total / 86400;
+    total %= 86400;
+    std::uint64_t hours = total / 3600;
+    total %= 3600;
+    std::uint64_t minutes = total / 60;
+    std::uint64_t secs = total % 60;
+    std::ostringstream out;
+    out << days << "d "
+        << std::setw(2) << std::setfill('0') << hours << "h "
+        << std::setw(2) << std::setfill('0') << minutes << "m "
+        << std::setw(2) << std::setfill('0') << secs << "s";
+    return out.str();
+}
+
+bool finite_positive_total(const cpp_int& total) {
+    return total > 0;
+}
+
+std::string progress_percent_label(std::uint64_t processed, const cpp_int& total) {
+    if (!finite_positive_total(total)) return "?";
+    long double total_value = total.convert_to<long double>();
+    if (!std::isfinite(static_cast<double>(total_value)) || total_value <= 0) return "?";
+    long double percent = 100.0L * static_cast<long double>(processed) / total_value;
+    if (percent > 100.0L) percent = 100.0L;
+    std::ostringstream out;
+    out << std::fixed << std::setprecision(2) << static_cast<double>(percent) << "%";
+    return out.str();
+}
+
+std::string estimated_remaining_label(std::uint64_t processed, const cpp_int& total, double elapsed) {
+    if (processed == 0 || !finite_positive_total(total) || !std::isfinite(elapsed) || elapsed < 0) return "?";
+    long double total_value = total.convert_to<long double>();
+    if (!std::isfinite(static_cast<double>(total_value)) || total_value <= 0) return "?";
+    long double remaining = (total_value / static_cast<long double>(processed) - 1.0L) * static_cast<long double>(elapsed);
+    if (remaining < 0) remaining = 0;
+    return format_duration(static_cast<double>(remaining));
+}
+
+void print_progress_block(
+    const Context& ctx,
+    const Stats& stats,
+    const std::string& total_label,
+    double elapsed,
+    const std::string& random_pattern_summary = ""
+) {
+    std::cout << "prime: " << ctx.opts.p << "\n"
+              << "genus: " << ctx.opts.genus << "\n"
+              << "progress: " << stats.processed << "/" << total_label << "\n"
+              << "progress_percent: " << progress_percent_label(stats.processed, stats.total_presentations) << "\n"
+              << "elapsed: " << format_duration(elapsed) << "\n"
+              << "estimated_remaining: " << estimated_remaining_label(stats.processed, stats.total_presentations, elapsed) << "\n"
+              << "sparse_presentations: " << stats.sparse_presentations << "\n"
+              << "sparse_isomorphism_classes: " << stats.sparse << "\n"
+              << "canonicalized_isomorphism_classes: " << stats.canonicalized << "\n";
+    if (!random_pattern_summary.empty()) {
+        std::cout << "random_patterns: " << random_pattern_summary << "\n";
+    }
+    std::cout << "-\n";
+}
+
 bool for_combinations(
     int n,
     int k,
@@ -1736,12 +1800,7 @@ bool enumerate_factor_choices_rec(
             ++stats.processed;
             if (ctx.opts.progress_interval > 0 && stats.processed % static_cast<std::uint64_t>(ctx.opts.progress_interval) == 0) {
                 double elapsed = std::chrono::duration<double>(std::chrono::steady_clock::now() - started).count();
-                std::cout << "prime: " << ctx.opts.p << "\n"
-                          << "genus: " << ctx.opts.genus << "\n"
-                          << "progress: " << stats.processed << "/" << total_label << "\n"
-                          << "sparse_presentations: " << stats.sparse_presentations << "\n"
-                          << "sparse_isomorphism_classes: " << stats.sparse << "\n"
-                          << "canonicalized_isomorphism_classes: " << stats.canonicalized << "\n-\n";
+                print_progress_block(ctx, stats, total_label, elapsed);
                 writer.write_progress(stats, elapsed);
             }
         }
@@ -1780,12 +1839,7 @@ void enumerate_mode(Context& ctx, SqliteWriter& writer, Stats& stats) {
     auto started = std::chrono::steady_clock::now();
     stats.total_presentations = total_branch_divisor_presentations(ctx);
     std::string total_label = cpp_int_to_string(stats.total_presentations);
-    std::cout << "prime: " << ctx.opts.p << "\n"
-              << "genus: " << ctx.opts.genus << "\n"
-              << "progress: 0/" << total_label << "\n"
-              << "sparse_presentations: 0\n"
-              << "sparse_isomorphism_classes: 0\n"
-              << "canonicalized_isomorphism_classes: 0\n-\n";
+    print_progress_block(ctx, stats, total_label, 0.0);
 
     for (int model = 0; model < 2; ++model) {
         if (stop_requested()) return;
@@ -1894,13 +1948,7 @@ void random_mode(Context& ctx, SqliteWriter& writer, Stats& stats) {
     std::string total_label = steps == std::numeric_limits<std::uint64_t>::max()
         ? "?"
         : std::to_string(steps);
-    std::cout << "prime: " << ctx.opts.p << "\n"
-              << "genus: " << ctx.opts.genus << "\n"
-              << "progress: 0/" << total_label << "\n"
-              << "sparse_presentations: 0\n"
-              << "sparse_isomorphism_classes: 0\n"
-              << "canonicalized_isomorphism_classes: 0\n"
-              << "random_patterns: " << random_pattern_progress_summary(patterns) << "\n-\n";
+    print_progress_block(ctx, stats, total_label, 0.0, random_pattern_progress_summary(patterns));
     for (std::uint64_t step = 0; step < steps && !stop_requested(); ++step) {
         std::size_t pattern_index = choose_random_pattern(patterns, stats.processed, rng);
         RandomPatternState& pattern_state = patterns[pattern_index];
@@ -1914,13 +1962,7 @@ void random_mode(Context& ctx, SqliteWriter& writer, Stats& stats) {
         ++stats.processed;
         if (ctx.opts.progress_interval > 0 && stats.processed % static_cast<std::uint64_t>(ctx.opts.progress_interval) == 0) {
             double elapsed = std::chrono::duration<double>(std::chrono::steady_clock::now() - started).count();
-            std::cout << "prime: " << ctx.opts.p << "\n"
-                      << "genus: " << ctx.opts.genus << "\n"
-                      << "progress: " << stats.processed << "/" << total_label << "\n"
-                      << "sparse_presentations: " << stats.sparse_presentations << "\n"
-                      << "sparse_isomorphism_classes: " << stats.sparse << "\n"
-                      << "canonicalized_isomorphism_classes: " << stats.canonicalized << "\n"
-                      << "random_patterns: " << random_pattern_progress_summary(patterns) << "\n-\n";
+            print_progress_block(ctx, stats, total_label, elapsed, random_pattern_progress_summary(patterns));
             writer.write_progress(stats, elapsed);
         }
     }
