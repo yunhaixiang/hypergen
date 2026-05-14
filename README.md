@@ -78,12 +78,28 @@ If `--out` is omitted, single-genus runs write under `results/`. If `--out-dir` 
 
 ## Modes
 
-`--enumeration-mode enumerate` deterministically enumerates squarefree branch divisors by factorization pattern and irreducible-factor choices. It includes both normalized degree `2g+1` and degree `2g+2` models. Degree `2g+2` branch patterns with an `F_p`-linear factor are skipped because they are represented by odd-degree models.
+`--enumeration-mode enumerate` deterministically enumerates squarefree branch divisors by branch divisor type and irreducible-factor choices. It includes both normalized degree `2g+1` and degree `2g+2` models. Degree `2g+2` branch types with an `F_p`-linear factor are skipped because they are represented by odd-degree models.
 
-`--enumeration-mode random` samples random factorized branch divisors for higher-genus sparse search. It first builds all feasible factorization-pattern strata, then adaptively gives more samples to patterns whose previous samples produced sparse curves. The optional `--random-max-factors N` restricts this to patterns with at most `N` irreducible factors; if omitted, there is no hard factor-count cap. Even without a cap, the sampling weights strongly favor patterns with fewer irreducible factors. If `--limit` is omitted, random mode runs until interrupted.
+`--enumeration-mode random` samples random factorized branch divisors for higher-genus sparse search. It first builds all feasible branch-divisor-type strata, then adaptively gives more samples to types whose previous samples produced sparse curves. The optional `--random-max-factors N` restricts this to types with at most `N` irreducible finite factors; if omitted, there is no hard factor-count cap. Even without a cap, the sampling weights strongly favor types with fewer irreducible factors. If `--limit` is omitted, random mode runs until interrupted.
+
+Before either mode starts choosing actual irreducible factors, it precomputes
+the normalized branch divisor types that can occur over `F_p`. A type is kept
+only if `F_p` has enough irreducible polynomials of each requested degree. When
+`--max-sparsity` is supplied, the type list is also filtered using the mod-2
+branch divisor theorem:
+
+```text
+L_C(T) = product_i (1 + T^{d_i}) / (1 + T)^2 mod 2
+```
+
+Here `d_i` are the Frobenius orbit degrees of the branch points; the stored
+infinity marker `0` counts as degree `1` for this formula. If this mod-2
+polynomial already has more than `max_sparsity` nonzero coefficients among
+`a_1,...,a_{g-1}`, then no integral L-polynomial with that branch divisor type
+can satisfy the sparsity bound, so the entire type is skipped.
 
 When no exact sparse curves have been found yet, random mode also uses
-Hasse-Witt pass rates as a proxy signal for choosing factorization patterns.
+Hasse-Witt pass rates as a proxy signal for choosing branch divisor types.
 This matters in higher genus, where exact sparse hits can be rare enough that
 the sampler otherwise has no early feedback.
 
@@ -141,7 +157,7 @@ canonicalized_isomorphism_classes: K
 -
 ```
 
-`total` is the actual deterministic branch-divisor presentation count in `enumerate` mode, even if `--limit` is used. In unbounded `random` mode, `total`, `progress_percent`, and `estimated_remaining` are printed as `?`.
+`total` is the actual deterministic branch-divisor presentation count in `enumerate` mode after feasibility and mod-2 branch-type filtering, even if `--limit` is used. In unbounded `random` mode, `total`, `progress_percent`, and `estimated_remaining` are printed as `?`.
 
 `sparse_presentations` is the sum of normalized enumerated orbit sizes for sparse isomorphism classes.
 
@@ -152,6 +168,14 @@ Each generated SQLite file is intentionally lean and keeps only sparse output pl
 - `sparse_curves`: sparse survivors, including readable expanded coefficients, readable factorized branch data, exact L-polynomial coefficients, and sparsity.
 - `enumeration_summary`: one-row run summary with `prime`, `genus`, `max_sparsity`, `enumeration_mode`, `total_coefficient_vectors`, `processed`, `sparse_presentations`, `sparse_isomorphism_classes`, and timing/status fields.
 - `enumeration_progress`: progress snapshots at the print interval.
+
+`sparse_curves.branch_factorization_pattern` is stored as a partition of the
+branch polynomial degree. For example, `[1,11,11]` means one linear factor and
+two irreducible degree-11 factors.
+
+`sparse_curves.branch_divisor_type` stores the full branch divisor type, using
+`0` for the branch point at infinity. For example, `[0,1,11,11]` means infinity,
+one linear factor, and two irreducible degree-11 factors.
 
 The output database does not store all candidates, all duplicates, all Hasse-Witt failures, or all orbit-cache rows.
 

@@ -25,6 +25,7 @@ CREATE TABLE sparse_curves (
     branch_infinity_branch INTEGER,
     branch_leading_coefficient INTEGER,
     branch_factorization_pattern TEXT,
+    branch_divisor_type TEXT,
     lpoly TEXT NOT NULL,
     sparsity INTEGER NOT NULL,
     rational_branch_count INTEGER NOT NULL
@@ -83,6 +84,7 @@ def factor_data(coeffs: list[int], p: int, genus: int):
     poly = sum(field(value) * (x**degree) for degree, value in enumerate(coeffs))
     factors = []
     counts = [0] * (2 * genus + 3)
+    partition = []
     rational_finite = 0
     for factor, exponent in poly.factor():
         factor_coeffs = [int(c) for c in factor.list()]
@@ -92,10 +94,12 @@ def factor_data(coeffs: list[int], p: int, genus: int):
             if factor_degree >= len(counts):
                 counts.extend([0] * (factor_degree - len(counts) + 1))
             counts[factor_degree] += 1
+            partition.append(factor_degree)
             if factor_degree == 1:
                 rational_finite += 1
     factors.sort(key=lambda item: (len(item), item))
-    return factors, counts, rational_finite
+    partition.sort()
+    return factors, partition, rational_finite
 
 
 def create_schema(conn: sqlite3.Connection) -> None:
@@ -129,6 +133,7 @@ def convert_file(path: Path, out_root: Path) -> Path:
             infinity_branch = 1 if degree <= 2 * genus + 1 else 0
             factors, pattern, rational_finite = factor_data(coeffs, p, genus)
             rational_branch_count = rational_finite + infinity_branch
+            branch_divisor_type = ([0] if infinity_branch else []) + pattern
 
             reduction_key = curve.get("reduction_key")
             canonical_key = ",".join(str(int(v)) for v in reduction_key) if reduction_key else ",".join(str(v) for v in canonical_coeffs)
@@ -148,10 +153,11 @@ def convert_file(path: Path, out_root: Path) -> Path:
                     branch_infinity_branch,
                     branch_leading_coefficient,
                     branch_factorization_pattern,
+                    branch_divisor_type,
                     lpoly,
                     sparsity,
                     rational_branch_count
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """,
                 (
                     canonical_key,
@@ -160,6 +166,7 @@ def convert_file(path: Path, out_root: Path) -> Path:
                     infinity_branch,
                     leading,
                     json_compact(pattern),
+                    json_compact(branch_divisor_type),
                     json_compact(lpoly),
                     0,
                     rational_branch_count,

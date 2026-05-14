@@ -105,12 +105,13 @@ struct Stats {
     cpp_int sparse_presentations = 0;
 };
 
-struct RandomPatternState {
+struct BranchDivisorTypeState {
     int model = 0;
     int total_degree = 0;
     bool infinity_branch = false;
     std::vector<int> pattern;
     int factor_count = 0;
+    int forced_mod2_sparsity = 0;
     std::uint64_t leading_count = 1;
     cpp_int presentations = 0;
     std::uint64_t attempts = 0;
@@ -172,6 +173,25 @@ std::string json_ints(const std::vector<int>& values) {
     }
     out << "]";
     return out.str();
+}
+
+std::string json_factorization_partition(const std::vector<int>& degree_counts) {
+    std::vector<int> partition;
+    for (int degree = 1; degree < static_cast<int>(degree_counts.size()); ++degree) {
+        int multiplicity = degree_counts[static_cast<std::size_t>(degree)];
+        for (int i = 0; i < multiplicity; ++i) partition.push_back(degree);
+    }
+    return json_ints(partition);
+}
+
+std::string json_branch_divisor_type(bool infinity_branch, const std::vector<int>& degree_counts) {
+    std::vector<int> branch_type;
+    if (infinity_branch) branch_type.push_back(0);
+    for (int degree = 1; degree < static_cast<int>(degree_counts.size()); ++degree) {
+        int multiplicity = degree_counts[static_cast<std::size_t>(degree)];
+        for (int i = 0; i < multiplicity; ++i) branch_type.push_back(degree);
+    }
+    return json_ints(branch_type);
 }
 
 std::string json_polys(std::vector<Poly> polynomials) {
@@ -631,6 +651,7 @@ public:
             "branch_infinity_branch INTEGER,"
             "branch_leading_coefficient INTEGER,"
             "branch_factorization_pattern TEXT,"
+            "branch_divisor_type TEXT,"
             "lpoly TEXT NOT NULL,"
             "sparsity INTEGER NOT NULL,"
             "rational_branch_count INTEGER NOT NULL"
@@ -664,6 +685,7 @@ public:
         ensure_column("sparse_curves", "branch_infinity_branch", "INTEGER");
         ensure_column("sparse_curves", "branch_leading_coefficient", "INTEGER");
         ensure_column("sparse_curves", "branch_factorization_pattern", "TEXT");
+        ensure_column("sparse_curves", "branch_divisor_type", "TEXT");
         ensure_column("enumeration_summary", "total_coefficient_vectors", "TEXT");
         ensure_column("enumeration_summary", "sparse_presentations", "TEXT");
         ensure_column("enumeration_summary", "irreducible_memory_budget_mb", "INTEGER");
@@ -772,6 +794,7 @@ public:
             << "branch_infinity_branch,"
             << "branch_leading_coefficient,"
             << "branch_factorization_pattern,"
+            << "branch_divisor_type,"
             << "lpoly,"
             << "sparsity,"
             << "rational_branch_count"
@@ -781,7 +804,8 @@ public:
             << quote(json_polys(candidate.factors)) << ","
             << (candidate.infinity_branch ? 1 : 0) << ","
             << candidate.leading << ","
-            << quote(json_ints(candidate.pattern)) << ","
+            << quote(json_factorization_partition(candidate.pattern)) << ","
+            << quote(json_branch_divisor_type(candidate.infinity_branch, candidate.pattern)) << ","
             << quote(json_cpp_ints(lpoly)) << ","
             << sparsity << ","
             << rational_branch_count << ");";
@@ -1463,6 +1487,53 @@ std::vector<std::vector<int>> factorization_patterns(int total_degree, bool skip
     return out;
 }
 
+std::vector<std::uint8_t> divide_by_one_plus_t_mod2(const std::vector<std::uint8_t>& poly) {
+    if (poly.size() < 2) {
+        throw std::runtime_error("mod-2 branch divisor quotient is too small");
+    }
+    std::vector<std::uint8_t> quotient(poly.size() - 1, 0);
+    quotient[0] = poly[0] & 1U;
+    for (std::size_t i = 1; i < quotient.size(); ++i) {
+        quotient[i] = static_cast<std::uint8_t>((poly[i] ^ quotient[i - 1]) & 1U);
+    }
+    if (((poly.back() ^ quotient.back()) & 1U) != 0) {
+        throw std::runtime_error("branch divisor type did not produce a divisible mod-2 L-polynomial");
+    }
+    return quotient;
+}
+
+int branch_type_forced_mod2_sparsity(bool infinity_branch, const std::vector<int>& pattern, int genus) {
+    int total_degree = infinity_branch ? 1 : 0;
+    for (int degree = 1; degree < static_cast<int>(pattern.size()); ++degree) {
+        total_degree += degree * pattern[static_cast<std::size_t>(degree)];
+    }
+
+    std::vector<std::uint8_t> product(static_cast<std::size_t>(total_degree + 1), 0);
+    product[0] = 1;
+    int current_degree = 0;
+    auto multiply_by_orbit = [&](int degree) {
+        if (degree <= 0) return;
+        for (int i = current_degree; i >= 0; --i) {
+            product[static_cast<std::size_t>(i + degree)] ^= product[static_cast<std::size_t>(i)];
+        }
+        current_degree += degree;
+    };
+
+    if (infinity_branch) multiply_by_orbit(1);
+    for (int degree = 1; degree < static_cast<int>(pattern.size()); ++degree) {
+        int multiplicity = pattern[static_cast<std::size_t>(degree)];
+        for (int i = 0; i < multiplicity; ++i) multiply_by_orbit(degree);
+    }
+
+    std::vector<std::uint8_t> quotient = divide_by_one_plus_t_mod2(divide_by_one_plus_t_mod2(product));
+    int sparsity = 0;
+    int max_degree = std::min(genus - 1, static_cast<int>(quotient.size()) - 1);
+    for (int degree = 1; degree <= max_degree; ++degree) {
+        if (quotient[static_cast<std::size_t>(degree)] != 0) ++sparsity;
+    }
+    return sparsity;
+}
+
 cpp_int binomial_count(std::uint64_t n, int k) {
     if (k < 0 || static_cast<std::uint64_t>(k) > n) return 0;
     std::uint64_t kk = static_cast<std::uint64_t>(k);
@@ -1489,31 +1560,18 @@ cpp_int branch_pattern_presentation_count(
     return total;
 }
 
-cpp_int total_branch_divisor_presentations(const Context& ctx) {
-    cpp_int total = 0;
-    for (int model = 0; model < 2; ++model) {
-        int total_degree = model == 0 ? 2 * ctx.opts.genus + 1 : 2 * ctx.opts.genus + 2;
-        bool skip_linear = model == 1;
-        std::uint64_t leading_count = model == 0 ? 1 : 2;
-        for (const auto& pattern : factorization_patterns(total_degree, skip_linear)) {
-            total += branch_pattern_presentation_count(ctx, pattern, leading_count);
-        }
-    }
-    return total;
-}
-
 int pattern_factor_count(const std::vector<int>& pattern) {
     int total = 0;
     for (int multiplicity : pattern) total += multiplicity;
     return total;
 }
 
-std::vector<RandomPatternState> build_random_pattern_states(const Context& ctx) {
-    if (ctx.opts.random_max_factors < 0) {
+std::vector<BranchDivisorTypeState> build_branch_divisor_type_states(const Context& ctx, bool apply_random_factor_cap) {
+    if (apply_random_factor_cap && ctx.opts.random_max_factors < 0) {
         throw std::runtime_error("--random-max-factors must be nonnegative");
     }
 
-    std::vector<RandomPatternState> states;
+    std::vector<BranchDivisorTypeState> states;
     for (int model = 0; model < 2; ++model) {
         int total_degree = model == 0 ? 2 * ctx.opts.genus + 1 : 2 * ctx.opts.genus + 2;
         bool skip_linear = model == 1;
@@ -1522,44 +1580,41 @@ std::vector<RandomPatternState> build_random_pattern_states(const Context& ctx) 
         for (const auto& pattern : factorization_patterns(total_degree, skip_linear)) {
             int factors = pattern_factor_count(pattern);
             if (factors < 1) continue;
-            if (ctx.opts.random_max_factors > 0 && factors > ctx.opts.random_max_factors) continue;
+            if (apply_random_factor_cap && ctx.opts.random_max_factors > 0 && factors > ctx.opts.random_max_factors) continue;
+            int forced_mod2_sparsity = branch_type_forced_mod2_sparsity(infinity_branch, pattern, ctx.opts.genus);
+            if (ctx.opts.max_sparsity >= 0 && forced_mod2_sparsity > ctx.opts.max_sparsity) continue;
             cpp_int presentations = branch_pattern_presentation_count(ctx, pattern, leading_count);
             if (presentations == 0) continue;
-            RandomPatternState state;
+            BranchDivisorTypeState state;
             state.model = model;
             state.total_degree = total_degree;
             state.infinity_branch = infinity_branch;
             state.pattern = pattern;
             state.factor_count = factors;
+            state.forced_mod2_sparsity = forced_mod2_sparsity;
             state.leading_count = leading_count;
             state.presentations = std::move(presentations);
             states.push_back(std::move(state));
         }
     }
     if (states.empty()) {
-        throw std::runtime_error("no feasible random factorization patterns");
+        throw std::runtime_error("no feasible branch divisor types after feasibility and mod-2 filters");
     }
     return states;
 }
 
-std::string random_pattern_label(const RandomPatternState& state) {
-    std::ostringstream out;
-    out << (state.infinity_branch ? "odd" : "even") << ":";
-    bool first = true;
-    for (int degree = 1; degree < static_cast<int>(state.pattern.size()); ++degree) {
-        int multiplicity = state.pattern[static_cast<std::size_t>(degree)];
-        if (multiplicity == 0) continue;
-        if (!first) out << ",";
-        first = false;
-        out << degree;
-        if (multiplicity > 1) out << "^" << multiplicity;
-    }
-    if (first) out << "empty";
-    return out.str();
+cpp_int total_branch_divisor_presentations(const std::vector<BranchDivisorTypeState>& states) {
+    cpp_int total = 0;
+    for (const auto& state : states) total += state.presentations;
+    return total;
 }
 
-std::string random_pattern_progress_summary(const std::vector<RandomPatternState>& states) {
-    const RandomPatternState* best = nullptr;
+std::string random_pattern_label(const BranchDivisorTypeState& state) {
+    return json_branch_divisor_type(state.infinity_branch, state.pattern);
+}
+
+std::string random_pattern_progress_summary(const std::vector<BranchDivisorTypeState>& states) {
+    const BranchDivisorTypeState* best = nullptr;
     for (const auto& state : states) {
         if (state.attempts == 0) continue;
         if (!best) {
@@ -1588,7 +1643,7 @@ std::string random_pattern_progress_summary(const std::vector<RandomPatternState
 }
 
 std::size_t choose_random_pattern(
-    const std::vector<RandomPatternState>& states,
+    const std::vector<BranchDivisorTypeState>& states,
     std::uint64_t total_attempts,
     std::mt19937_64& rng
 ) {
@@ -1604,6 +1659,9 @@ std::size_t choose_random_pattern(
         double factor_prior = 1.0 / static_cast<double>(
             state.factor_count * state.factor_count * state.factor_count
         );
+        double mod2_prior = 1.0 / static_cast<double>(
+            (state.forced_mod2_sparsity + 1) * (state.forced_mod2_sparsity + 1)
+        );
         double smoothed_hit_rate = (sparse_hits + 0.25) / (attempts + 8.0);
         double exploration = std::sqrt(log_scale / (attempts + 1.0));
         double hit_boost = state.sparse_hits == 0
@@ -1614,6 +1672,7 @@ std::size_t choose_random_pattern(
             : 1.0;
         weights.push_back(
             factor_prior *
+            mod2_prior *
             (0.02 + smoothed_hit_rate + 30.0 * hasse_witt_pass_rate + 0.20 * exploration) *
             hit_boost *
             hasse_witt_boost
@@ -1864,51 +1923,49 @@ bool enumerate_factor_choices_rec(
 
 void enumerate_mode(Context& ctx, SqliteWriter& writer, Stats& stats) {
     auto started = std::chrono::steady_clock::now();
-    stats.total_presentations = total_branch_divisor_presentations(ctx);
+    std::vector<BranchDivisorTypeState> types = build_branch_divisor_type_states(ctx, false);
+    stats.total_presentations = total_branch_divisor_presentations(types);
     std::string total_label = cpp_int_to_string(stats.total_presentations);
+    std::cout << "branch_divisor_types: " << types.size()
+              << " mod2_filter=" << (ctx.opts.max_sparsity >= 0 ? "on" : "off")
+              << std::endl;
     print_progress_block(ctx, stats, total_label, 0.0);
 
-    for (int model = 0; model < 2; ++model) {
+    for (const auto& type : types) {
         if (stop_requested()) return;
-        int total_degree = model == 0 ? 2 * ctx.opts.genus + 1 : 2 * ctx.opts.genus + 2;
-        bool infinity_branch = model == 0;
-        bool skip_linear = model == 1;
-        std::vector<unsigned long> leadings = model == 0
+        std::vector<unsigned long> leadings = type.model == 0
             ? std::vector<unsigned long>{1}
             : std::vector<unsigned long>{1, smallest_nonsquare(ctx.opts.p)};
-        for (const auto& pattern : factorization_patterns(total_degree, skip_linear)) {
-            if (stop_requested()) return;
-            std::vector<std::pair<int, int>> active;
-            for (int degree = 1; degree < static_cast<int>(pattern.size()); ++degree) {
-                if (pattern[static_cast<std::size_t>(degree)] > 0) {
-                    active.emplace_back(degree, pattern[static_cast<std::size_t>(degree)]);
-                }
+        std::vector<std::pair<int, int>> active;
+        for (int degree = 1; degree < static_cast<int>(type.pattern.size()); ++degree) {
+            if (type.pattern[static_cast<std::size_t>(degree)] > 0) {
+                active.emplace_back(degree, type.pattern[static_cast<std::size_t>(degree)]);
             }
-            std::vector<Poly> selected;
-            std::vector<FactorId> selected_ids;
-            if (!enumerate_factor_choices_rec(
-                ctx,
-                writer,
-                active,
-                0,
-                selected,
-                selected_ids,
-                leadings,
-                infinity_branch,
-                pattern,
-                stats,
-                total_label,
-                started
-            )) {
-                return;
-            }
+        }
+        std::vector<Poly> selected;
+        std::vector<FactorId> selected_ids;
+        if (!enumerate_factor_choices_rec(
+            ctx,
+            writer,
+            active,
+            0,
+            selected,
+            selected_ids,
+            leadings,
+            type.infinity_branch,
+            type.pattern,
+            stats,
+            total_label,
+            started
+        )) {
+            return;
         }
     }
 }
 
 BranchCandidate random_candidate_from_pattern(
     Context& ctx,
-    const RandomPatternState& state,
+    const BranchDivisorTypeState& state,
     std::mt19937_64& rng
 ) {
     std::vector<Poly> factors;
@@ -1966,7 +2023,10 @@ BranchCandidate random_candidate_from_pattern(
 void random_mode(Context& ctx, SqliteWriter& writer, Stats& stats) {
     auto started = std::chrono::steady_clock::now();
     std::mt19937_64 rng(ctx.opts.random_seed);
-    std::vector<RandomPatternState> patterns = build_random_pattern_states(ctx);
+    std::vector<BranchDivisorTypeState> patterns = build_branch_divisor_type_states(ctx, true);
+    std::cout << "branch_divisor_types: " << patterns.size()
+              << " mod2_filter=" << (ctx.opts.max_sparsity >= 0 ? "on" : "off")
+              << std::endl;
     std::uint64_t steps = ctx.opts.limit;
     if (!steps) steps = std::numeric_limits<std::uint64_t>::max();
     stats.total_presentations = steps == std::numeric_limits<std::uint64_t>::max()
@@ -1978,7 +2038,7 @@ void random_mode(Context& ctx, SqliteWriter& writer, Stats& stats) {
     print_progress_block(ctx, stats, total_label, 0.0, random_pattern_progress_summary(patterns));
     for (std::uint64_t step = 0; step < steps && !stop_requested(); ++step) {
         std::size_t pattern_index = choose_random_pattern(patterns, stats.processed, rng);
-        RandomPatternState& pattern_state = patterns[pattern_index];
+        BranchDivisorTypeState& pattern_state = patterns[pattern_index];
         BranchCandidate candidate = random_candidate_from_pattern(ctx, pattern_state, rng);
         CandidateOutcome outcome = process_candidate(ctx, writer, candidate, stats);
         ++pattern_state.attempts;
