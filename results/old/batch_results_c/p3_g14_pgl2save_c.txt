@@ -1,0 +1,85 @@
+Hyperelliptic curves with trinomial L-polynomial
+========================================================
+p = 3
+g = 14
+base field: F_3
+presentation reduction: pgl2save
+monic enforced: False
+nonmonic leading square class included: True
+hasse-witt prefilter: True
+reduction class count: 4
+isomorphism class count: 4
+search status: interrupted
+complete list: False
+total presentations found: 14
+
+[1]
+f(x) = 1 + x^29
+middle_coefficient_a_14 = 0
+canonical_presentation_index = 1
+
+[2]
+f(x) = 2 + x^29
+middle_coefficient_a_14 = 0
+canonical_presentation_index = 2
+
+[3]
+f(x) = 1 + 2x^3 + 2x^27 + x^29
+middle_coefficient_a_14 = 0
+canonical_presentation_index = 1
+
+[4]
+f(x) = 2 + 2x^3 + 2x^27 + x^29
+middle_coefficient_a_14 = 0
+canonical_presentation_index = 2
+
+[5]
+f(x) = 2x + x^2 + 2x^3 + 2x^28 + x^29
+middle_coefficient_a_14 = 0
+canonical_presentation_index = 1
+
+[6]
+f(x) = 2x + 2x^2 + 2x^3 + x^28 + x^29
+middle_coefficient_a_14 = 0
+canonical_presentation_index = 2
+
+[7]
+f(x) = 2x + x^2 + x^27 + 2x^28 + x^29
+middle_coefficient_a_14 = 0
+canonical_presentation_index = 2
+
+[8]
+f(x) = 2x + 2x^2 + x^27 + x^28 + x^29
+middle_coefficient_a_14 = 0
+canonical_presentation_index = 1
+
+[9]
+f(x) = 1 + 2x + x^2 + 2x^3 + 2x^28 + x^29
+middle_coefficient_a_14 = 0
+canonical_presentation_index = 2
+
+[10]
+f(x) = 2 + 2x + 2x^2 + 2x^3 + x^28 + x^29
+middle_coefficient_a_14 = 0
+canonical_presentation_index = 1
+
+[11]
+f(x) = 1 + 2x + 2x^2 + x^27 + x^28 + x^29
+middle_coefficient_a_14 = 0
+canonical_presentation_index = 2
+
+[12]
+f(x) = 2 + 2x + x^2 + x^27 + 2x^28 + x^29
+middle_coefficient_a_14 = 0
+canonical_presentation_index = 1
+
+[13]
+f(x) = 1 + x^2 + 2x^14 + 2x^15 + x^27 + x^29
+middle_coefficient_a_14 = 0
+canonical_presentation_index = 13
+
+[14]
+f(x) = 2 + 2x^2 + x^14 + 2x^15 + x^27 + x^29
+middle_coefficient_a_14 = 0
+canonical_presentation_index = 14
+

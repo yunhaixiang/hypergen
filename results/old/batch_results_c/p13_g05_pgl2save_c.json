@@ -1,0 +1,150 @@
+{
+  "p": 13,
+  "g": 5,
+  "field": "F_13",
+  "presentation_reduction": "pgl2save",
+  "monic_enforced": false,
+  "allow_nonmonic": true,
+  "hasse_witt_prefilter": true,
+  "workers": 1,
+  "worker_index": 0,
+  "reduction_class_count": 2,
+  "isomorphism_class_count": 2,
+  "search_status": "interrupted",
+  "complete_list": false,
+  "total_presentations_found": 12,
+  "curves": [
+    {
+      "index": 1,
+      "f_coeffs": [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "f_polynomial": "1 + x^11",
+      "middle_coefficient": 0,
+      "canonical_presentation_index": 1,
+      "canonical_f_coeffs": [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "canonical_f_polynomial": "1 + x^11",
+      "reduction_key": [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "reused_l_polynomial": false
+    },
+    {
+      "index": 2,
+      "f_coeffs": [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "f_polynomial": "2 + x^11",
+      "middle_coefficient": 0,
+      "canonical_presentation_index": 2,
+      "canonical_f_coeffs": [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "canonical_f_polynomial": "2 + x^11",
+      "reduction_key": [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+      "reused_l_polynomial": false
+    },
+    {
+      "index": 3,
+      "f_coeffs": [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "f_polynomial": "3 + x^11",
+      "middle_coefficient": 0,
+      "canonical_presentation_index": 1,
+      "canonical_f_coeffs": [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "canonical_f_polynomial": "1 + x^11",
+      "reduction_key": [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "reused_l_polynomial": true
+    },
+    {
+      "index": 4,
+      "f_coeffs": [4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "f_polynomial": "4 + x^11",
+      "middle_coefficient": 0,
+      "canonical_presentation_index": 1,
+      "canonical_f_coeffs": [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "canonical_f_polynomial": "1 + x^11",
+      "reduction_key": [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "reused_l_polynomial": true
+    },
+    {
+      "index": 5,
+      "f_coeffs": [5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "f_polynomial": "5 + x^11",
+      "middle_coefficient": 0,
+      "canonical_presentation_index": 2,
+      "canonical_f_coeffs": [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "canonical_f_polynomial": "2 + x^11",
+      "reduction_key": [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+      "reused_l_polynomial": true
+    },
+    {
+      "index": 6,
+      "f_coeffs": [6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "f_polynomial": "6 + x^11",
+      "middle_coefficient": 0,
+      "canonical_presentation_index": 2,
+      "canonical_f_coeffs": [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "canonical_f_polynomial": "2 + x^11",
+      "reduction_key": [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+      "reused_l_polynomial": true
+    },
+    {
+      "index": 7,
+      "f_coeffs": [7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "f_polynomial": "7 + x^11",
+      "middle_coefficient": 0,
+      "canonical_presentation_index": 2,
+      "canonical_f_coeffs": [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "canonical_f_polynomial": "2 + x^11",
+      "reduction_key": [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+      "reused_l_polynomial": true
+    },
+    {
+      "index": 8,
+      "f_coeffs": [8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "f_polynomial": "8 + x^11",
+      "middle_coefficient": 0,
+      "canonical_presentation_index": 2,
+      "canonical_f_coeffs": [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "canonical_f_polynomial": "2 + x^11",
+      "reduction_key": [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+      "reused_l_polynomial": true
+    },
+    {
+      "index": 9,
+      "f_coeffs": [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "f_polynomial": "9 + x^11",
+      "middle_coefficient": 0,
+      "canonical_presentation_index": 1,
+      "canonical_f_coeffs": [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "canonical_f_polynomial": "1 + x^11",
+      "reduction_key": [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "reused_l_polynomial": true
+    },
+    {
+      "index": 10,
+      "f_coeffs": [10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "f_polynomial": "10 + x^11",
+      "middle_coefficient": 0,
+      "canonical_presentation_index": 1,
+      "canonical_f_coeffs": [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "canonical_f_polynomial": "1 + x^11",
+      "reduction_key": [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "reused_l_polynomial": true
+    },
+    {
+      "index": 11,
+      "f_coeffs": [11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "f_polynomial": "11 + x^11",
+      "middle_coefficient": 0,
+      "canonical_presentation_index": 2,
+      "canonical_f_coeffs": [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "canonical_f_polynomial": "2 + x^11",
+      "reduction_key": [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+      "reused_l_polynomial": true
+    },
+    {
+      "index": 12,
+      "f_coeffs": [12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "f_polynomial": "12 + x^11",
+      "middle_coefficient": 0,
+      "canonical_presentation_index": 1,
+      "canonical_f_coeffs": [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "canonical_f_polynomial": "1 + x^11",
+      "reduction_key": [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "reused_l_polynomial": true
+    }
+  ]
+}

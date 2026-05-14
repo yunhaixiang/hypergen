@@ -1,0 +1,6995 @@
+Hyperelliptic curves with trinomial L-polynomial
+========================================================
+p = 5
+g = 6
+base field: F_5
+presentation reduction: pgl2save
+monic enforced: False
+nonmonic leading square class included: True
+hasse-witt prefilter: True
+reduction class count: 396
+isomorphism class count: 396
+search status: interrupted
+complete list: False
+total presentations found: 1396
+
+[1]
+f(x) = x + x^5 + 3x^9 + x^13
+middle_coefficient_a_6 = 250
+canonical_presentation_index = 1
+
+[2]
+f(x) = x + 3x^5 + x^9 + x^13
+middle_coefficient_a_6 = 250
+canonical_presentation_index = 1
+
+[3]
+f(x) = 2x + 2x^5 + 3x^9 + x^13
+middle_coefficient_a_6 = 0
+canonical_presentation_index = 3
+
+[4]
+f(x) = 2x + 4x^5 + 4x^9 + x^13
+middle_coefficient_a_6 = 0
+canonical_presentation_index = 4
+
+[5]
+f(x) = 3x + 2x^5 + 2x^9 + x^13
+middle_coefficient_a_6 = 0
+canonical_presentation_index = 4
+
+[6]
+f(x) = 3x + 4x^5 + x^9 + x^13
+middle_coefficient_a_6 = 0
+canonical_presentation_index = 3
+
+[7]
+f(x) = 4x + x^5 + 2x^9 + x^13
+middle_coefficient_a_6 = -250
+canonical_presentation_index = 7
+
+[8]
+f(x) = 4x + 3x^5 + 4x^9 + x^13
+middle_coefficient_a_6 = -250
+canonical_presentation_index = 7
+
+[9]
+f(x) = 4x + x^2 + 3x^3 + 3x^8 + x^13
+middle_coefficient_a_6 = 50
+canonical_presentation_index = 9
+
+[10]
+f(x) = 4x + 2x^2 + 2x^3 + 4x^8 + x^13
+middle_coefficient_a_6 = 50
+canonical_presentation_index = 10
+
+[11]
+f(x) = 4x + 3x^2 + 2x^3 + x^8 + x^13
+middle_coefficient_a_6 = 50
+canonical_presentation_index = 10
+
+[12]
+f(x) = 4x + 4x^2 + 3x^3 + 2x^8 + x^13
+middle_coefficient_a_6 = 50
+canonical_presentation_index = 9
+
+[13]
+f(x) = 4x + 2x^3 + x^5 + 3x^11 + x^13
+middle_coefficient_a_6 = -214
+canonical_presentation_index = 13
+
+[14]
+f(x) = 4x + 3x^3 + x^5 + 2x^11 + x^13
+middle_coefficient_a_6 = -214
+canonical_presentation_index = 14
+
+[15]
+f(x) = 4x + x^3 + 2x^7 + x^11 + x^13
+middle_coefficient_a_6 = -186
+canonical_presentation_index = 15
+
+[16]
+f(x) = 4x + 4x^3 + 3x^7 + 4x^11 + x^13
+middle_coefficient_a_6 = -186
+canonical_presentation_index = 15
+
+[17]
+f(x) = 4x + 2x^3 + 4x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = -214
+canonical_presentation_index = 13
+
+[18]
+f(x) = 4x + 3x^3 + 4x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = -214
+canonical_presentation_index = 14
+
+[19]
+f(x) = 4x + x^4 + 2x^7 + 3x^10 + x^13
+middle_coefficient_a_6 = 142
+canonical_presentation_index = 19
+
+[20]
+f(x) = 4x + 2x^4 + 3x^7 + 4x^10 + x^13
+middle_coefficient_a_6 = 142
+canonical_presentation_index = 19
+
+[21]
+f(x) = 4x + 3x^4 + 3x^7 + x^10 + x^13
+middle_coefficient_a_6 = 142
+canonical_presentation_index = 19
+
+[22]
+f(x) = 4x + 4x^4 + 2x^7 + 2x^10 + x^13
+middle_coefficient_a_6 = 142
+canonical_presentation_index = 19
+
+[23]
+f(x) = 4x + x^6 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 50
+canonical_presentation_index = 10
+
+[24]
+f(x) = 4x + 2x^6 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 50
+canonical_presentation_index = 9
+
+[25]
+f(x) = 4x + 3x^6 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = 50
+canonical_presentation_index = 9
+
+[26]
+f(x) = 4x + 4x^6 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 50
+canonical_presentation_index = 10
+
+[27]
+f(x) = 1 + 3x + x^2 + 2x^3 + x^8 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 27
+
+[28]
+f(x) = 2 + 3x + 3x^2 + 3x^3 + 2x^8 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 28
+
+[29]
+f(x) = 3 + 3x + 2x^2 + 3x^3 + 3x^8 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 28
+
+[30]
+f(x) = 4 + 3x + 4x^2 + 2x^3 + 4x^8 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 27
+
+[31]
+f(x) = 4x + x^2 + x^5 + 4x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = -22
+canonical_presentation_index = 31
+
+[32]
+f(x) = 4x + 2x^2 + x^5 + 4x^9 + x^12 + x^13
+middle_coefficient_a_6 = -22
+canonical_presentation_index = 31
+
+[33]
+f(x) = 4x + 3x^2 + x^5 + 4x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = -22
+canonical_presentation_index = 31
+
+[34]
+f(x) = 4x + 4x^2 + x^5 + 4x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = -22
+canonical_presentation_index = 31
+
+[35]
+f(x) = 4x + 2x^3 + 2x^5 + 3x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = -54
+canonical_presentation_index = 35
+
+[36]
+f(x) = 4x + 3x^3 + 2x^5 + 3x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = -54
+canonical_presentation_index = 35
+
+[37]
+f(x) = 1 + 2x + 3x^3 + 4x^5 + 4x^8 + 3x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 37
+
+[38]
+f(x) = 2 + 2x + 2x^3 + 4x^5 + 3x^8 + x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 38
+
+[39]
+f(x) = 3 + 2x + 2x^3 + 4x^5 + 2x^8 + 4x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 38
+
+[40]
+f(x) = 4 + 2x + 3x^3 + 4x^5 + x^8 + 2x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 37
+
+[41]
+f(x) = 1 + x + x^3 + 4x^6 + 2x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 41
+
+[42]
+f(x) = 2 + x + 4x^3 + 2x^6 + x^10 + x^12 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 42
+
+[43]
+f(x) = 3 + x + 4x^3 + 3x^6 + 4x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 42
+
+[44]
+f(x) = 4 + x + x^3 + x^6 + 3x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 41
+
+[45]
+f(x) = 1 + 4x + 2x^3 + 2x^7 + 2x^9 + x^11 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 45
+
+[46]
+f(x) = 2 + 4x + 3x^3 + 3x^7 + 2x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 46
+
+[47]
+f(x) = 3 + 4x + 3x^3 + 3x^7 + 2x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 46
+
+[48]
+f(x) = 4 + 4x + 2x^3 + 2x^7 + 2x^9 + x^11 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 45
+
+[49]
+f(x) = 1 + 2x + 2x^4 + 2x^9 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = -106
+canonical_presentation_index = 49
+
+[50]
+f(x) = 2 + 2x + 4x^4 + 2x^9 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -106
+canonical_presentation_index = 50
+
+[51]
+f(x) = 3 + 2x + x^4 + 2x^9 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -106
+canonical_presentation_index = 50
+
+[52]
+f(x) = 4 + 2x + 3x^4 + 2x^9 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -106
+canonical_presentation_index = 49
+
+[53]
+f(x) = 1 + 3x^2 + 3x^3 + 3x^4 + 3x^8 + 3x^10 + x^13
+middle_coefficient_a_6 = 42
+canonical_presentation_index = 53
+
+[54]
+f(x) = 2 + 4x^2 + 2x^3 + x^4 + x^8 + 4x^10 + x^13
+middle_coefficient_a_6 = 42
+canonical_presentation_index = 54
+
+[55]
+f(x) = 3 + x^2 + 2x^3 + 4x^4 + 4x^8 + x^10 + x^13
+middle_coefficient_a_6 = 42
+canonical_presentation_index = 54
+
+[56]
+f(x) = 4 + 2x^2 + 3x^3 + 2x^4 + 2x^8 + 2x^10 + x^13
+middle_coefficient_a_6 = 42
+canonical_presentation_index = 53
+
+[57]
+f(x) = 1 + x^2 + 3x^3 + 2x^6 + x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -50
+canonical_presentation_index = 57
+
+[58]
+f(x) = 2 + 3x^2 + 2x^3 + x^6 + 3x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -50
+canonical_presentation_index = 58
+
+[59]
+f(x) = 3 + 2x^2 + 2x^3 + 4x^6 + 2x^10 + x^12 + x^13
+middle_coefficient_a_6 = -50
+canonical_presentation_index = 58
+
+[60]
+f(x) = 4 + 4x^2 + 3x^3 + 3x^6 + 4x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -50
+canonical_presentation_index = 57
+
+[61]
+f(x) = 1 + 3x^2 + 4x^4 + 4x^5 + 3x^6 + x^11 + x^13
+middle_coefficient_a_6 = 178
+canonical_presentation_index = 61
+
+[62]
+f(x) = 2 + 4x^2 + 3x^4 + 4x^5 + 4x^6 + 4x^11 + x^13
+middle_coefficient_a_6 = 178
+canonical_presentation_index = 62
+
+[63]
+f(x) = 3 + x^2 + 2x^4 + 4x^5 + x^6 + 4x^11 + x^13
+middle_coefficient_a_6 = 178
+canonical_presentation_index = 62
+
+[64]
+f(x) = 4 + 2x^2 + x^4 + 4x^5 + 2x^6 + x^11 + x^13
+middle_coefficient_a_6 = 178
+canonical_presentation_index = 61
+
+[65]
+f(x) = 1 + 4x^3 + x^6 + 2x^8 + 4x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -50
+canonical_presentation_index = 57
+
+[66]
+f(x) = 2 + x^3 + 3x^6 + 4x^8 + 2x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -50
+canonical_presentation_index = 58
+
+[67]
+f(x) = 3 + x^3 + 2x^6 + x^8 + 3x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -50
+canonical_presentation_index = 58
+
+[68]
+f(x) = 4 + 4x^3 + 4x^6 + 3x^8 + x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -50
+canonical_presentation_index = 57
+
+[69]
+f(x) = 1 + 4x^4 + x^7 + 4x^9 + 4x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -92
+canonical_presentation_index = 69
+
+[70]
+f(x) = 2 + 3x^4 + 4x^7 + 4x^9 + 2x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -92
+canonical_presentation_index = 70
+
+[71]
+f(x) = 3 + 2x^4 + 4x^7 + 4x^9 + 3x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -92
+canonical_presentation_index = 70
+
+[72]
+f(x) = 4 + x^4 + x^7 + 4x^9 + x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -92
+canonical_presentation_index = 69
+
+[73]
+f(x) = 2x + x^2 + x^3 + 2x^4 + 4x^11 + x^12 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 27
+
+[74]
+f(x) = 2x + 2x^2 + 4x^3 + x^4 + x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 28
+
+[75]
+f(x) = 2x + 3x^2 + 4x^3 + 4x^4 + x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 28
+
+[76]
+f(x) = 2x + 4x^2 + x^3 + 3x^4 + 4x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 27
+
+[77]
+f(x) = 3x + x^2 + 3x^3 + 2x^8 + 4x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 77
+
+[78]
+f(x) = 3x + 2x^2 + 2x^3 + x^8 + 3x^10 + x^11 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 78
+
+[79]
+f(x) = 3x + 3x^2 + 2x^3 + 4x^8 + 2x^10 + x^11 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 78
+
+[80]
+f(x) = 3x + 4x^2 + 3x^3 + 3x^8 + x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 77
+
+[81]
+f(x) = 3x + x^2 + 3x^3 + 2x^10 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 27
+
+[82]
+f(x) = 3x + 2x^2 + 2x^3 + 4x^10 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 28
+
+[83]
+f(x) = 3x + 3x^2 + 2x^3 + x^10 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 28
+
+[84]
+f(x) = 3x + 4x^2 + 3x^3 + 3x^10 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 27
+
+[85]
+f(x) = 4x + x^2 + 2x^4 + 2x^7 + 4x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -6
+canonical_presentation_index = 85
+
+[86]
+f(x) = 4x + 2x^2 + x^4 + 3x^7 + 3x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -6
+canonical_presentation_index = 85
+
+[87]
+f(x) = 4x + 3x^2 + 4x^4 + 3x^7 + 2x^10 + x^12 + x^13
+middle_coefficient_a_6 = -6
+canonical_presentation_index = 85
+
+[88]
+f(x) = 4x + 4x^2 + 3x^4 + 2x^7 + x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -6
+canonical_presentation_index = 85
+
+[89]
+f(x) = 2x + 2x^3 + x^4 + 2x^6 + 4x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 77
+
+[90]
+f(x) = 2x + 2x^3 + 4x^4 + 3x^6 + 4x^11 + x^12 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 77
+
+[91]
+f(x) = 2x + 3x^3 + 2x^4 + x^6 + x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 78
+
+[92]
+f(x) = 2x + 3x^3 + 3x^4 + 4x^6 + x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 78
+
+[93]
+f(x) = x + x^3 + 3x^5 + 3x^7 + 3x^9 + x^11 + x^13
+middle_coefficient_a_6 = 250
+canonical_presentation_index = 93
+
+[94]
+f(x) = x + 4x^3 + 3x^5 + 2x^7 + 3x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = 250
+canonical_presentation_index = 94
+
+[95]
+f(x) = 4x + x^3 + x^5 + x^7 + 3x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = -234
+canonical_presentation_index = 95
+
+[96]
+f(x) = 4x + x^3 + x^5 + 2x^7 + 3x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = -214
+canonical_presentation_index = 96
+
+[97]
+f(x) = 4x + x^3 + x^5 + 4x^7 + 4x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = -54
+canonical_presentation_index = 97
+
+[98]
+f(x) = 4x + x^3 + 3x^5 + 4x^7 + 2x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = -246
+canonical_presentation_index = 98
+
+[99]
+f(x) = 4x + 2x^3 + x^5 + 4x^7 + 4x^9 + x^11 + x^13
+middle_coefficient_a_6 = -54
+canonical_presentation_index = 99
+
+[100]
+f(x) = 4x + 2x^3 + 2x^5 + 2x^7 + 4x^9 + x^11 + x^13
+middle_coefficient_a_6 = -214
+canonical_presentation_index = 100
+
+[101]
+f(x) = 4x + 2x^3 + 2x^5 + 4x^7 + 3x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = -246
+canonical_presentation_index = 101
+
+[102]
+f(x) = 4x + 2x^3 + 2x^5 + 4x^7 + 4x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = -234
+canonical_presentation_index = 95
+
+[103]
+f(x) = 4x + 2x^3 + 3x^5 + x^7 + 2x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = -246
+canonical_presentation_index = 98
+
+[104]
+f(x) = 4x + 2x^3 + 3x^5 + 4x^7 + 2x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = -250
+canonical_presentation_index = 104
+
+[105]
+f(x) = 4x + 2x^3 + 4x^5 + x^7 + x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = -246
+canonical_presentation_index = 105
+
+[106]
+f(x) = 4x + 2x^3 + 4x^5 + 2x^7 + x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = -150
+canonical_presentation_index = 106
+
+[107]
+f(x) = 4x + 2x^3 + 4x^5 + 3x^7 + x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = -234
+canonical_presentation_index = 107
+
+[108]
+f(x) = 4x + 2x^3 + 4x^5 + 3x^7 + x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = -150
+canonical_presentation_index = 106
+
+[109]
+f(x) = 4x + 2x^3 + 4x^5 + 4x^7 + x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = -246
+canonical_presentation_index = 105
+
+[110]
+f(x) = 4x + 3x^3 + x^5 + x^7 + 4x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = -54
+canonical_presentation_index = 97
+
+[111]
+f(x) = 4x + 3x^3 + 2x^5 + x^7 + 3x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = -246
+canonical_presentation_index = 101
+
+[112]
+f(x) = 4x + 3x^3 + 2x^5 + x^7 + 4x^9 + x^11 + x^13
+middle_coefficient_a_6 = -234
+canonical_presentation_index = 112
+
+[113]
+f(x) = 4x + 3x^3 + 2x^5 + 3x^7 + 4x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = -214
+canonical_presentation_index = 96
+
+[114]
+f(x) = 4x + 3x^3 + 3x^5 + x^7 + 2x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = -250
+canonical_presentation_index = 104
+
+[115]
+f(x) = 4x + 3x^3 + 3x^5 + 4x^7 + 2x^9 + x^11 + x^13
+middle_coefficient_a_6 = -246
+canonical_presentation_index = 115
+
+[116]
+f(x) = 4x + 3x^3 + 4x^5 + x^7 + x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = -246
+canonical_presentation_index = 116
+
+[117]
+f(x) = 4x + 3x^3 + 4x^5 + 2x^7 + x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = -150
+canonical_presentation_index = 117
+
+[118]
+f(x) = 4x + 3x^3 + 4x^5 + 2x^7 + x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = -234
+canonical_presentation_index = 107
+
+[119]
+f(x) = 4x + 3x^3 + 4x^5 + 3x^7 + x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = -150
+canonical_presentation_index = 117
+
+[120]
+f(x) = 4x + 3x^3 + 4x^5 + 4x^7 + x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = -246
+canonical_presentation_index = 116
+
+[121]
+f(x) = 4x + 4x^3 + x^5 + x^7 + 4x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = -54
+canonical_presentation_index = 99
+
+[122]
+f(x) = 4x + 4x^3 + x^5 + 3x^7 + 3x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = -214
+canonical_presentation_index = 100
+
+[123]
+f(x) = 4x + 4x^3 + x^5 + 4x^7 + 3x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = -234
+canonical_presentation_index = 112
+
+[124]
+f(x) = 4x + 4x^3 + 3x^5 + x^7 + 2x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = -246
+canonical_presentation_index = 115
+
+[125]
+f(x) = 4x + x^4 + x^5 + x^7 + 4x^9 + 2x^10 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 125
+
+[126]
+f(x) = 4x + 2x^4 + x^5 + 4x^7 + 4x^9 + x^10 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 125
+
+[127]
+f(x) = 4x + 3x^4 + x^5 + 4x^7 + 4x^9 + 4x^10 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 125
+
+[128]
+f(x) = 4x + 4x^4 + x^5 + x^7 + 4x^9 + 3x^10 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 125
+
+[129]
+f(x) = 4x + x^4 + 2x^6 + 3x^7 + x^8 + 2x^10 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 129
+
+[130]
+f(x) = 4x + 2x^4 + x^6 + 2x^7 + 2x^8 + x^10 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 129
+
+[131]
+f(x) = 4x + 3x^4 + 4x^6 + 2x^7 + 3x^8 + 4x^10 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 129
+
+[132]
+f(x) = 4x + 4x^4 + 3x^6 + 3x^7 + 4x^8 + 3x^10 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 129
+
+[133]
+f(x) = 1 + x + 2x^2 + 4x^3 + 3x^5 + x^6 + 2x^9 + x^13
+middle_coefficient_a_6 = -6
+canonical_presentation_index = 133
+
+[134]
+f(x) = 2 + x + x^2 + x^3 + 3x^5 + 3x^6 + 2x^9 + x^13
+middle_coefficient_a_6 = -6
+canonical_presentation_index = 133
+
+[135]
+f(x) = 3 + x + 4x^2 + x^3 + 3x^5 + 2x^6 + 2x^9 + x^13
+middle_coefficient_a_6 = -6
+canonical_presentation_index = 133
+
+[136]
+f(x) = 4 + x + 3x^2 + 4x^3 + 3x^5 + 4x^6 + 2x^9 + x^13
+middle_coefficient_a_6 = -6
+canonical_presentation_index = 133
+
+[137]
+f(x) = 1 + 3x + 2x^2 + 3x^3 + 2x^6 + 4x^7 + 2x^9 + x^13
+middle_coefficient_a_6 = 130
+canonical_presentation_index = 137
+
+[138]
+f(x) = 2 + 3x + x^2 + 2x^3 + x^6 + x^7 + 2x^9 + x^13
+middle_coefficient_a_6 = 130
+canonical_presentation_index = 138
+
+[139]
+f(x) = 3 + 3x + 4x^2 + 2x^3 + 4x^6 + x^7 + 2x^9 + x^13
+middle_coefficient_a_6 = 130
+canonical_presentation_index = 138
+
+[140]
+f(x) = 4 + 3x + 3x^2 + 3x^3 + 3x^6 + 4x^7 + 2x^9 + x^13
+middle_coefficient_a_6 = 130
+canonical_presentation_index = 137
+
+[141]
+f(x) = 1 + x + x^2 + x^3 + 3x^6 + 3x^7 + x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 141
+
+[142]
+f(x) = 2 + x + 3x^2 + 4x^3 + 4x^6 + 2x^7 + 2x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 142
+
+[143]
+f(x) = 3 + x + 2x^2 + 4x^3 + x^6 + 2x^7 + 3x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 142
+
+[144]
+f(x) = 4 + x + 4x^2 + x^3 + 2x^6 + 3x^7 + 4x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 141
+
+[145]
+f(x) = 1 + 2x + 4x^2 + 3x^3 + 2x^10 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 50
+canonical_presentation_index = 10
+
+[146]
+f(x) = 2 + 2x + 2x^2 + 2x^3 + x^10 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 50
+canonical_presentation_index = 9
+
+[147]
+f(x) = 3 + 2x + 3x^2 + 2x^3 + 4x^10 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 50
+canonical_presentation_index = 9
+
+[148]
+f(x) = 4 + 2x + x^2 + 3x^3 + 3x^10 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = 50
+canonical_presentation_index = 10
+
+[149]
+f(x) = 1 + 3x + 4x^2 + 2x^4 + 4x^5 + x^7 + 4x^12 + x^13
+middle_coefficient_a_6 = -82
+canonical_presentation_index = 149
+
+[150]
+f(x) = 2 + 3x + 2x^2 + 4x^4 + 4x^5 + 4x^7 + 3x^12 + x^13
+middle_coefficient_a_6 = -82
+canonical_presentation_index = 150
+
+[151]
+f(x) = 3 + 3x + 3x^2 + x^4 + 4x^5 + 4x^7 + 2x^12 + x^13
+middle_coefficient_a_6 = -82
+canonical_presentation_index = 150
+
+[152]
+f(x) = 4 + 3x + x^2 + 3x^4 + 4x^5 + x^7 + x^12 + x^13
+middle_coefficient_a_6 = -82
+canonical_presentation_index = 149
+
+[153]
+f(x) = 1 + 4x + 2x^2 + 2x^4 + 3x^5 + 3x^8 + 3x^10 + x^13
+middle_coefficient_a_6 = 16
+canonical_presentation_index = 153
+
+[154]
+f(x) = 2 + 4x + x^2 + 4x^4 + 3x^5 + x^8 + 4x^10 + x^13
+middle_coefficient_a_6 = 16
+canonical_presentation_index = 154
+
+[155]
+f(x) = 3 + 4x + 4x^2 + x^4 + 3x^5 + 4x^8 + x^10 + x^13
+middle_coefficient_a_6 = 16
+canonical_presentation_index = 154
+
+[156]
+f(x) = 4 + 4x + 3x^2 + 3x^4 + 3x^5 + 2x^8 + 2x^10 + x^13
+middle_coefficient_a_6 = 16
+canonical_presentation_index = 153
+
+[157]
+f(x) = 1 + 3x + 2x^2 + 3x^4 + 3x^5 + 4x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 157
+
+[158]
+f(x) = 2 + 3x + x^2 + x^4 + 3x^5 + 4x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 158
+
+[159]
+f(x) = 3 + 3x + 4x^2 + 4x^4 + 3x^5 + 4x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 158
+
+[160]
+f(x) = 4 + 3x + 3x^2 + 2x^4 + 3x^5 + 4x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 157
+
+[161]
+f(x) = 1 + 4x + 2x^2 + 3x^4 + 3x^6 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 146
+canonical_presentation_index = 161
+
+[162]
+f(x) = 2 + 4x + x^2 + x^4 + 4x^6 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 146
+canonical_presentation_index = 162
+
+[163]
+f(x) = 3 + 4x + 4x^2 + 4x^4 + x^6 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = 146
+canonical_presentation_index = 162
+
+[164]
+f(x) = 4 + 4x + 3x^2 + 2x^4 + 2x^6 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 146
+canonical_presentation_index = 161
+
+[165]
+f(x) = 1 + x + x^2 + x^4 + 3x^7 + 2x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = -32
+canonical_presentation_index = 165
+
+[166]
+f(x) = 2 + x + 3x^2 + 2x^4 + 2x^7 + 2x^9 + x^11 + x^13
+middle_coefficient_a_6 = -32
+canonical_presentation_index = 166
+
+[167]
+f(x) = 3 + x + 2x^2 + 3x^4 + 2x^7 + 2x^9 + x^11 + x^13
+middle_coefficient_a_6 = -32
+canonical_presentation_index = 166
+
+[168]
+f(x) = 4 + x + 4x^2 + 4x^4 + 3x^7 + 2x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = -32
+canonical_presentation_index = 165
+
+[169]
+f(x) = 1 + x + 3x^2 + 3x^5 + 3x^6 + x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 169
+
+[170]
+f(x) = 2 + x + 4x^2 + 3x^5 + 4x^6 + x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 170
+
+[171]
+f(x) = 3 + x + x^2 + 3x^5 + x^6 + x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 170
+
+[172]
+f(x) = 4 + x + 2x^2 + 3x^5 + 2x^6 + x^9 + x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 169
+
+[173]
+f(x) = 1 + 2x + 2x^2 + x^5 + x^8 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 173
+
+[174]
+f(x) = 2 + 2x + x^2 + x^5 + 2x^8 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 174
+
+[175]
+f(x) = 3 + 2x + 4x^2 + x^5 + 3x^8 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 174
+
+[176]
+f(x) = 4 + 2x + 3x^2 + x^5 + 4x^8 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 173
+
+[177]
+f(x) = 1 + 2x + 3x^2 + 2x^6 + 4x^7 + 3x^8 + x^10 + x^13
+middle_coefficient_a_6 = 62
+canonical_presentation_index = 177
+
+[178]
+f(x) = 2 + 2x + 4x^2 + x^6 + x^7 + x^8 + 3x^10 + x^13
+middle_coefficient_a_6 = 62
+canonical_presentation_index = 178
+
+[179]
+f(x) = 3 + 2x + x^2 + 4x^6 + x^7 + 4x^8 + 2x^10 + x^13
+middle_coefficient_a_6 = 62
+canonical_presentation_index = 178
+
+[180]
+f(x) = 4 + 2x + 2x^2 + 3x^6 + 4x^7 + 2x^8 + 4x^10 + x^13
+middle_coefficient_a_6 = 62
+canonical_presentation_index = 177
+
+[181]
+f(x) = 1 + 4x + 3x^2 + 3x^7 + 4x^8 + x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 181
+
+[182]
+f(x) = 2 + 4x + 4x^2 + 2x^7 + 3x^8 + x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 182
+
+[183]
+f(x) = 3 + 4x + x^2 + 2x^7 + 2x^8 + x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 182
+
+[184]
+f(x) = 4 + 4x + 2x^2 + 3x^7 + x^8 + x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 181
+
+[185]
+f(x) = 1 + 3x + 3x^3 + 2x^4 + 2x^6 + 3x^8 + 4x^10 + x^13
+middle_coefficient_a_6 = 146
+canonical_presentation_index = 161
+
+[186]
+f(x) = 2 + 3x + 2x^3 + 4x^4 + x^6 + x^8 + 2x^10 + x^13
+middle_coefficient_a_6 = 146
+canonical_presentation_index = 162
+
+[187]
+f(x) = 3 + 3x + 2x^3 + x^4 + 4x^6 + 4x^8 + 3x^10 + x^13
+middle_coefficient_a_6 = 146
+canonical_presentation_index = 162
+
+[188]
+f(x) = 4 + 3x + 3x^3 + 3x^4 + 3x^6 + 2x^8 + x^10 + x^13
+middle_coefficient_a_6 = 146
+canonical_presentation_index = 161
+
+[189]
+f(x) = 1 + x + 3x^3 + x^5 + x^6 + 2x^7 + 4x^10 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 45
+
+[190]
+f(x) = 2 + x + 2x^3 + x^5 + 3x^6 + 3x^7 + 2x^10 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 46
+
+[191]
+f(x) = 3 + x + 2x^3 + x^5 + 2x^6 + 3x^7 + 3x^10 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 46
+
+[192]
+f(x) = 4 + x + 3x^3 + x^5 + 4x^6 + 2x^7 + x^10 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 45
+
+[193]
+f(x) = 1 + 3x + x^3 + x^5 + x^6 + 3x^8 + 4x^10 + x^13
+middle_coefficient_a_6 = 50
+canonical_presentation_index = 10
+
+[194]
+f(x) = 2 + 3x + 4x^3 + x^5 + 3x^6 + x^8 + 2x^10 + x^13
+middle_coefficient_a_6 = 50
+canonical_presentation_index = 9
+
+[195]
+f(x) = 3 + 3x + 4x^3 + x^5 + 2x^6 + 4x^8 + 3x^10 + x^13
+middle_coefficient_a_6 = 50
+canonical_presentation_index = 9
+
+[196]
+f(x) = 4 + 3x + x^3 + x^5 + 4x^6 + 2x^8 + x^10 + x^13
+middle_coefficient_a_6 = 50
+canonical_presentation_index = 10
+
+[197]
+f(x) = 1 + 2x + 4x^3 + 4x^5 + 2x^6 + x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 197
+
+[198]
+f(x) = 2 + 2x + x^3 + 4x^5 + x^6 + 3x^10 + x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 198
+
+[199]
+f(x) = 3 + 2x + x^3 + 4x^5 + 4x^6 + 2x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 198
+
+[200]
+f(x) = 4 + 2x + 4x^3 + 4x^5 + 3x^6 + 4x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 197
+
+[201]
+f(x) = 1 + x + 3x^3 + 4x^5 + 2x^7 + 4x^8 + x^12 + x^13
+middle_coefficient_a_6 = 96
+canonical_presentation_index = 201
+
+[202]
+f(x) = 2 + x + 2x^3 + 4x^5 + 3x^7 + 3x^8 + 2x^12 + x^13
+middle_coefficient_a_6 = 96
+canonical_presentation_index = 202
+
+[203]
+f(x) = 3 + x + 2x^3 + 4x^5 + 3x^7 + 2x^8 + 3x^12 + x^13
+middle_coefficient_a_6 = 96
+canonical_presentation_index = 202
+
+[204]
+f(x) = 4 + x + 3x^3 + 4x^5 + 2x^7 + x^8 + 4x^12 + x^13
+middle_coefficient_a_6 = 96
+canonical_presentation_index = 201
+
+[205]
+f(x) = 1 + x + 2x^3 + 2x^6 + 4x^10 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 77
+
+[206]
+f(x) = 2 + x + 3x^3 + x^6 + 2x^10 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 78
+
+[207]
+f(x) = 3 + x + 3x^3 + 4x^6 + 3x^10 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 78
+
+[208]
+f(x) = 4 + x + 2x^3 + 3x^6 + x^10 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 77
+
+[209]
+f(x) = 1 + 4x + x^3 + 4x^8 + 2x^9 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 209
+
+[210]
+f(x) = 2 + 4x + 4x^3 + 3x^8 + 2x^9 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 210
+
+[211]
+f(x) = 3 + 4x + 4x^3 + 2x^8 + 2x^9 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 210
+
+[212]
+f(x) = 4 + 4x + x^3 + x^8 + 2x^9 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 209
+
+[213]
+f(x) = 1 + 3x + 4x^4 + 2x^5 + 4x^8 + 2x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = -104
+canonical_presentation_index = 213
+
+[214]
+f(x) = 1 + 4x + 2x^4 + 2x^5 + 2x^8 + 2x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = 212
+canonical_presentation_index = 214
+
+[215]
+f(x) = 2 + 3x + 3x^4 + 2x^5 + 3x^8 + 2x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = -104
+canonical_presentation_index = 215
+
+[216]
+f(x) = 2 + 4x + 4x^4 + 2x^5 + 4x^8 + 2x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = 212
+canonical_presentation_index = 216
+
+[217]
+f(x) = 3 + 3x + 2x^4 + 2x^5 + 2x^8 + 2x^9 + x^12 + x^13
+middle_coefficient_a_6 = -104
+canonical_presentation_index = 215
+
+[218]
+f(x) = 3 + 4x + x^4 + 2x^5 + x^8 + 2x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = 212
+canonical_presentation_index = 216
+
+[219]
+f(x) = 4 + 3x + x^4 + 2x^5 + x^8 + 2x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = -104
+canonical_presentation_index = 213
+
+[220]
+f(x) = 4 + 4x + 3x^4 + 2x^5 + 3x^8 + 2x^9 + x^12 + x^13
+middle_coefficient_a_6 = 212
+canonical_presentation_index = 214
+
+[221]
+f(x) = 1 + 2x + 4x^4 + x^5 + 4x^8 + x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 221
+
+[222]
+f(x) = 2 + 2x + 3x^4 + x^5 + 3x^8 + 3x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 222
+
+[223]
+f(x) = 3 + 2x + 2x^4 + x^5 + 2x^8 + 2x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 222
+
+[224]
+f(x) = 4 + 2x + x^4 + x^5 + x^8 + 4x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 221
+
+[225]
+f(x) = 1 + x + 4x^4 + x^6 + 2x^7 + 3x^9 + 3x^10 + x^13
+middle_coefficient_a_6 = -16
+canonical_presentation_index = 225
+
+[226]
+f(x) = 2 + x + 3x^4 + 3x^6 + 3x^7 + 3x^9 + 4x^10 + x^13
+middle_coefficient_a_6 = -16
+canonical_presentation_index = 226
+
+[227]
+f(x) = 3 + x + 2x^4 + 2x^6 + 3x^7 + 3x^9 + x^10 + x^13
+middle_coefficient_a_6 = -16
+canonical_presentation_index = 226
+
+[228]
+f(x) = 4 + x + x^4 + 4x^6 + 2x^7 + 3x^9 + 2x^10 + x^13
+middle_coefficient_a_6 = -16
+canonical_presentation_index = 225
+
+[229]
+f(x) = 1 + 4x + 3x^5 + 4x^6 + 4x^7 + 2x^8 + 3x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 229
+
+[230]
+f(x) = 2 + 4x + 3x^5 + 2x^6 + x^7 + 4x^8 + x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 230
+
+[231]
+f(x) = 3 + 4x + 3x^5 + 3x^6 + x^7 + x^8 + 4x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 230
+
+[232]
+f(x) = 4 + 4x + 3x^5 + x^6 + 4x^7 + 3x^8 + 2x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 229
+
+[233]
+f(x) = 1 + 4x + 3x^5 + 2x^7 + 2x^9 + 4x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -116
+canonical_presentation_index = 233
+
+[234]
+f(x) = 2 + 4x + 3x^5 + 3x^7 + 2x^9 + 2x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -116
+canonical_presentation_index = 234
+
+[235]
+f(x) = 3 + 4x + 3x^5 + 3x^7 + 2x^9 + 3x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -116
+canonical_presentation_index = 234
+
+[236]
+f(x) = 4 + 4x + 3x^5 + 2x^7 + 2x^9 + x^10 + x^12 + x^13
+middle_coefficient_a_6 = -116
+canonical_presentation_index = 233
+
+[237]
+f(x) = 1 + 4x + 2x^6 + 4x^7 + 4x^9 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 237
+
+[238]
+f(x) = 2 + 4x + x^6 + x^7 + 4x^9 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 238
+
+[239]
+f(x) = 3 + 4x + 4x^6 + x^7 + 4x^9 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 238
+
+[240]
+f(x) = 4 + 4x + 3x^6 + 4x^7 + 4x^9 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 237
+
+[241]
+f(x) = 1 + x^2 + 2x^3 + 3x^4 + x^5 + 2x^9 + x^11 + x^13
+middle_coefficient_a_6 = 58
+canonical_presentation_index = 241
+
+[242]
+f(x) = 2 + 3x^2 + 3x^3 + x^4 + x^5 + 2x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = 58
+canonical_presentation_index = 242
+
+[243]
+f(x) = 3 + 2x^2 + 3x^3 + 4x^4 + x^5 + 2x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = 58
+canonical_presentation_index = 242
+
+[244]
+f(x) = 4 + 4x^2 + 2x^3 + 2x^4 + x^5 + 2x^9 + x^11 + x^13
+middle_coefficient_a_6 = 58
+canonical_presentation_index = 241
+
+[245]
+f(x) = 1 + 4x^2 + 4x^3 + 2x^4 + 4x^7 + 3x^8 + 4x^11 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 245
+
+[246]
+f(x) = 2 + 2x^2 + x^3 + 4x^4 + x^7 + x^8 + x^11 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 246
+
+[247]
+f(x) = 3 + 3x^2 + x^3 + x^4 + x^7 + 4x^8 + x^11 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 246
+
+[248]
+f(x) = 4 + x^2 + 4x^3 + 3x^4 + 4x^7 + 2x^8 + 4x^11 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 245
+
+[249]
+f(x) = 1 + 4x^2 + 4x^3 + 3x^5 + 2x^6 + 3x^7 + x^12 + x^13
+middle_coefficient_a_6 = 146
+canonical_presentation_index = 249
+
+[250]
+f(x) = 2 + 2x^2 + x^3 + 3x^5 + x^6 + 2x^7 + 2x^12 + x^13
+middle_coefficient_a_6 = 146
+canonical_presentation_index = 250
+
+[251]
+f(x) = 3 + 3x^2 + x^3 + 3x^5 + 4x^6 + 2x^7 + 3x^12 + x^13
+middle_coefficient_a_6 = 146
+canonical_presentation_index = 250
+
+[252]
+f(x) = 4 + x^2 + 4x^3 + 3x^5 + 3x^6 + 3x^7 + 4x^12 + x^13
+middle_coefficient_a_6 = 146
+canonical_presentation_index = 249
+
+[253]
+f(x) = 1 + 2x^2 + 3x^3 + 3x^5 + 2x^6 + 4x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 253
+
+[254]
+f(x) = 2 + x^2 + 2x^3 + 3x^5 + x^6 + x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 254
+
+[255]
+f(x) = 3 + 4x^2 + 2x^3 + 3x^5 + 4x^6 + x^11 + x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 254
+
+[256]
+f(x) = 4 + 3x^2 + 3x^3 + 3x^5 + 3x^6 + 4x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 253
+
+[257]
+f(x) = 1 + x^2 + 3x^3 + 4x^6 + x^7 + x^9 + x^11 + x^13
+middle_coefficient_a_6 = -208
+canonical_presentation_index = 257
+
+[258]
+f(x) = 2 + 3x^2 + 2x^3 + 2x^6 + 4x^7 + x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = -208
+canonical_presentation_index = 258
+
+[259]
+f(x) = 3 + 2x^2 + 2x^3 + 3x^6 + 4x^7 + x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = -208
+canonical_presentation_index = 258
+
+[260]
+f(x) = 4 + 4x^2 + 3x^3 + x^6 + x^7 + x^9 + x^11 + x^13
+middle_coefficient_a_6 = -208
+canonical_presentation_index = 257
+
+[261]
+f(x) = 1 + 3x^2 + 2x^3 + 2x^6 + 4x^8 + 4x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 261
+
+[262]
+f(x) = 2 + 4x^2 + 3x^3 + x^6 + 3x^8 + 4x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 261
+
+[263]
+f(x) = 3 + x^2 + 3x^3 + 4x^6 + 2x^8 + 4x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 261
+
+[264]
+f(x) = 4 + 2x^2 + 2x^3 + 3x^6 + x^8 + 4x^9 + x^12 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 261
+
+[265]
+f(x) = 1 + x^2 + x^3 + x^7 + 4x^8 + x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -82
+canonical_presentation_index = 150
+
+[266]
+f(x) = 2 + 3x^2 + 4x^3 + 4x^7 + 3x^8 + 3x^10 + x^11 + x^13
+middle_coefficient_a_6 = -82
+canonical_presentation_index = 149
+
+[267]
+f(x) = 3 + 2x^2 + 4x^3 + 4x^7 + 2x^8 + 2x^10 + x^11 + x^13
+middle_coefficient_a_6 = -82
+canonical_presentation_index = 149
+
+[268]
+f(x) = 4 + 4x^2 + x^3 + x^7 + x^8 + 4x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -82
+canonical_presentation_index = 150
+
+[269]
+f(x) = 1 + x^2 + 3x^3 + 3x^7 + 4x^9 + 4x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -154
+canonical_presentation_index = 269
+
+[270]
+f(x) = 2 + 3x^2 + 2x^3 + 2x^7 + 4x^9 + 2x^10 + x^12 + x^13
+middle_coefficient_a_6 = -154
+canonical_presentation_index = 270
+
+[271]
+f(x) = 3 + 2x^2 + 2x^3 + 2x^7 + 4x^9 + 3x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -154
+canonical_presentation_index = 270
+
+[272]
+f(x) = 4 + 4x^2 + 3x^3 + 3x^7 + 4x^9 + x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -154
+canonical_presentation_index = 269
+
+[273]
+f(x) = 1 + 2x^2 + x^4 + 4x^5 + 2x^6 + x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = 78
+canonical_presentation_index = 273
+
+[274]
+f(x) = 2 + x^2 + 2x^4 + 4x^5 + x^6 + x^9 + x^12 + x^13
+middle_coefficient_a_6 = 78
+canonical_presentation_index = 274
+
+[275]
+f(x) = 3 + 4x^2 + 3x^4 + 4x^5 + 4x^6 + x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = 78
+canonical_presentation_index = 274
+
+[276]
+f(x) = 4 + 3x^2 + 4x^4 + 4x^5 + 3x^6 + x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = 78
+canonical_presentation_index = 273
+
+[277]
+f(x) = 1 + x^2 + x^4 + 2x^5 + x^7 + 2x^8 + 4x^9 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 277
+
+[278]
+f(x) = 2 + 3x^2 + 2x^4 + 2x^5 + 4x^7 + 4x^8 + 4x^9 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 278
+
+[279]
+f(x) = 3 + 2x^2 + 3x^4 + 2x^5 + 4x^7 + x^8 + 4x^9 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 278
+
+[280]
+f(x) = 4 + 4x^2 + 4x^4 + 2x^5 + x^7 + 3x^8 + 4x^9 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 277
+
+[281]
+f(x) = 1 + 3x^2 + 4x^4 + 3x^5 + 4x^9 + 2x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -106
+canonical_presentation_index = 281
+
+[282]
+f(x) = 2 + 4x^2 + 3x^4 + 3x^5 + 4x^9 + x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -106
+canonical_presentation_index = 282
+
+[283]
+f(x) = 3 + x^2 + 2x^4 + 3x^5 + 4x^9 + 4x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -106
+canonical_presentation_index = 282
+
+[284]
+f(x) = 4 + 2x^2 + x^4 + 3x^5 + 4x^9 + 3x^10 + x^12 + x^13
+middle_coefficient_a_6 = -106
+canonical_presentation_index = 281
+
+[285]
+f(x) = 1 + 2x^2 + 2x^4 + x^5 + 3x^10 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 285
+
+[286]
+f(x) = 2 + x^2 + 4x^4 + x^5 + 4x^10 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 286
+
+[287]
+f(x) = 3 + 4x^2 + x^4 + x^5 + x^10 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 286
+
+[288]
+f(x) = 4 + 3x^2 + 3x^4 + x^5 + 2x^10 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 285
+
+[289]
+f(x) = 1 + x^2 + 3x^4 + x^6 + x^7 + 4x^10 + x^11 + x^13
+middle_coefficient_a_6 = 136
+canonical_presentation_index = 289
+
+[290]
+f(x) = 2 + 3x^2 + x^4 + 3x^6 + 4x^7 + 2x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 136
+canonical_presentation_index = 290
+
+[291]
+f(x) = 3 + 2x^2 + 4x^4 + 2x^6 + 4x^7 + 3x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 136
+canonical_presentation_index = 290
+
+[292]
+f(x) = 4 + 4x^2 + 2x^4 + 4x^6 + x^7 + x^10 + x^11 + x^13
+middle_coefficient_a_6 = 136
+canonical_presentation_index = 289
+
+[293]
+f(x) = 1 + 4x^2 + 4x^5 + 2x^6 + 2x^7 + 4x^8 + 4x^11 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 293
+
+[294]
+f(x) = 2 + 2x^2 + 4x^5 + x^6 + 3x^7 + 3x^8 + x^11 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 293
+
+[295]
+f(x) = 3 + 3x^2 + 4x^5 + 4x^6 + 3x^7 + 2x^8 + x^11 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 293
+
+[296]
+f(x) = 4 + x^2 + 4x^5 + 3x^6 + 2x^7 + x^8 + 4x^11 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 293
+
+[297]
+f(x) = 1 + x^2 + 4x^5 + 4x^6 + 2x^7 + 2x^8 + 3x^12 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 297
+
+[298]
+f(x) = 2 + 3x^2 + 4x^5 + 2x^6 + 3x^7 + 4x^8 + x^12 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 298
+
+[299]
+f(x) = 3 + 2x^2 + 4x^5 + 3x^6 + 3x^7 + x^8 + 4x^12 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 298
+
+[300]
+f(x) = 4 + 4x^2 + 4x^5 + x^6 + 2x^7 + 3x^8 + 2x^12 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 297
+
+[301]
+f(x) = 1 + 2x^2 + x^5 + 4x^6 + 3x^8 + 4x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 37
+
+[302]
+f(x) = 1 + 4x^2 + 4x^5 + x^6 + 4x^8 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -54
+canonical_presentation_index = 302
+
+[303]
+f(x) = 2 + x^2 + x^5 + 2x^6 + x^8 + x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 38
+
+[304]
+f(x) = 2 + 2x^2 + 4x^5 + 3x^6 + 3x^8 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -54
+canonical_presentation_index = 304
+
+[305]
+f(x) = 3 + 3x^2 + 4x^5 + 2x^6 + 2x^8 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -54
+canonical_presentation_index = 304
+
+[306]
+f(x) = 3 + 4x^2 + x^5 + 3x^6 + 4x^8 + x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 38
+
+[307]
+f(x) = 4 + x^2 + 4x^5 + 4x^6 + x^8 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = -54
+canonical_presentation_index = 302
+
+[308]
+f(x) = 4 + 3x^2 + x^5 + x^6 + 2x^8 + 4x^11 + x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 37
+
+[309]
+f(x) = 1 + 4x^2 + 2x^5 + 2x^6 + 4x^9 + x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 309
+
+[310]
+f(x) = 2 + 2x^2 + 2x^5 + x^6 + 4x^9 + 4x^11 + x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 310
+
+[311]
+f(x) = 3 + 3x^2 + 2x^5 + 4x^6 + 4x^9 + 4x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 310
+
+[312]
+f(x) = 4 + x^2 + 2x^5 + 3x^6 + 4x^9 + x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 309
+
+[313]
+f(x) = 1 + 4x^2 + x^5 + 3x^7 + 4x^8 + x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 198
+
+[314]
+f(x) = 2 + 2x^2 + x^5 + 2x^7 + 3x^8 + 4x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 197
+
+[315]
+f(x) = 3 + 3x^2 + x^5 + 2x^7 + 2x^8 + 4x^11 + x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 197
+
+[316]
+f(x) = 4 + x^2 + x^5 + 3x^7 + x^8 + x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 198
+
+[317]
+f(x) = 1 + x^2 + 3x^6 + 3x^8 + x^9 + 4x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 198
+canonical_presentation_index = 317
+
+[318]
+f(x) = 2 + 3x^2 + 4x^6 + x^8 + x^9 + x^11 + x^12 + x^13
+middle_coefficient_a_6 = 198
+canonical_presentation_index = 318
+
+[319]
+f(x) = 3 + 2x^2 + x^6 + 4x^8 + x^9 + x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 198
+canonical_presentation_index = 318
+
+[320]
+f(x) = 4 + 4x^2 + 2x^6 + 2x^8 + x^9 + 4x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 198
+canonical_presentation_index = 317
+
+[321]
+f(x) = 1 + 4x^3 + 2x^4 + x^5 + x^6 + 3x^8 + x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 321
+
+[322]
+f(x) = 2 + x^3 + 4x^4 + x^5 + 3x^6 + x^8 + 2x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 322
+
+[323]
+f(x) = 3 + x^3 + x^4 + x^5 + 2x^6 + 4x^8 + 3x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 322
+
+[324]
+f(x) = 4 + 4x^3 + 3x^4 + x^5 + 4x^6 + 2x^8 + 4x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 321
+
+[325]
+f(x) = 1 + 2x^3 + 2x^4 + x^5 + x^8 + 2x^9 + 2x^10 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 325
+
+[326]
+f(x) = 2 + 3x^3 + 4x^4 + x^5 + 2x^8 + 2x^9 + x^10 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 326
+
+[327]
+f(x) = 3 + 3x^3 + x^4 + x^5 + 3x^8 + 2x^9 + 4x^10 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 326
+
+[328]
+f(x) = 4 + 2x^3 + 3x^4 + x^5 + 4x^8 + 2x^9 + 3x^10 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 325
+
+[329]
+f(x) = 1 + 4x^3 + 2x^4 + 3x^6 + 2x^9 + x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -116
+canonical_presentation_index = 234
+
+[330]
+f(x) = 2 + x^3 + 4x^4 + 4x^6 + 2x^9 + 3x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -116
+canonical_presentation_index = 233
+
+[331]
+f(x) = 3 + x^3 + x^4 + x^6 + 2x^9 + 2x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -116
+canonical_presentation_index = 233
+
+[332]
+f(x) = 4 + 4x^3 + 3x^4 + 2x^6 + 2x^9 + 4x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -116
+canonical_presentation_index = 234
+
+[333]
+f(x) = 1 + 3x^3 + x^4 + 2x^7 + 4x^8 + 4x^9 + x^11 + x^13
+middle_coefficient_a_6 = 56
+canonical_presentation_index = 333
+
+[334]
+f(x) = 2 + 2x^3 + 2x^4 + 3x^7 + 3x^8 + 4x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = 56
+canonical_presentation_index = 334
+
+[335]
+f(x) = 3 + 2x^3 + 3x^4 + 3x^7 + 2x^8 + 4x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = 56
+canonical_presentation_index = 334
+
+[336]
+f(x) = 4 + 3x^3 + 4x^4 + 2x^7 + x^8 + 4x^9 + x^11 + x^13
+middle_coefficient_a_6 = 56
+canonical_presentation_index = 333
+
+[337]
+f(x) = 1 + 3x^3 + x^5 + x^6 + 4x^7 + 3x^8 + 4x^9 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 337
+
+[338]
+f(x) = 2 + 2x^3 + x^5 + 3x^6 + x^7 + x^8 + 4x^9 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 338
+
+[339]
+f(x) = 3 + 2x^3 + x^5 + 2x^6 + x^7 + 4x^8 + 4x^9 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 338
+
+[340]
+f(x) = 4 + 3x^3 + x^5 + 4x^6 + 4x^7 + 2x^8 + 4x^9 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 337
+
+[341]
+f(x) = 1 + 2x^3 + 4x^5 + 4x^7 + 4x^8 + x^9 + 2x^10 + x^13
+middle_coefficient_a_6 = 98
+canonical_presentation_index = 341
+
+[342]
+f(x) = 2 + 3x^3 + 4x^5 + x^7 + 3x^8 + x^9 + x^10 + x^13
+middle_coefficient_a_6 = 98
+canonical_presentation_index = 342
+
+[343]
+f(x) = 3 + 3x^3 + 4x^5 + x^7 + 2x^8 + x^9 + 4x^10 + x^13
+middle_coefficient_a_6 = 98
+canonical_presentation_index = 342
+
+[344]
+f(x) = 4 + 2x^3 + 4x^5 + 4x^7 + x^8 + x^9 + 3x^10 + x^13
+middle_coefficient_a_6 = 98
+canonical_presentation_index = 341
+
+[345]
+f(x) = 1 + x^3 + 3x^5 + 4x^8 + 4x^9 + 3x^10 + x^12 + x^13
+middle_coefficient_a_6 = -64
+canonical_presentation_index = 345
+
+[346]
+f(x) = 2 + 4x^3 + 3x^5 + 3x^8 + 4x^9 + 4x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -64
+canonical_presentation_index = 346
+
+[347]
+f(x) = 3 + 4x^3 + 3x^5 + 2x^8 + 4x^9 + x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -64
+canonical_presentation_index = 346
+
+[348]
+f(x) = 4 + x^3 + 3x^5 + x^8 + 4x^9 + 2x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -64
+canonical_presentation_index = 345
+
+[349]
+f(x) = 1 + 2x^3 + x^6 + 3x^8 + 2x^10 + x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 298
+
+[350]
+f(x) = 2 + 3x^3 + 3x^6 + x^8 + x^10 + 4x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 297
+
+[351]
+f(x) = 3 + 3x^3 + 2x^6 + 4x^8 + 4x^10 + 4x^11 + x^12 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 297
+
+[352]
+f(x) = 4 + 2x^3 + 4x^6 + 2x^8 + 3x^10 + x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 298
+
+[353]
+f(x) = 1 + 4x^5 + 4x^6 + 2x^7 + 4x^8 + 2x^10 + x^11 + x^13
+middle_coefficient_a_6 = 130
+canonical_presentation_index = 353
+
+[354]
+f(x) = 2 + 4x^5 + 2x^6 + 3x^7 + 3x^8 + x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 130
+canonical_presentation_index = 354
+
+[355]
+f(x) = 3 + 4x^5 + 3x^6 + 3x^7 + 2x^8 + 4x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 130
+canonical_presentation_index = 354
+
+[356]
+f(x) = 4 + 4x^5 + x^6 + 2x^7 + x^8 + 3x^10 + x^11 + x^13
+middle_coefficient_a_6 = 130
+canonical_presentation_index = 353
+
+[357]
+f(x) = x + x^2 + 4x^3 + 3x^4 + 2x^5 + x^7 + 4x^9 + x^13
+middle_coefficient_a_6 = 22
+canonical_presentation_index = 357
+
+[358]
+f(x) = x + 2x^2 + x^3 + 4x^4 + 2x^5 + 4x^7 + 4x^9 + x^13
+middle_coefficient_a_6 = 22
+canonical_presentation_index = 358
+
+[359]
+f(x) = x + 3x^2 + x^3 + x^4 + 2x^5 + 4x^7 + 4x^9 + x^13
+middle_coefficient_a_6 = 22
+canonical_presentation_index = 358
+
+[360]
+f(x) = x + 4x^2 + 4x^3 + 2x^4 + 2x^5 + x^7 + 4x^9 + x^13
+middle_coefficient_a_6 = 22
+canonical_presentation_index = 357
+
+[361]
+f(x) = 2x + x^2 + 3x^3 + 3x^4 + x^6 + 4x^9 + x^10 + x^13
+middle_coefficient_a_6 = 36
+canonical_presentation_index = 361
+
+[362]
+f(x) = 2x + 2x^2 + 2x^3 + 4x^4 + 2x^6 + 4x^9 + 2x^10 + x^13
+middle_coefficient_a_6 = 36
+canonical_presentation_index = 362
+
+[363]
+f(x) = 2x + 3x^2 + 2x^3 + x^4 + 3x^6 + 4x^9 + 3x^10 + x^13
+middle_coefficient_a_6 = 36
+canonical_presentation_index = 362
+
+[364]
+f(x) = 2x + 4x^2 + 3x^3 + 2x^4 + 4x^6 + 4x^9 + 4x^10 + x^13
+middle_coefficient_a_6 = 36
+canonical_presentation_index = 361
+
+[365]
+f(x) = 4x + x^2 + 2x^3 + 2x^4 + 3x^8 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 365
+
+[366]
+f(x) = 4x + 2x^2 + 3x^3 + x^4 + 4x^8 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 366
+
+[367]
+f(x) = 4x + 3x^2 + 3x^3 + 4x^4 + x^8 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 366
+
+[368]
+f(x) = 4x + 4x^2 + 2x^3 + 3x^4 + 2x^8 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 365
+
+[369]
+f(x) = 3x + x^2 + 2x^3 + 4x^4 + x^9 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -146
+canonical_presentation_index = 369
+
+[370]
+f(x) = 3x + 2x^2 + 3x^3 + 2x^4 + x^9 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -146
+canonical_presentation_index = 370
+
+[371]
+f(x) = 3x + 3x^2 + 3x^3 + 3x^4 + x^9 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = -146
+canonical_presentation_index = 370
+
+[372]
+f(x) = 3x + 4x^2 + 2x^3 + x^4 + x^9 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -146
+canonical_presentation_index = 369
+
+[373]
+f(x) = 4x + x^2 + x^3 + 3x^4 + 4x^10 + x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -218
+canonical_presentation_index = 373
+
+[374]
+f(x) = 4x + 2x^2 + 4x^3 + 4x^4 + 3x^10 + 4x^11 + x^12 + x^13
+middle_coefficient_a_6 = -218
+canonical_presentation_index = 373
+
+[375]
+f(x) = 4x + 3x^2 + 4x^3 + x^4 + 2x^10 + 4x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -218
+canonical_presentation_index = 373
+
+[376]
+f(x) = 4x + 4x^2 + x^3 + 2x^4 + x^10 + x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -218
+canonical_presentation_index = 373
+
+[377]
+f(x) = 4x + x^2 + 3x^3 + 4x^5 + 2x^9 + 4x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = 74
+canonical_presentation_index = 377
+
+[378]
+f(x) = 4x + 2x^2 + 2x^3 + 4x^5 + 2x^9 + 3x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = 74
+canonical_presentation_index = 378
+
+[379]
+f(x) = 4x + 3x^2 + 2x^3 + 4x^5 + 2x^9 + 2x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = 74
+canonical_presentation_index = 378
+
+[380]
+f(x) = 4x + 4x^2 + 3x^3 + 4x^5 + 2x^9 + x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = 74
+canonical_presentation_index = 377
+
+[381]
+f(x) = 2x + x^2 + x^3 + 2x^5 + 3x^10 + 4x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -146
+canonical_presentation_index = 370
+
+[382]
+f(x) = 2x + 2x^2 + 4x^3 + 2x^5 + x^10 + x^11 + x^12 + x^13
+middle_coefficient_a_6 = -146
+canonical_presentation_index = 369
+
+[383]
+f(x) = 2x + 3x^2 + 4x^3 + 2x^5 + 4x^10 + x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -146
+canonical_presentation_index = 369
+
+[384]
+f(x) = 2x + 4x^2 + x^3 + 2x^5 + 2x^10 + 4x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -146
+canonical_presentation_index = 370
+
+[385]
+f(x) = 4x + x^2 + 3x^3 + 2x^6 + x^7 + x^8 + 4x^10 + x^13
+middle_coefficient_a_6 = -54
+canonical_presentation_index = 304
+
+[386]
+f(x) = 4x + 2x^2 + 2x^3 + 4x^6 + 4x^7 + 3x^8 + 3x^10 + x^13
+middle_coefficient_a_6 = -54
+canonical_presentation_index = 302
+
+[387]
+f(x) = 4x + 3x^2 + 2x^3 + x^6 + 4x^7 + 2x^8 + 2x^10 + x^13
+middle_coefficient_a_6 = -54
+canonical_presentation_index = 302
+
+[388]
+f(x) = 4x + 4x^2 + 3x^3 + 3x^6 + x^7 + 4x^8 + x^10 + x^13
+middle_coefficient_a_6 = -54
+canonical_presentation_index = 304
+
+[389]
+f(x) = x + x^2 + 3x^3 + 3x^6 + 2x^7 + 4x^8 + 3x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 197
+
+[390]
+f(x) = x + 2x^2 + 2x^3 + x^6 + 3x^7 + 2x^8 + 4x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 198
+
+[391]
+f(x) = x + 3x^2 + 2x^3 + 4x^6 + 3x^7 + 3x^8 + x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 198
+
+[392]
+f(x) = x + 4x^2 + 3x^3 + 2x^6 + 2x^7 + x^8 + 2x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 197
+
+[393]
+f(x) = x + x^2 + 2x^3 + x^6 + 2x^7 + x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 393
+
+[394]
+f(x) = x + x^2 + 4x^3 + x^6 + 3x^7 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 142
+
+[395]
+f(x) = x + 2x^2 + x^3 + 2x^6 + 2x^7 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 141
+
+[396]
+f(x) = x + 2x^2 + 3x^3 + 2x^6 + 3x^7 + 4x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 396
+
+[397]
+f(x) = x + 3x^2 + x^3 + 3x^6 + 2x^7 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 141
+
+[398]
+f(x) = x + 3x^2 + 3x^3 + 3x^6 + 3x^7 + 4x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 396
+
+[399]
+f(x) = x + 4x^2 + 2x^3 + 4x^6 + 2x^7 + x^11 + x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 393
+
+[400]
+f(x) = x + 4x^2 + 4x^3 + 4x^6 + 3x^7 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 142
+
+[401]
+f(x) = 4x + x^2 + 3x^3 + x^6 + 4x^10 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 366
+
+[402]
+f(x) = 4x + 2x^2 + 2x^3 + 2x^6 + 3x^10 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 365
+
+[403]
+f(x) = 4x + 3x^2 + 2x^3 + 3x^6 + 2x^10 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 365
+
+[404]
+f(x) = 4x + 4x^2 + 3x^3 + 4x^6 + x^10 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 366
+
+[405]
+f(x) = x + x^2 + x^3 + 2x^7 + 4x^8 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 393
+
+[406]
+f(x) = x + x^2 + 3x^3 + 3x^7 + 4x^8 + 4x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 142
+
+[407]
+f(x) = x + 2x^2 + 2x^3 + 2x^7 + 2x^8 + x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 141
+
+[408]
+f(x) = x + 2x^2 + 4x^3 + 3x^7 + 2x^8 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 396
+
+[409]
+f(x) = x + 3x^2 + 2x^3 + 2x^7 + 3x^8 + x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 141
+
+[410]
+f(x) = x + 3x^2 + 4x^3 + 3x^7 + 3x^8 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 396
+
+[411]
+f(x) = x + 4x^2 + x^3 + 2x^7 + x^8 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 393
+
+[412]
+f(x) = x + 4x^2 + 3x^3 + 3x^7 + x^8 + 4x^11 + x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 142
+
+[413]
+f(x) = x + x^2 + x^4 + x^6 + 3x^7 + 4x^8 + 4x^9 + x^13
+middle_coefficient_a_6 = -42
+canonical_presentation_index = 413
+
+[414]
+f(x) = x + 2x^2 + 3x^4 + 2x^6 + 2x^7 + 2x^8 + 4x^9 + x^13
+middle_coefficient_a_6 = -42
+canonical_presentation_index = 414
+
+[415]
+f(x) = x + 3x^2 + 2x^4 + 3x^6 + 2x^7 + 3x^8 + 4x^9 + x^13
+middle_coefficient_a_6 = -42
+canonical_presentation_index = 414
+
+[416]
+f(x) = x + 4x^2 + 4x^4 + 4x^6 + 3x^7 + x^8 + 4x^9 + x^13
+middle_coefficient_a_6 = -42
+canonical_presentation_index = 413
+
+[417]
+f(x) = x + x^2 + 3x^4 + 4x^6 + 3x^7 + 2x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 298
+
+[418]
+f(x) = x + 2x^2 + 4x^4 + 3x^6 + 2x^7 + 2x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 297
+
+[419]
+f(x) = x + 3x^2 + x^4 + 2x^6 + 2x^7 + 2x^9 + x^12 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 297
+
+[420]
+f(x) = x + 4x^2 + 2x^4 + x^6 + 3x^7 + 2x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 298
+
+[421]
+f(x) = 4x + x^2 + x^4 + 2x^6 + x^7 + 4x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 421
+
+[422]
+f(x) = 4x + 2x^2 + 3x^4 + 4x^6 + 4x^7 + 3x^10 + x^11 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 422
+
+[423]
+f(x) = 4x + 3x^2 + 2x^4 + x^6 + 4x^7 + 2x^10 + x^11 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 422
+
+[424]
+f(x) = 4x + 4x^2 + 4x^4 + 3x^6 + x^7 + x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 421
+
+[425]
+f(x) = 4x + x^2 + 4x^4 + x^6 + 2x^8 + 2x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 58
+canonical_presentation_index = 425
+
+[426]
+f(x) = 4x + 2x^2 + 2x^4 + 2x^6 + x^8 + 4x^10 + x^12 + x^13
+middle_coefficient_a_6 = 58
+canonical_presentation_index = 425
+
+[427]
+f(x) = 4x + 3x^2 + 3x^4 + 3x^6 + 4x^8 + x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 58
+canonical_presentation_index = 425
+
+[428]
+f(x) = 4x + 4x^2 + x^4 + 4x^6 + 3x^8 + 3x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 58
+canonical_presentation_index = 425
+
+[429]
+f(x) = 4x + x^2 + 2x^5 + 2x^6 + 4x^8 + 3x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 429
+
+[430]
+f(x) = 4x + 2x^2 + 2x^5 + 4x^6 + 2x^8 + 3x^9 + x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 429
+
+[431]
+f(x) = 4x + 3x^2 + 2x^5 + x^6 + 3x^8 + 3x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 429
+
+[432]
+f(x) = 4x + 4x^2 + 2x^5 + 3x^6 + x^8 + 3x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 429
+
+[433]
+f(x) = 4x + x^2 + 2x^5 + 4x^6 + x^9 + 4x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -126
+canonical_presentation_index = 433
+
+[434]
+f(x) = 4x + 2x^2 + 2x^5 + 3x^6 + x^9 + 3x^10 + x^11 + x^13
+middle_coefficient_a_6 = -126
+canonical_presentation_index = 434
+
+[435]
+f(x) = 4x + 3x^2 + 2x^5 + 2x^6 + x^9 + 2x^10 + x^11 + x^13
+middle_coefficient_a_6 = -126
+canonical_presentation_index = 434
+
+[436]
+f(x) = 4x + 4x^2 + 2x^5 + x^6 + x^9 + x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -126
+canonical_presentation_index = 433
+
+[437]
+f(x) = x + x^2 + 2x^5 + 2x^7 + 2x^8 + x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 297
+
+[438]
+f(x) = x + 2x^2 + 2x^5 + 3x^7 + x^8 + 2x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 298
+
+[439]
+f(x) = x + 3x^2 + 2x^5 + 3x^7 + 4x^8 + 3x^10 + x^12 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 298
+
+[440]
+f(x) = x + 4x^2 + 2x^5 + 2x^7 + 3x^8 + 4x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 297
+
+[441]
+f(x) = x + x^2 + 3x^6 + 3x^7 + 4x^8 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 198
+
+[442]
+f(x) = x + 2x^2 + x^6 + 2x^7 + 2x^8 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 197
+
+[443]
+f(x) = x + 3x^2 + 4x^6 + 2x^7 + 3x^8 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 197
+
+[444]
+f(x) = x + 4x^2 + 2x^6 + 3x^7 + x^8 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 198
+
+[445]
+f(x) = 4x + x^3 + x^4 + 4x^5 + x^8 + 3x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = -126
+canonical_presentation_index = 433
+
+[446]
+f(x) = 4x + x^3 + 4x^4 + 4x^5 + 4x^8 + 3x^9 + x^12 + x^13
+middle_coefficient_a_6 = -126
+canonical_presentation_index = 433
+
+[447]
+f(x) = 4x + 4x^3 + 2x^4 + 4x^5 + 2x^8 + 3x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = -126
+canonical_presentation_index = 434
+
+[448]
+f(x) = 4x + 4x^3 + 3x^4 + 4x^5 + 3x^8 + 3x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = -126
+canonical_presentation_index = 434
+
+[449]
+f(x) = 4x + 2x^3 + x^4 + x^5 + 4x^9 + 2x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 261
+
+[450]
+f(x) = 4x + 2x^3 + 4x^4 + x^5 + 4x^9 + 3x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 261
+
+[451]
+f(x) = 4x + 3x^3 + 2x^4 + x^5 + 4x^9 + x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 261
+
+[452]
+f(x) = 4x + 3x^3 + 3x^4 + x^5 + 4x^9 + 4x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 261
+
+[453]
+f(x) = 4x + 2x^3 + 2x^4 + 3x^5 + x^9 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 74
+canonical_presentation_index = 378
+
+[454]
+f(x) = 4x + 2x^3 + 3x^4 + 3x^5 + x^9 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 74
+canonical_presentation_index = 378
+
+[455]
+f(x) = 4x + 3x^3 + x^4 + 3x^5 + x^9 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 74
+canonical_presentation_index = 377
+
+[456]
+f(x) = 4x + 3x^3 + 4x^4 + 3x^5 + x^9 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = 74
+canonical_presentation_index = 377
+
+[457]
+f(x) = x + x^3 + 2x^4 + x^6 + x^8 + 3x^9 + 3x^10 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 285
+
+[458]
+f(x) = x + x^3 + 3x^4 + 4x^6 + 4x^8 + 3x^9 + 2x^10 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 285
+
+[459]
+f(x) = x + 4x^3 + x^4 + 2x^6 + 3x^8 + 3x^9 + x^10 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 286
+
+[460]
+f(x) = x + 4x^3 + 4x^4 + 3x^6 + 2x^8 + 3x^9 + 4x^10 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 286
+
+[461]
+f(x) = 4x + x^3 + x^4 + 4x^7 + 3x^8 + 4x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 421
+
+[462]
+f(x) = 4x + x^3 + 4x^4 + 4x^7 + 2x^8 + x^10 + x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 421
+
+[463]
+f(x) = 4x + 4x^3 + 2x^4 + x^7 + x^8 + 2x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 422
+
+[464]
+f(x) = 4x + 4x^3 + 3x^4 + x^7 + 4x^8 + 3x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 422
+
+[465]
+f(x) = x + x^4 + 3x^5 + 3x^6 + 2x^8 + x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 286
+
+[466]
+f(x) = x + 2x^4 + 3x^5 + 4x^6 + 4x^8 + 3x^10 + x^11 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 285
+
+[467]
+f(x) = x + 3x^4 + 3x^5 + x^6 + x^8 + 2x^10 + x^11 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 285
+
+[468]
+f(x) = x + 4x^4 + 3x^5 + 2x^6 + 3x^8 + 4x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 286
+
+[469]
+f(x) = 3x + x^4 + 2x^5 + x^8 + 2x^10 + x^11 + x^12 + x^13
+middle_coefficient_a_6 = 36
+canonical_presentation_index = 361
+
+[470]
+f(x) = 3x + 2x^4 + 2x^5 + 2x^8 + x^10 + 4x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 36
+canonical_presentation_index = 362
+
+[471]
+f(x) = 3x + 3x^4 + 2x^5 + 3x^8 + 4x^10 + 4x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 36
+canonical_presentation_index = 362
+
+[472]
+f(x) = 3x + 4x^4 + 2x^5 + 4x^8 + 3x^10 + x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 36
+canonical_presentation_index = 361
+
+[473]
+f(x) = 4x + x^4 + 4x^6 + 4x^7 + 3x^8 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -54
+canonical_presentation_index = 304
+
+[474]
+f(x) = 4x + 2x^4 + 2x^6 + x^7 + x^8 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -54
+canonical_presentation_index = 302
+
+[475]
+f(x) = 4x + 3x^4 + 3x^6 + x^7 + 4x^8 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -54
+canonical_presentation_index = 302
+
+[476]
+f(x) = 4x + 4x^4 + x^6 + 4x^7 + 2x^8 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = -54
+canonical_presentation_index = 304
+
+[477]
+f(x) = x + 4x^5 + x^6 + 3x^7 + 4x^8 + 4x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -42
+canonical_presentation_index = 413
+
+[478]
+f(x) = x + 4x^5 + 2x^6 + 2x^7 + 2x^8 + 3x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -42
+canonical_presentation_index = 414
+
+[479]
+f(x) = x + 4x^5 + 3x^6 + 2x^7 + 3x^8 + 2x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -42
+canonical_presentation_index = 414
+
+[480]
+f(x) = x + 4x^5 + 4x^6 + 3x^7 + x^8 + x^10 + x^12 + x^13
+middle_coefficient_a_6 = -42
+canonical_presentation_index = 413
+
+[481]
+f(x) = x + 4x^5 + x^7 + 2x^9 + 2x^10 + 4x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 22
+canonical_presentation_index = 357
+
+[482]
+f(x) = x + 4x^5 + x^7 + 2x^9 + 3x^10 + 4x^11 + x^12 + x^13
+middle_coefficient_a_6 = 22
+canonical_presentation_index = 357
+
+[483]
+f(x) = x + 4x^5 + 4x^7 + 2x^9 + x^10 + x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 22
+canonical_presentation_index = 358
+
+[484]
+f(x) = x + 4x^5 + 4x^7 + 2x^9 + 4x^10 + x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 22
+canonical_presentation_index = 358
+
+[485]
+f(x) = 1 + 2x + x^2 + x^3 + 2x^4 + 4x^5 + 4x^6 + 2x^11 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 485
+
+[486]
+f(x) = 2 + 2x + 3x^2 + 4x^3 + 4x^4 + 4x^5 + 2x^6 + 3x^11 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 486
+
+[487]
+f(x) = 3 + 2x + 2x^2 + 4x^3 + x^4 + 4x^5 + 3x^6 + 3x^11 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 486
+
+[488]
+f(x) = 4 + 2x + 4x^2 + x^3 + 3x^4 + 4x^5 + x^6 + 2x^11 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 485
+
+[489]
+f(x) = 1 + x + 4x^2 + 3x^3 + 2x^4 + 4x^5 + 4x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 489
+
+[490]
+f(x) = 2 + x + 2x^2 + 2x^3 + 4x^4 + 4x^5 + 4x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 490
+
+[491]
+f(x) = 3 + x + 3x^2 + 2x^3 + x^4 + 4x^5 + 4x^9 + x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 490
+
+[492]
+f(x) = 4 + x + x^2 + 3x^3 + 3x^4 + 4x^5 + 4x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 489
+
+[493]
+f(x) = 1 + 3x + 2x^2 + 4x^3 + x^4 + 2x^6 + 4x^7 + 2x^9 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 493
+
+[494]
+f(x) = 2 + 3x + x^2 + x^3 + 2x^4 + x^6 + x^7 + 2x^9 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 494
+
+[495]
+f(x) = 3 + 3x + 4x^2 + x^3 + 3x^4 + 4x^6 + x^7 + 2x^9 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 494
+
+[496]
+f(x) = 4 + 3x + 3x^2 + 4x^3 + 4x^4 + 3x^6 + 4x^7 + 2x^9 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 493
+
+[497]
+f(x) = 1 + 2x + 2x^2 + 2x^3 + x^4 + 4x^7 + 3x^8 + 3x^9 + x^13
+middle_coefficient_a_6 = 38
+canonical_presentation_index = 497
+
+[498]
+f(x) = 2 + 2x + x^2 + 3x^3 + 2x^4 + x^7 + x^8 + 3x^9 + x^13
+middle_coefficient_a_6 = 38
+canonical_presentation_index = 498
+
+[499]
+f(x) = 3 + 2x + 4x^2 + 3x^3 + 3x^4 + x^7 + 4x^8 + 3x^9 + x^13
+middle_coefficient_a_6 = 38
+canonical_presentation_index = 498
+
+[500]
+f(x) = 4 + 2x + 3x^2 + 2x^3 + 4x^4 + 4x^7 + 2x^8 + 3x^9 + x^13
+middle_coefficient_a_6 = 38
+canonical_presentation_index = 497
+
+[501]
+f(x) = 1 + 2x + 4x^2 + 4x^3 + 4x^4 + 2x^7 + 3x^8 + 4x^12 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 28
+
+[502]
+f(x) = 2 + 2x + 2x^2 + x^3 + 3x^4 + 3x^7 + x^8 + 3x^12 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 27
+
+[503]
+f(x) = 3 + 2x + 3x^2 + x^3 + 2x^4 + 3x^7 + 4x^8 + 2x^12 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 27
+
+[504]
+f(x) = 4 + 2x + x^2 + 4x^3 + x^4 + 2x^7 + 2x^8 + x^12 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 28
+
+[505]
+f(x) = 1 + 2x + 3x^2 + 4x^3 + 4x^4 + 3x^7 + 3x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 505
+
+[506]
+f(x) = 2 + 2x + 4x^2 + x^3 + 3x^4 + 2x^7 + 4x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 505
+
+[507]
+f(x) = 3 + 2x + x^2 + x^3 + 2x^4 + 2x^7 + x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 505
+
+[508]
+f(x) = 4 + 2x + 2x^2 + 4x^3 + x^4 + 3x^7 + 2x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 505
+
+[509]
+f(x) = 1 + 3x + 2x^2 + 4x^3 + x^4 + 4x^7 + 2x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 134
+canonical_presentation_index = 509
+
+[510]
+f(x) = 2 + 3x + x^2 + x^3 + 2x^4 + x^7 + x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 134
+canonical_presentation_index = 510
+
+[511]
+f(x) = 3 + 3x + 4x^2 + x^3 + 3x^4 + x^7 + 4x^10 + x^12 + x^13
+middle_coefficient_a_6 = 134
+canonical_presentation_index = 510
+
+[512]
+f(x) = 4 + 3x + 3x^2 + 4x^3 + 4x^4 + 4x^7 + 3x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 134
+canonical_presentation_index = 509
+
+[513]
+f(x) = 1 + 3x + 3x^2 + x^3 + 2x^4 + 4x^8 + 2x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = 194
+canonical_presentation_index = 513
+
+[514]
+f(x) = 2 + 3x + 4x^2 + 4x^3 + 4x^4 + 3x^8 + 2x^9 + x^12 + x^13
+middle_coefficient_a_6 = 194
+canonical_presentation_index = 514
+
+[515]
+f(x) = 3 + 3x + x^2 + 4x^3 + x^4 + 2x^8 + 2x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = 194
+canonical_presentation_index = 514
+
+[516]
+f(x) = 4 + 3x + 2x^2 + x^3 + 3x^4 + x^8 + 2x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = 194
+canonical_presentation_index = 513
+
+[517]
+f(x) = 1 + 4x + 4x^2 + 2x^3 + x^4 + 4x^9 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 517
+
+[518]
+f(x) = 2 + 4x + 2x^2 + 3x^3 + 2x^4 + 4x^9 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 517
+
+[519]
+f(x) = 3 + 4x + 3x^2 + 3x^3 + 3x^4 + 4x^9 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 517
+
+[520]
+f(x) = 4 + 4x + x^2 + 2x^3 + 4x^4 + 4x^9 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 517
+
+[521]
+f(x) = 1 + 3x + 4x^2 + 2x^3 + 2x^5 + 2x^6 + 2x^8 + x^11 + x^13
+middle_coefficient_a_6 = -146
+canonical_presentation_index = 370
+
+[522]
+f(x) = 2 + 3x + 2x^2 + 3x^3 + 2x^5 + x^6 + 4x^8 + 4x^11 + x^13
+middle_coefficient_a_6 = -146
+canonical_presentation_index = 369
+
+[523]
+f(x) = 3 + 3x + 3x^2 + 3x^3 + 2x^5 + 4x^6 + x^8 + 4x^11 + x^13
+middle_coefficient_a_6 = -146
+canonical_presentation_index = 369
+
+[524]
+f(x) = 4 + 3x + x^2 + 2x^3 + 2x^5 + 3x^6 + 3x^8 + x^11 + x^13
+middle_coefficient_a_6 = -146
+canonical_presentation_index = 370
+
+[525]
+f(x) = 1 + x + x^2 + 2x^3 + 3x^5 + 3x^6 + 4x^9 + x^12 + x^13
+middle_coefficient_a_6 = 2
+canonical_presentation_index = 525
+
+[526]
+f(x) = 2 + x + 3x^2 + 3x^3 + 3x^5 + 4x^6 + 4x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = 2
+canonical_presentation_index = 526
+
+[527]
+f(x) = 3 + x + 2x^2 + 3x^3 + 3x^5 + x^6 + 4x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = 2
+canonical_presentation_index = 526
+
+[528]
+f(x) = 4 + x + 4x^2 + 2x^3 + 3x^5 + 2x^6 + 4x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = 2
+canonical_presentation_index = 525
+
+[529]
+f(x) = 1 + 2x + x^2 + x^3 + 4x^5 + 3x^7 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 173
+
+[530]
+f(x) = 1 + 4x + x^2 + 3x^3 + 2x^5 + 4x^7 + 4x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -82
+canonical_presentation_index = 149
+
+[531]
+f(x) = 2 + 2x + 3x^2 + 4x^3 + 4x^5 + 2x^7 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 174
+
+[532]
+f(x) = 2 + 4x + 3x^2 + 2x^3 + 2x^5 + x^7 + x^11 + x^12 + x^13
+middle_coefficient_a_6 = -82
+canonical_presentation_index = 150
+
+[533]
+f(x) = 3 + 2x + 2x^2 + 4x^3 + 4x^5 + 2x^7 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 174
+
+[534]
+f(x) = 3 + 4x + 2x^2 + 2x^3 + 2x^5 + x^7 + x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -82
+canonical_presentation_index = 150
+
+[535]
+f(x) = 4 + 2x + 4x^2 + x^3 + 4x^5 + 3x^7 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 173
+
+[536]
+f(x) = 4 + 4x + 4x^2 + 3x^3 + 2x^5 + 4x^7 + 4x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -82
+canonical_presentation_index = 149
+
+[537]
+f(x) = 1 + x + x^2 + 3x^3 + 4x^5 + 4x^8 + 4x^9 + x^11 + x^13
+middle_coefficient_a_6 = -6
+canonical_presentation_index = 537
+
+[538]
+f(x) = 2 + x + 3x^2 + 2x^3 + 4x^5 + 3x^8 + 4x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = -6
+canonical_presentation_index = 537
+
+[539]
+f(x) = 3 + x + 2x^2 + 2x^3 + 4x^5 + 2x^8 + 4x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = -6
+canonical_presentation_index = 537
+
+[540]
+f(x) = 4 + x + 4x^2 + 3x^3 + 4x^5 + x^8 + 4x^9 + x^11 + x^13
+middle_coefficient_a_6 = -6
+canonical_presentation_index = 537
+
+[541]
+f(x) = 1 + 2x + 4x^2 + 3x^3 + 3x^5 + 4x^8 + 3x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 42
+
+[542]
+f(x) = 2 + 2x + 2x^2 + 2x^3 + 3x^5 + 3x^8 + 4x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 41
+
+[543]
+f(x) = 3 + 2x + 3x^2 + 2x^3 + 3x^5 + 2x^8 + x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 41
+
+[544]
+f(x) = 4 + 2x + x^2 + 3x^3 + 3x^5 + x^8 + 2x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 42
+
+[545]
+f(x) = 1 + 3x + 2x^2 + 4x^3 + 4x^5 + 4x^8 + 4x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 198
+canonical_presentation_index = 545
+
+[546]
+f(x) = 2 + 3x + x^2 + x^3 + 4x^5 + 3x^8 + 2x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 198
+canonical_presentation_index = 546
+
+[547]
+f(x) = 3 + 3x + 4x^2 + x^3 + 4x^5 + 2x^8 + 3x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 198
+canonical_presentation_index = 546
+
+[548]
+f(x) = 4 + 3x + 3x^2 + 4x^3 + 4x^5 + x^8 + x^10 + x^12 + x^13
+middle_coefficient_a_6 = 198
+canonical_presentation_index = 545
+
+[549]
+f(x) = 1 + 3x + 4x^2 + 2x^3 + x^6 + 4x^7 + 3x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 549
+
+[550]
+f(x) = 2 + 3x + 2x^2 + 3x^3 + 3x^6 + x^7 + 3x^9 + x^11 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 550
+
+[551]
+f(x) = 3 + 3x + 3x^2 + 3x^3 + 2x^6 + x^7 + 3x^9 + x^11 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 550
+
+[552]
+f(x) = 4 + 3x + x^2 + 2x^3 + 4x^6 + 4x^7 + 3x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 549
+
+[553]
+f(x) = 1 + x + 3x^2 + 3x^3 + x^6 + 3x^8 + 3x^9 + x^12 + x^13
+middle_coefficient_a_6 = 26
+canonical_presentation_index = 553
+
+[554]
+f(x) = 2 + x + 4x^2 + 2x^3 + 3x^6 + x^8 + 3x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = 26
+canonical_presentation_index = 553
+
+[555]
+f(x) = 3 + x + x^2 + 2x^3 + 2x^6 + 4x^8 + 3x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = 26
+canonical_presentation_index = 553
+
+[556]
+f(x) = 4 + x + 2x^2 + 3x^3 + 4x^6 + 2x^8 + 3x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = 26
+canonical_presentation_index = 553
+
+[557]
+f(x) = 1 + 4x + 4x^2 + x^3 + x^6 + 3x^9 + 4x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 557
+
+[558]
+f(x) = 2 + 4x + 2x^2 + 4x^3 + 3x^6 + 3x^9 + 2x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 558
+
+[559]
+f(x) = 3 + 4x + 3x^2 + 4x^3 + 2x^6 + 3x^9 + 3x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 558
+
+[560]
+f(x) = 4 + 4x + x^2 + x^3 + 4x^6 + 3x^9 + x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 557
+
+[561]
+f(x) = 1 + x + x^2 + 4x^3 + x^6 + 2x^9 + 3x^10 + x^12 + x^13
+middle_coefficient_a_6 = 154
+canonical_presentation_index = 561
+
+[562]
+f(x) = 1 + 4x + 4x^2 + 2x^3 + x^6 + 4x^9 + x^10 + x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 562
+
+[563]
+f(x) = 2 + x + 3x^2 + x^3 + 3x^6 + 2x^9 + 4x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 154
+canonical_presentation_index = 563
+
+[564]
+f(x) = 2 + 4x + 2x^2 + 3x^3 + 3x^6 + 4x^9 + 3x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 564
+
+[565]
+f(x) = 3 + x + 2x^2 + x^3 + 2x^6 + 2x^9 + x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 154
+canonical_presentation_index = 563
+
+[566]
+f(x) = 3 + 4x + 3x^2 + 3x^3 + 2x^6 + 4x^9 + 2x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 564
+
+[567]
+f(x) = 4 + x + 4x^2 + 4x^3 + 4x^6 + 2x^9 + 2x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 154
+canonical_presentation_index = 561
+
+[568]
+f(x) = 4 + 4x + x^2 + 2x^3 + 4x^6 + 4x^9 + 4x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 562
+
+[569]
+f(x) = 1 + 4x + 2x^2 + x^3 + 2x^6 + 4x^9 + 4x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 569
+
+[570]
+f(x) = 2 + 4x + x^2 + 4x^3 + x^6 + 4x^9 + x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 570
+
+[571]
+f(x) = 3 + 4x + 4x^2 + 4x^3 + 4x^6 + 4x^9 + x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 570
+
+[572]
+f(x) = 4 + 4x + 3x^2 + x^3 + 3x^6 + 4x^9 + 4x^11 + x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 569
+
+[573]
+f(x) = 1 + 3x + 3x^2 + 2x^3 + x^7 + 3x^8 + x^9 + 2x^10 + x^13
+middle_coefficient_a_6 = -148
+canonical_presentation_index = 573
+
+[574]
+f(x) = 2 + 3x + 4x^2 + 3x^3 + 4x^7 + x^8 + x^9 + x^10 + x^13
+middle_coefficient_a_6 = -148
+canonical_presentation_index = 574
+
+[575]
+f(x) = 3 + 3x + x^2 + 3x^3 + 4x^7 + 4x^8 + x^9 + 4x^10 + x^13
+middle_coefficient_a_6 = -148
+canonical_presentation_index = 574
+
+[576]
+f(x) = 4 + 3x + 2x^2 + 2x^3 + x^7 + 2x^8 + x^9 + 3x^10 + x^13
+middle_coefficient_a_6 = -148
+canonical_presentation_index = 573
+
+[577]
+f(x) = 1 + 4x + x^2 + 2x^3 + 2x^7 + 4x^9 + x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = 106
+canonical_presentation_index = 577
+
+[578]
+f(x) = 2 + 4x + 3x^2 + 3x^3 + 3x^7 + 4x^9 + 3x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = 106
+canonical_presentation_index = 578
+
+[579]
+f(x) = 3 + 4x + 2x^2 + 3x^3 + 3x^7 + 4x^9 + 2x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = 106
+canonical_presentation_index = 578
+
+[580]
+f(x) = 4 + 4x + 4x^2 + 2x^3 + 2x^7 + 4x^9 + 4x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = 106
+canonical_presentation_index = 577
+
+[581]
+f(x) = 1 + 2x + 3x^2 + 3x^4 + 4x^5 + 2x^6 + 3x^7 + 3x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 581
+
+[582]
+f(x) = 2 + 2x + 4x^2 + x^4 + 4x^5 + x^6 + 2x^7 + x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 582
+
+[583]
+f(x) = 3 + 2x + x^2 + 4x^4 + 4x^5 + 4x^6 + 2x^7 + 4x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 582
+
+[584]
+f(x) = 4 + 2x + 2x^2 + 2x^4 + 4x^5 + 3x^6 + 3x^7 + 2x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 581
+
+[585]
+f(x) = 1 + x + x^2 + x^4 + x^5 + 4x^6 + 2x^8 + x^9 + x^13
+middle_coefficient_a_6 = 0
+canonical_presentation_index = 585
+
+[586]
+f(x) = 2 + x + 3x^2 + 2x^4 + x^5 + 2x^6 + 4x^8 + x^9 + x^13
+middle_coefficient_a_6 = 0
+canonical_presentation_index = 586
+
+[587]
+f(x) = 3 + x + 2x^2 + 3x^4 + x^5 + 3x^6 + x^8 + x^9 + x^13
+middle_coefficient_a_6 = 0
+canonical_presentation_index = 586
+
+[588]
+f(x) = 4 + x + 4x^2 + 4x^4 + x^5 + x^6 + 3x^8 + x^9 + x^13
+middle_coefficient_a_6 = 0
+canonical_presentation_index = 585
+
+[589]
+f(x) = 1 + 4x + 4x^2 + x^4 + 3x^5 + 4x^7 + 4x^9 + x^12 + x^13
+middle_coefficient_a_6 = 26
+canonical_presentation_index = 589
+
+[590]
+f(x) = 2 + 4x + 2x^2 + 2x^4 + 3x^5 + x^7 + 4x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = 26
+canonical_presentation_index = 589
+
+[591]
+f(x) = 3 + 4x + 3x^2 + 3x^4 + 3x^5 + x^7 + 4x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = 26
+canonical_presentation_index = 589
+
+[592]
+f(x) = 4 + 4x + x^2 + 4x^4 + 3x^5 + 4x^7 + 4x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = 26
+canonical_presentation_index = 589
+
+[593]
+f(x) = 1 + 3x + 2x^2 + 2x^4 + 3x^5 + 3x^7 + x^11 + x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 494
+
+[594]
+f(x) = 2 + 3x + x^2 + 4x^4 + 3x^5 + 2x^7 + 4x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 493
+
+[595]
+f(x) = 3 + 3x + 4x^2 + x^4 + 3x^5 + 2x^7 + 4x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 493
+
+[596]
+f(x) = 4 + 3x + 3x^2 + 3x^4 + 3x^5 + 3x^7 + x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 494
+
+[597]
+f(x) = 1 + x + x^2 + 4x^4 + 4x^5 + 2x^8 + 4x^10 + x^11 + x^13
+middle_coefficient_a_6 = 110
+canonical_presentation_index = 597
+
+[598]
+f(x) = 2 + x + 3x^2 + 3x^4 + 4x^5 + 4x^8 + 2x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 110
+canonical_presentation_index = 598
+
+[599]
+f(x) = 3 + x + 2x^2 + 2x^4 + 4x^5 + x^8 + 3x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 110
+canonical_presentation_index = 598
+
+[600]
+f(x) = 4 + x + 4x^2 + x^4 + 4x^5 + 3x^8 + x^10 + x^11 + x^13
+middle_coefficient_a_6 = 110
+canonical_presentation_index = 597
+
+[601]
+f(x) = 1 + 3x + 3x^2 + 3x^4 + 2x^5 + 3x^8 + 2x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 601
+
+[602]
+f(x) = 1 + 4x + 3x^2 + 2x^4 + x^5 + 4x^8 + x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 581
+
+[603]
+f(x) = 2 + 3x + 4x^2 + x^4 + 2x^5 + x^8 + x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 603
+
+[604]
+f(x) = 2 + 4x + 4x^2 + 4x^4 + x^5 + 3x^8 + 3x^10 + x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 582
+
+[605]
+f(x) = 3 + 3x + x^2 + 4x^4 + 2x^5 + 4x^8 + 4x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 603
+
+[606]
+f(x) = 3 + 4x + x^2 + x^4 + x^5 + 2x^8 + 2x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 582
+
+[607]
+f(x) = 4 + 3x + 2x^2 + 2x^4 + 2x^5 + 2x^8 + 3x^10 + x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 601
+
+[608]
+f(x) = 4 + 4x + 2x^2 + 3x^4 + x^5 + x^8 + 4x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 581
+
+[609]
+f(x) = 1 + 3x + x^2 + 4x^4 + 4x^6 + x^9 + x^10 + x^11 + x^13
+middle_coefficient_a_6 = 122
+canonical_presentation_index = 609
+
+[610]
+f(x) = 2 + 3x + 3x^2 + 3x^4 + 2x^6 + x^9 + 3x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 122
+canonical_presentation_index = 609
+
+[611]
+f(x) = 3 + 3x + 2x^2 + 2x^4 + 3x^6 + x^9 + 2x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 122
+canonical_presentation_index = 609
+
+[612]
+f(x) = 4 + 3x + 4x^2 + x^4 + x^6 + x^9 + 4x^10 + x^11 + x^13
+middle_coefficient_a_6 = 122
+canonical_presentation_index = 609
+
+[613]
+f(x) = 1 + 3x + x^2 + 3x^4 + 3x^7 + x^8 + x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 613
+
+[614]
+f(x) = 2 + 3x + 3x^2 + x^4 + 2x^7 + 2x^8 + x^9 + x^11 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 614
+
+[615]
+f(x) = 3 + 3x + 2x^2 + 4x^4 + 2x^7 + 3x^8 + x^9 + x^11 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 614
+
+[616]
+f(x) = 4 + 3x + 4x^2 + 2x^4 + 3x^7 + 4x^8 + x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 613
+
+[617]
+f(x) = 1 + x + 2x^2 + x^4 + 4x^7 + 4x^8 + 2x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 58
+canonical_presentation_index = 425
+
+[618]
+f(x) = 2 + x + x^2 + 2x^4 + x^7 + 3x^8 + x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 58
+canonical_presentation_index = 425
+
+[619]
+f(x) = 3 + x + 4x^2 + 3x^4 + x^7 + 2x^8 + 4x^10 + x^12 + x^13
+middle_coefficient_a_6 = 58
+canonical_presentation_index = 425
+
+[620]
+f(x) = 4 + x + 3x^2 + 4x^4 + 4x^7 + x^8 + 3x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 58
+canonical_presentation_index = 425
+
+[621]
+f(x) = 1 + x + 3x^2 + 2x^4 + x^8 + 2x^9 + 3x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = 250
+canonical_presentation_index = 621
+
+[622]
+f(x) = 2 + x + 4x^2 + 4x^4 + 2x^8 + 2x^9 + 4x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = 250
+canonical_presentation_index = 622
+
+[623]
+f(x) = 3 + x + x^2 + x^4 + 3x^8 + 2x^9 + x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = 250
+canonical_presentation_index = 622
+
+[624]
+f(x) = 4 + x + 2x^2 + 3x^4 + 4x^8 + 2x^9 + 2x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = 250
+canonical_presentation_index = 621
+
+[625]
+f(x) = 1 + x + 2x^2 + 4x^5 + x^6 + x^7 + x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = -34
+canonical_presentation_index = 625
+
+[626]
+f(x) = 2 + x + x^2 + 4x^5 + 3x^6 + 4x^7 + x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = -34
+canonical_presentation_index = 626
+
+[627]
+f(x) = 3 + x + 4x^2 + 4x^5 + 2x^6 + 4x^7 + x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = -34
+canonical_presentation_index = 626
+
+[628]
+f(x) = 4 + x + 3x^2 + 4x^5 + 4x^6 + x^7 + x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = -34
+canonical_presentation_index = 625
+
+[629]
+f(x) = 1 + 2x + 3x^2 + 3x^5 + 4x^6 + x^7 + 4x^10 + x^11 + x^13
+middle_coefficient_a_6 = -56
+canonical_presentation_index = 629
+
+[630]
+f(x) = 2 + 2x + 4x^2 + 3x^5 + 2x^6 + 4x^7 + 2x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -56
+canonical_presentation_index = 630
+
+[631]
+f(x) = 3 + 2x + x^2 + 3x^5 + 3x^6 + 4x^7 + 3x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -56
+canonical_presentation_index = 630
+
+[632]
+f(x) = 4 + 2x + 2x^2 + 3x^5 + x^6 + x^7 + x^10 + x^11 + x^13
+middle_coefficient_a_6 = -56
+canonical_presentation_index = 629
+
+[633]
+f(x) = 1 + 3x + 4x^2 + 3x^5 + 4x^6 + 3x^8 + 4x^9 + 2x^10 + x^13
+middle_coefficient_a_6 = -172
+canonical_presentation_index = 633
+
+[634]
+f(x) = 2 + 3x + 2x^2 + 3x^5 + 2x^6 + x^8 + 4x^9 + x^10 + x^13
+middle_coefficient_a_6 = -172
+canonical_presentation_index = 634
+
+[635]
+f(x) = 3 + 3x + 3x^2 + 3x^5 + 3x^6 + 4x^8 + 4x^9 + 4x^10 + x^13
+middle_coefficient_a_6 = -172
+canonical_presentation_index = 634
+
+[636]
+f(x) = 4 + 3x + x^2 + 3x^5 + x^6 + 2x^8 + 4x^9 + 3x^10 + x^13
+middle_coefficient_a_6 = -172
+canonical_presentation_index = 633
+
+[637]
+f(x) = 1 + 4x + 3x^2 + x^5 + 3x^6 + 3x^8 + 3x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 197
+
+[638]
+f(x) = 2 + 4x + 4x^2 + x^5 + 4x^6 + x^8 + 4x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 198
+
+[639]
+f(x) = 3 + 4x + x^2 + x^5 + x^6 + 4x^8 + x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 198
+
+[640]
+f(x) = 4 + 4x + 2x^2 + x^5 + 2x^6 + 2x^8 + 2x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 197
+
+[641]
+f(x) = 1 + 3x + 2x^2 + 2x^5 + 4x^6 + 3x^8 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 293
+
+[642]
+f(x) = 2 + 3x + x^2 + 2x^5 + 2x^6 + x^8 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 293
+
+[643]
+f(x) = 3 + 3x + 4x^2 + 2x^5 + 3x^6 + 4x^8 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 293
+
+[644]
+f(x) = 4 + 3x + 3x^2 + 2x^5 + x^6 + 2x^8 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 293
+
+[645]
+f(x) = 1 + 2x + x^2 + 3x^5 + 4x^7 + x^8 + 3x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = 26
+canonical_presentation_index = 645
+
+[646]
+f(x) = 2 + 2x + 3x^2 + 3x^5 + x^7 + 2x^8 + 3x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = 26
+canonical_presentation_index = 646
+
+[647]
+f(x) = 3 + 2x + 2x^2 + 3x^5 + x^7 + 3x^8 + 3x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = 26
+canonical_presentation_index = 646
+
+[648]
+f(x) = 4 + 2x + 4x^2 + 3x^5 + 4x^7 + 4x^8 + 3x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = 26
+canonical_presentation_index = 645
+
+[649]
+f(x) = 1 + x + 4x^2 + x^5 + 4x^7 + 4x^8 + 4x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 649
+
+[650]
+f(x) = 2 + x + 2x^2 + x^5 + x^7 + 3x^8 + 4x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 650
+
+[651]
+f(x) = 3 + x + 3x^2 + x^5 + x^7 + 2x^8 + 4x^9 + x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 650
+
+[652]
+f(x) = 4 + x + x^2 + x^5 + 4x^7 + x^8 + 4x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 649
+
+[653]
+f(x) = 1 + x + 4x^2 + 2x^5 + x^7 + x^8 + 2x^10 + x^11 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 653
+
+[654]
+f(x) = 2 + x + 2x^2 + 2x^5 + 4x^7 + 2x^8 + x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 654
+
+[655]
+f(x) = 3 + x + 3x^2 + 2x^5 + 4x^7 + 3x^8 + 4x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 654
+
+[656]
+f(x) = 4 + x + x^2 + 2x^5 + x^7 + 4x^8 + 3x^10 + x^11 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 653
+
+[657]
+f(x) = 1 + 4x + 3x^2 + 3x^5 + 4x^7 + 2x^8 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -186
+canonical_presentation_index = 15
+
+[658]
+f(x) = 2 + 4x + 4x^2 + 3x^5 + x^7 + 4x^8 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = -186
+canonical_presentation_index = 15
+
+[659]
+f(x) = 3 + 4x + x^2 + 3x^5 + x^7 + x^8 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -186
+canonical_presentation_index = 15
+
+[660]
+f(x) = 4 + 4x + 2x^2 + 3x^5 + 4x^7 + 3x^8 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -186
+canonical_presentation_index = 15
+
+[661]
+f(x) = 1 + 3x + x^2 + 2x^5 + x^8 + 2x^9 + 4x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -166
+canonical_presentation_index = 661
+
+[662]
+f(x) = 2 + 3x + 3x^2 + 2x^5 + 2x^8 + 2x^9 + 2x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -166
+canonical_presentation_index = 661
+
+[663]
+f(x) = 3 + 3x + 2x^2 + 2x^5 + 3x^8 + 2x^9 + 3x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -166
+canonical_presentation_index = 661
+
+[664]
+f(x) = 4 + 3x + 4x^2 + 2x^5 + 4x^8 + 2x^9 + x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -166
+canonical_presentation_index = 661
+
+[665]
+f(x) = 1 + x + 4x^2 + 3x^7 + 4x^8 + 4x^10 + x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 141
+
+[666]
+f(x) = 2 + x + 2x^2 + 2x^7 + 3x^8 + 2x^10 + 4x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 142
+
+[667]
+f(x) = 3 + x + 3x^2 + 2x^7 + 2x^8 + 3x^10 + 4x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 142
+
+[668]
+f(x) = 4 + x + x^2 + 3x^7 + x^8 + x^10 + x^11 + x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 141
+
+[669]
+f(x) = 1 + 2x + x^3 + 3x^4 + x^5 + 4x^6 + x^7 + 2x^9 + x^13
+middle_coefficient_a_6 = 142
+canonical_presentation_index = 669
+
+[670]
+f(x) = 2 + 2x + 4x^3 + x^4 + x^5 + 2x^6 + 4x^7 + 2x^9 + x^13
+middle_coefficient_a_6 = 142
+canonical_presentation_index = 670
+
+[671]
+f(x) = 3 + 2x + 4x^3 + 4x^4 + x^5 + 3x^6 + 4x^7 + 2x^9 + x^13
+middle_coefficient_a_6 = 142
+canonical_presentation_index = 670
+
+[672]
+f(x) = 4 + 2x + x^3 + 2x^4 + x^5 + x^6 + x^7 + 2x^9 + x^13
+middle_coefficient_a_6 = 142
+canonical_presentation_index = 669
+
+[673]
+f(x) = 1 + 3x + 4x^3 + x^4 + 2x^5 + x^6 + 2x^7 + 4x^10 + x^13
+middle_coefficient_a_6 = -148
+canonical_presentation_index = 573
+
+[674]
+f(x) = 2 + 3x + x^3 + 2x^4 + 2x^5 + 3x^6 + 3x^7 + 2x^10 + x^13
+middle_coefficient_a_6 = -148
+canonical_presentation_index = 574
+
+[675]
+f(x) = 3 + 3x + x^3 + 3x^4 + 2x^5 + 2x^6 + 3x^7 + 3x^10 + x^13
+middle_coefficient_a_6 = -148
+canonical_presentation_index = 574
+
+[676]
+f(x) = 4 + 3x + 4x^3 + 4x^4 + 2x^5 + 4x^6 + 2x^7 + x^10 + x^13
+middle_coefficient_a_6 = -148
+canonical_presentation_index = 573
+
+[677]
+f(x) = 1 + 3x + 2x^3 + 4x^4 + 4x^5 + 2x^6 + 4x^7 + x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 677
+
+[678]
+f(x) = 2 + 3x + 3x^3 + 3x^4 + 4x^5 + x^6 + x^7 + 2x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 678
+
+[679]
+f(x) = 3 + 3x + 3x^3 + 2x^4 + 4x^5 + 4x^6 + x^7 + 3x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 678
+
+[680]
+f(x) = 4 + 3x + 2x^3 + x^4 + 4x^5 + 3x^6 + 4x^7 + 4x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 677
+
+[681]
+f(x) = 1 + x + 4x^3 + x^4 + 3x^5 + x^6 + x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = 142
+canonical_presentation_index = 669
+
+[682]
+f(x) = 2 + x + x^3 + 2x^4 + 3x^5 + 3x^6 + x^9 + x^11 + x^13
+middle_coefficient_a_6 = 142
+canonical_presentation_index = 670
+
+[683]
+f(x) = 3 + x + x^3 + 3x^4 + 3x^5 + 2x^6 + x^9 + x^11 + x^13
+middle_coefficient_a_6 = 142
+canonical_presentation_index = 670
+
+[684]
+f(x) = 4 + x + 4x^3 + 4x^4 + 3x^5 + 4x^6 + x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = 142
+canonical_presentation_index = 669
+
+[685]
+f(x) = 1 + 2x + x^3 + 3x^4 + 2x^5 + x^6 + 4x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = 62
+canonical_presentation_index = 685
+
+[686]
+f(x) = 2 + 2x + 4x^3 + x^4 + 2x^5 + 3x^6 + 2x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = 62
+canonical_presentation_index = 686
+
+[687]
+f(x) = 3 + 2x + 4x^3 + 4x^4 + 2x^5 + 2x^6 + 3x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = 62
+canonical_presentation_index = 686
+
+[688]
+f(x) = 4 + 2x + x^3 + 2x^4 + 2x^5 + 4x^6 + x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = 62
+canonical_presentation_index = 685
+
+[689]
+f(x) = 1 + 3x + 4x^3 + 4x^4 + x^5 + 3x^6 + 2x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 221
+
+[690]
+f(x) = 1 + 4x + 4x^3 + 3x^4 + 3x^5 + 3x^6 + x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -122
+canonical_presentation_index = 690
+
+[691]
+f(x) = 2 + 3x + x^3 + 3x^4 + x^5 + 4x^6 + x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 222
+
+[692]
+f(x) = 2 + 4x + x^3 + x^4 + 3x^5 + 4x^6 + 3x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -122
+canonical_presentation_index = 692
+
+[693]
+f(x) = 3 + 3x + x^3 + 2x^4 + x^5 + x^6 + 4x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 222
+
+[694]
+f(x) = 3 + 4x + x^3 + 4x^4 + 3x^5 + x^6 + 2x^10 + x^12 + x^13
+middle_coefficient_a_6 = -122
+canonical_presentation_index = 692
+
+[695]
+f(x) = 4 + 3x + 4x^3 + x^4 + x^5 + 2x^6 + 3x^10 + x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 221
+
+[696]
+f(x) = 4 + 4x + 4x^3 + 2x^4 + 3x^5 + 2x^6 + 4x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -122
+canonical_presentation_index = 690
+
+[697]
+f(x) = 1 + 4x + 3x^3 + 4x^4 + x^5 + 2x^7 + 4x^8 + 2x^12 + x^13
+middle_coefficient_a_6 = 208
+canonical_presentation_index = 697
+
+[698]
+f(x) = 2 + 4x + 2x^3 + 3x^4 + x^5 + 3x^7 + 3x^8 + 4x^12 + x^13
+middle_coefficient_a_6 = 208
+canonical_presentation_index = 698
+
+[699]
+f(x) = 3 + 4x + 2x^3 + 2x^4 + x^5 + 3x^7 + 2x^8 + x^12 + x^13
+middle_coefficient_a_6 = 208
+canonical_presentation_index = 698
+
+[700]
+f(x) = 4 + 4x + 3x^3 + x^4 + x^5 + 2x^7 + x^8 + 3x^12 + x^13
+middle_coefficient_a_6 = 208
+canonical_presentation_index = 697
+
+[701]
+f(x) = 1 + 3x + 4x^3 + 2x^4 + 3x^5 + 4x^7 + 2x^9 + x^11 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 701
+
+[702]
+f(x) = 2 + 3x + x^3 + 4x^4 + 3x^5 + x^7 + 2x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 702
+
+[703]
+f(x) = 3 + 3x + x^3 + x^4 + 3x^5 + x^7 + 2x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 702
+
+[704]
+f(x) = 4 + 3x + 4x^3 + 3x^4 + 3x^5 + 4x^7 + 2x^9 + x^11 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 701
+
+[705]
+f(x) = 1 + 3x + 3x^3 + x^4 + 2x^5 + 2x^7 + 4x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -2
+canonical_presentation_index = 705
+
+[706]
+f(x) = 2 + 3x + 2x^3 + 2x^4 + 2x^5 + 3x^7 + 2x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -2
+canonical_presentation_index = 706
+
+[707]
+f(x) = 3 + 3x + 2x^3 + 3x^4 + 2x^5 + 3x^7 + 3x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -2
+canonical_presentation_index = 706
+
+[708]
+f(x) = 4 + 3x + 3x^3 + 4x^4 + 2x^5 + 2x^7 + x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -2
+canonical_presentation_index = 705
+
+[709]
+f(x) = 1 + 4x + 2x^3 + 4x^4 + 4x^5 + x^7 + x^10 + x^12 + x^13
+middle_coefficient_a_6 = 76
+canonical_presentation_index = 709
+
+[710]
+f(x) = 2 + 4x + 3x^3 + 3x^4 + 4x^5 + 4x^7 + 3x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 76
+canonical_presentation_index = 710
+
+[711]
+f(x) = 3 + 4x + 3x^3 + 2x^4 + 4x^5 + 4x^7 + 2x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 76
+canonical_presentation_index = 710
+
+[712]
+f(x) = 4 + 4x + 2x^3 + x^4 + 4x^5 + x^7 + 4x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 76
+canonical_presentation_index = 709
+
+[713]
+f(x) = 1 + x + 2x^3 + x^4 + 4x^5 + 3x^8 + 4x^9 + x^10 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 713
+
+[714]
+f(x) = 2 + x + 3x^3 + 2x^4 + 4x^5 + x^8 + 4x^9 + 3x^10 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 714
+
+[715]
+f(x) = 3 + x + 3x^3 + 3x^4 + 4x^5 + 4x^8 + 4x^9 + 2x^10 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 714
+
+[716]
+f(x) = 4 + x + 2x^3 + 4x^4 + 4x^5 + 2x^8 + 4x^9 + 4x^10 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 713
+
+[717]
+f(x) = 1 + x + 4x^3 + 2x^4 + 2x^6 + 2x^7 + x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 717
+
+[718]
+f(x) = 2 + x + x^3 + 4x^4 + x^6 + 3x^7 + x^9 + x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 718
+
+[719]
+f(x) = 3 + x + x^3 + x^4 + 4x^6 + 3x^7 + x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 718
+
+[720]
+f(x) = 4 + x + 4x^3 + 3x^4 + 3x^6 + 2x^7 + x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 717
+
+[721]
+f(x) = 1 + 3x + x^3 + 4x^4 + 2x^6 + x^8 + 3x^9 + 2x^10 + x^13
+middle_coefficient_a_6 = -86
+canonical_presentation_index = 721
+
+[722]
+f(x) = 2 + 3x + 4x^3 + 3x^4 + x^6 + 2x^8 + 3x^9 + x^10 + x^13
+middle_coefficient_a_6 = -86
+canonical_presentation_index = 722
+
+[723]
+f(x) = 3 + 3x + 4x^3 + 2x^4 + 4x^6 + 3x^8 + 3x^9 + 4x^10 + x^13
+middle_coefficient_a_6 = -86
+canonical_presentation_index = 722
+
+[724]
+f(x) = 4 + 3x + x^3 + x^4 + 3x^6 + 4x^8 + 3x^9 + 3x^10 + x^13
+middle_coefficient_a_6 = -86
+canonical_presentation_index = 721
+
+[725]
+f(x) = 1 + 2x + 2x^3 + 3x^4 + x^6 + 2x^8 + 2x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 725
+
+[726]
+f(x) = 2 + 2x + 3x^3 + x^4 + 3x^6 + 4x^8 + x^10 + x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 726
+
+[727]
+f(x) = 3 + 2x + 3x^3 + 4x^4 + 2x^6 + x^8 + 4x^10 + x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 726
+
+[728]
+f(x) = 4 + 2x + 2x^3 + 2x^4 + 4x^6 + 3x^8 + 3x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 725
+
+[729]
+f(x) = 1 + x + x^3 + 3x^4 + x^6 + 2x^8 + 3x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 729
+
+[730]
+f(x) = 2 + x + 4x^3 + x^4 + 3x^6 + 4x^8 + 4x^10 + x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 730
+
+[731]
+f(x) = 3 + x + 4x^3 + 4x^4 + 2x^6 + x^8 + x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 730
+
+[732]
+f(x) = 4 + x + x^3 + 2x^4 + 4x^6 + 3x^8 + 2x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 729
+
+[733]
+f(x) = 1 + 2x + x^3 + 2x^4 + x^6 + x^9 + 4x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 733
+
+[734]
+f(x) = 2 + 2x + 4x^3 + 4x^4 + 3x^6 + x^9 + x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 734
+
+[735]
+f(x) = 3 + 2x + 4x^3 + x^4 + 2x^6 + x^9 + x^11 + x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 734
+
+[736]
+f(x) = 4 + 2x + x^3 + 3x^4 + 4x^6 + x^9 + 4x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 733
+
+[737]
+f(x) = 1 + x + 3x^3 + 4x^4 + 3x^7 + x^8 + x^9 + 3x^10 + x^13
+middle_coefficient_a_6 = 2
+canonical_presentation_index = 737
+
+[738]
+f(x) = 2 + x + 2x^3 + 3x^4 + 2x^7 + 2x^8 + x^9 + 4x^10 + x^13
+middle_coefficient_a_6 = 2
+canonical_presentation_index = 738
+
+[739]
+f(x) = 3 + x + 2x^3 + 2x^4 + 2x^7 + 3x^8 + x^9 + x^10 + x^13
+middle_coefficient_a_6 = 2
+canonical_presentation_index = 738
+
+[740]
+f(x) = 4 + x + 3x^3 + x^4 + 3x^7 + 4x^8 + x^9 + 2x^10 + x^13
+middle_coefficient_a_6 = 2
+canonical_presentation_index = 737
+
+[741]
+f(x) = 1 + x + 4x^3 + 2x^4 + x^7 + 3x^9 + x^11 + x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 222
+
+[742]
+f(x) = 2 + x + x^3 + 4x^4 + 4x^7 + 3x^9 + 4x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 221
+
+[743]
+f(x) = 3 + x + x^3 + x^4 + 4x^7 + 3x^9 + 4x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 221
+
+[744]
+f(x) = 4 + x + 4x^3 + 3x^4 + x^7 + 3x^9 + x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 222
+
+[745]
+f(x) = 1 + 4x + x^3 + 2x^4 + 2x^8 + 2x^9 + 4x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 106
+canonical_presentation_index = 745
+
+[746]
+f(x) = 2 + 4x + 4x^3 + 4x^4 + 4x^8 + 2x^9 + 2x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 106
+canonical_presentation_index = 746
+
+[747]
+f(x) = 3 + 4x + 4x^3 + x^4 + x^8 + 2x^9 + 3x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 106
+canonical_presentation_index = 746
+
+[748]
+f(x) = 4 + 4x + x^3 + 3x^4 + 3x^8 + 2x^9 + x^10 + x^12 + x^13
+middle_coefficient_a_6 = 106
+canonical_presentation_index = 745
+
+[749]
+f(x) = 1 + x + 2x^3 + 4x^4 + 2x^8 + 4x^9 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 34
+canonical_presentation_index = 749
+
+[750]
+f(x) = 2 + x + 3x^3 + 3x^4 + 4x^8 + 4x^9 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 34
+canonical_presentation_index = 750
+
+[751]
+f(x) = 3 + x + 3x^3 + 2x^4 + x^8 + 4x^9 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 34
+canonical_presentation_index = 750
+
+[752]
+f(x) = 4 + x + 2x^3 + x^4 + 3x^8 + 4x^9 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = 34
+canonical_presentation_index = 749
+
+[753]
+f(x) = 1 + 4x + 4x^3 + 2x^5 + 4x^6 + 3x^7 + 3x^8 + 4x^9 + x^13
+middle_coefficient_a_6 = 72
+canonical_presentation_index = 753
+
+[754]
+f(x) = 2 + 4x + x^3 + 2x^5 + 2x^6 + 2x^7 + x^8 + 4x^9 + x^13
+middle_coefficient_a_6 = 72
+canonical_presentation_index = 754
+
+[755]
+f(x) = 3 + 4x + x^3 + 2x^5 + 3x^6 + 2x^7 + 4x^8 + 4x^9 + x^13
+middle_coefficient_a_6 = 72
+canonical_presentation_index = 754
+
+[756]
+f(x) = 4 + 4x + 4x^3 + 2x^5 + x^6 + 3x^7 + 2x^8 + 4x^9 + x^13
+middle_coefficient_a_6 = 72
+canonical_presentation_index = 753
+
+[757]
+f(x) = 1 + 3x + 3x^3 + 2x^5 + 2x^6 + 2x^7 + 4x^8 + x^11 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 174
+
+[758]
+f(x) = 1 + 4x + 2x^3 + x^5 + 4x^6 + x^7 + 3x^8 + 4x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 198
+
+[759]
+f(x) = 2 + 3x + 2x^3 + 2x^5 + x^6 + 3x^7 + 3x^8 + 4x^11 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 173
+
+[760]
+f(x) = 2 + 4x + 3x^3 + x^5 + 2x^6 + 4x^7 + x^8 + x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 197
+
+[761]
+f(x) = 3 + 3x + 2x^3 + 2x^5 + 4x^6 + 3x^7 + 2x^8 + 4x^11 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 173
+
+[762]
+f(x) = 3 + 4x + 3x^3 + x^5 + 3x^6 + 4x^7 + 4x^8 + x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 197
+
+[763]
+f(x) = 4 + 3x + 3x^3 + 2x^5 + 3x^6 + 2x^7 + x^8 + x^11 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 174
+
+[764]
+f(x) = 4 + 4x + 2x^3 + x^5 + x^6 + x^7 + 2x^8 + 4x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 198
+
+[765]
+f(x) = 1 + 4x + 3x^3 + x^5 + 3x^6 + 3x^7 + 3x^9 + x^11 + x^13
+middle_coefficient_a_6 = 164
+canonical_presentation_index = 765
+
+[766]
+f(x) = 2 + 4x + 2x^3 + x^5 + 4x^6 + 2x^7 + 3x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = 164
+canonical_presentation_index = 766
+
+[767]
+f(x) = 3 + 4x + 2x^3 + x^5 + x^6 + 2x^7 + 3x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = 164
+canonical_presentation_index = 766
+
+[768]
+f(x) = 4 + 4x + 3x^3 + x^5 + 2x^6 + 3x^7 + 3x^9 + x^11 + x^13
+middle_coefficient_a_6 = 164
+canonical_presentation_index = 765
+
+[769]
+f(x) = 1 + 4x + 4x^3 + x^5 + 3x^6 + x^7 + 3x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 297
+
+[770]
+f(x) = 2 + 4x + x^3 + x^5 + 4x^6 + 4x^7 + 4x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 298
+
+[771]
+f(x) = 3 + 4x + x^3 + x^5 + x^6 + 4x^7 + x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 298
+
+[772]
+f(x) = 4 + 4x + 4x^3 + x^5 + 2x^6 + x^7 + 2x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 297
+
+[773]
+f(x) = 1 + 4x + 4x^3 + 3x^5 + 4x^6 + x^8 + 3x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 773
+
+[774]
+f(x) = 2 + 4x + x^3 + 3x^5 + 2x^6 + 2x^8 + 3x^9 + x^11 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 774
+
+[775]
+f(x) = 3 + 4x + x^3 + 3x^5 + 3x^6 + 3x^8 + 3x^9 + x^11 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 774
+
+[776]
+f(x) = 4 + 4x + 4x^3 + 3x^5 + x^6 + 4x^8 + 3x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 773
+
+[777]
+f(x) = 1 + 2x + 2x^3 + x^5 + 4x^6 + 3x^8 + x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 298
+
+[778]
+f(x) = 2 + 2x + 3x^3 + x^5 + 2x^6 + x^8 + 4x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 297
+
+[779]
+f(x) = 3 + 2x + 3x^3 + x^5 + 3x^6 + 4x^8 + 4x^11 + x^12 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 297
+
+[780]
+f(x) = 4 + 2x + 2x^3 + x^5 + x^6 + 2x^8 + x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -18
+canonical_presentation_index = 298
+
+[781]
+f(x) = 1 + 2x + 4x^3 + 3x^5 + 2x^6 + x^9 + 2x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 781
+
+[782]
+f(x) = 2 + 2x + x^3 + 3x^5 + x^6 + x^9 + x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 782
+
+[783]
+f(x) = 3 + 2x + x^3 + 3x^5 + 4x^6 + x^9 + 4x^10 + x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 782
+
+[784]
+f(x) = 4 + 2x + 4x^3 + 3x^5 + 3x^6 + x^9 + 3x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 781
+
+[785]
+f(x) = 1 + 2x + 3x^3 + 4x^5 + 4x^7 + 2x^9 + x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -118
+canonical_presentation_index = 785
+
+[786]
+f(x) = 2 + 2x + 2x^3 + 4x^5 + x^7 + 2x^9 + 3x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -118
+canonical_presentation_index = 785
+
+[787]
+f(x) = 3 + 2x + 2x^3 + 4x^5 + x^7 + 2x^9 + 2x^10 + x^12 + x^13
+middle_coefficient_a_6 = -118
+canonical_presentation_index = 785
+
+[788]
+f(x) = 4 + 2x + 3x^3 + 4x^5 + 4x^7 + 2x^9 + 4x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -118
+canonical_presentation_index = 785
+
+[789]
+f(x) = 1 + 2x + 3x^3 + x^5 + 2x^8 + 4x^9 + 4x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 789
+
+[790]
+f(x) = 2 + 2x + 2x^3 + x^5 + 4x^8 + 4x^9 + 2x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 790
+
+[791]
+f(x) = 3 + 2x + 2x^3 + x^5 + x^8 + 4x^9 + 3x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 790
+
+[792]
+f(x) = 4 + 2x + 3x^3 + x^5 + 3x^8 + 4x^9 + x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 789
+
+[793]
+f(x) = 1 + 2x + 4x^3 + 4x^6 + 2x^7 + 4x^9 + 4x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 793
+
+[794]
+f(x) = 2 + 2x + x^3 + 2x^6 + 3x^7 + 4x^9 + 2x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 793
+
+[795]
+f(x) = 3 + 2x + x^3 + 3x^6 + 3x^7 + 4x^9 + 3x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 793
+
+[796]
+f(x) = 4 + 2x + 4x^3 + x^6 + 2x^7 + 4x^9 + x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 793
+
+[797]
+f(x) = 1 + 2x + 2x^4 + 2x^5 + 2x^6 + 3x^7 + 2x^9 + 3x^10 + x^13
+middle_coefficient_a_6 = 102
+canonical_presentation_index = 797
+
+[798]
+f(x) = 1 + 2x + 4x^4 + 3x^5 + 2x^6 + 4x^7 + 4x^9 + 4x^10 + x^13
+middle_coefficient_a_6 = 100
+canonical_presentation_index = 798
+
+[799]
+f(x) = 2 + 2x + 3x^4 + 3x^5 + x^6 + x^7 + 4x^9 + 2x^10 + x^13
+middle_coefficient_a_6 = 100
+canonical_presentation_index = 799
+
+[800]
+f(x) = 2 + 2x + 4x^4 + 2x^5 + x^6 + 2x^7 + 2x^9 + 4x^10 + x^13
+middle_coefficient_a_6 = 102
+canonical_presentation_index = 800
+
+[801]
+f(x) = 3 + 2x + x^4 + 2x^5 + 4x^6 + 2x^7 + 2x^9 + x^10 + x^13
+middle_coefficient_a_6 = 102
+canonical_presentation_index = 800
+
+[802]
+f(x) = 3 + 2x + 2x^4 + 3x^5 + 4x^6 + x^7 + 4x^9 + 3x^10 + x^13
+middle_coefficient_a_6 = 100
+canonical_presentation_index = 799
+
+[803]
+f(x) = 4 + 2x + x^4 + 3x^5 + 3x^6 + 4x^7 + 4x^9 + x^10 + x^13
+middle_coefficient_a_6 = 100
+canonical_presentation_index = 798
+
+[804]
+f(x) = 4 + 2x + 3x^4 + 2x^5 + 3x^6 + 3x^7 + 2x^9 + 2x^10 + x^13
+middle_coefficient_a_6 = 102
+canonical_presentation_index = 797
+
+[805]
+f(x) = 1 + 3x + 4x^4 + 2x^5 + 2x^7 + 3x^8 + 3x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 805
+
+[806]
+f(x) = 2 + 3x + 3x^4 + 2x^5 + 3x^7 + x^8 + 3x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 806
+
+[807]
+f(x) = 3 + 3x + 2x^4 + 2x^5 + 3x^7 + 4x^8 + 3x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 806
+
+[808]
+f(x) = 4 + 3x + x^4 + 2x^5 + 2x^7 + 2x^8 + 3x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 805
+
+[809]
+f(x) = 1 + 3x + x^4 + 2x^5 + 3x^7 + x^8 + 2x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -218
+canonical_presentation_index = 373
+
+[810]
+f(x) = 2 + 3x + 2x^4 + 2x^5 + 2x^7 + 2x^8 + x^10 + x^12 + x^13
+middle_coefficient_a_6 = -218
+canonical_presentation_index = 373
+
+[811]
+f(x) = 3 + 3x + 3x^4 + 2x^5 + 2x^7 + 3x^8 + 4x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -218
+canonical_presentation_index = 373
+
+[812]
+f(x) = 4 + 3x + 4x^4 + 2x^5 + 3x^7 + 4x^8 + 3x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -218
+canonical_presentation_index = 373
+
+[813]
+f(x) = 1 + x + 3x^4 + 4x^5 + x^9 + 4x^10 + 4x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -94
+canonical_presentation_index = 813
+
+[814]
+f(x) = 2 + x + x^4 + 4x^5 + x^9 + 2x^10 + x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -94
+canonical_presentation_index = 814
+
+[815]
+f(x) = 3 + x + 4x^4 + 4x^5 + x^9 + 3x^10 + x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -94
+canonical_presentation_index = 814
+
+[816]
+f(x) = 4 + x + 2x^4 + 4x^5 + x^9 + x^10 + 4x^11 + x^12 + x^13
+middle_coefficient_a_6 = -94
+canonical_presentation_index = 813
+
+[817]
+f(x) = 1 + 2x + x^4 + 4x^6 + 2x^7 + x^9 + 3x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 817
+
+[818]
+f(x) = 2 + 2x + 2x^4 + 2x^6 + 3x^7 + x^9 + 4x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 818
+
+[819]
+f(x) = 3 + 2x + 3x^4 + 3x^6 + 3x^7 + x^9 + x^10 + x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 818
+
+[820]
+f(x) = 4 + 2x + 4x^4 + x^6 + 2x^7 + x^9 + 2x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 817
+
+[821]
+f(x) = 1 + x + x^4 + 4x^7 + 4x^8 + 4x^9 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 821
+
+[822]
+f(x) = 2 + x + 2x^4 + x^7 + 3x^8 + 4x^9 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 822
+
+[823]
+f(x) = 3 + x + 3x^4 + x^7 + 2x^8 + 4x^9 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 822
+
+[824]
+f(x) = 4 + x + 4x^4 + 4x^7 + x^8 + 4x^9 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 821
+
+[825]
+f(x) = 1 + 4x + 2x^4 + 4x^7 + 3x^8 + x^10 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 781
+
+[826]
+f(x) = 2 + 4x + 4x^4 + x^7 + x^8 + 3x^10 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 782
+
+[827]
+f(x) = 3 + 4x + x^4 + x^7 + 4x^8 + 2x^10 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 782
+
+[828]
+f(x) = 4 + 4x + 3x^4 + 4x^7 + 2x^8 + 4x^10 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 781
+
+[829]
+f(x) = 1 + 2x + 4x^5 + 2x^6 + x^8 + 2x^9 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 829
+
+[830]
+f(x) = 2 + 2x + 4x^5 + x^6 + 2x^8 + 2x^9 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 830
+
+[831]
+f(x) = 3 + 2x + 4x^5 + 4x^6 + 3x^8 + 2x^9 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 830
+
+[832]
+f(x) = 4 + 2x + 4x^5 + 3x^6 + 4x^8 + 2x^9 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 829
+
+[833]
+f(x) = 1 + 2x + x^5 + x^8 + 4x^9 + 3x^10 + x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 22
+canonical_presentation_index = 833
+
+[834]
+f(x) = 2 + 2x + x^5 + 2x^8 + 4x^9 + 4x^10 + 4x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 22
+canonical_presentation_index = 834
+
+[835]
+f(x) = 3 + 2x + x^5 + 3x^8 + 4x^9 + x^10 + 4x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 22
+canonical_presentation_index = 834
+
+[836]
+f(x) = 4 + 2x + x^5 + 4x^8 + 4x^9 + 2x^10 + x^11 + x^12 + x^13
+middle_coefficient_a_6 = 22
+canonical_presentation_index = 833
+
+[837]
+f(x) = 1 + 4x + x^6 + 3x^7 + 3x^8 + 4x^9 + x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 837
+
+[838]
+f(x) = 2 + 4x + 3x^6 + 2x^7 + x^8 + 4x^9 + 3x^10 + x^11 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 838
+
+[839]
+f(x) = 3 + 4x + 2x^6 + 2x^7 + 4x^8 + 4x^9 + 2x^10 + x^11 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 838
+
+[840]
+f(x) = 4 + 4x + 4x^6 + 3x^7 + 2x^8 + 4x^9 + 4x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 837
+
+[841]
+f(x) = 1 + 4x + 4x^6 + 2x^7 + 4x^8 + x^10 + x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 581
+
+[842]
+f(x) = 2 + 4x + 2x^6 + 3x^7 + 3x^8 + 3x^10 + 4x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 582
+
+[843]
+f(x) = 3 + 4x + 3x^6 + 3x^7 + 2x^8 + 2x^10 + 4x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 582
+
+[844]
+f(x) = 4 + 4x + x^6 + 2x^7 + x^8 + 4x^10 + x^11 + x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 581
+
+[845]
+f(x) = 1 + 3x + 3x^7 + 3x^8 + 4x^9 + x^10 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 821
+
+[846]
+f(x) = 2 + 3x + 2x^7 + x^8 + 4x^9 + 3x^10 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 822
+
+[847]
+f(x) = 3 + 3x + 2x^7 + 4x^8 + 4x^9 + 2x^10 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 822
+
+[848]
+f(x) = 4 + 3x + 3x^7 + 2x^8 + 4x^9 + 4x^10 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 821
+
+[849]
+f(x) = 1 + 3x^2 + 3x^3 + 4x^4 + x^5 + x^6 + 3x^7 + 4x^8 + x^13
+middle_coefficient_a_6 = -176
+canonical_presentation_index = 849
+
+[850]
+f(x) = 2 + 4x^2 + 2x^3 + 3x^4 + x^5 + 3x^6 + 2x^7 + 3x^8 + x^13
+middle_coefficient_a_6 = -176
+canonical_presentation_index = 850
+
+[851]
+f(x) = 3 + x^2 + 2x^3 + 2x^4 + x^5 + 2x^6 + 2x^7 + 2x^8 + x^13
+middle_coefficient_a_6 = -176
+canonical_presentation_index = 850
+
+[852]
+f(x) = 4 + 2x^2 + 3x^3 + x^4 + x^5 + 4x^6 + 3x^7 + x^8 + x^13
+middle_coefficient_a_6 = -176
+canonical_presentation_index = 849
+
+[853]
+f(x) = 1 + 4x^2 + 2x^3 + 4x^4 + 3x^5 + 3x^6 + 3x^8 + 3x^12 + x^13
+middle_coefficient_a_6 = -34
+canonical_presentation_index = 625
+
+[854]
+f(x) = 2 + 2x^2 + 3x^3 + 3x^4 + 3x^5 + 4x^6 + x^8 + x^12 + x^13
+middle_coefficient_a_6 = -34
+canonical_presentation_index = 626
+
+[855]
+f(x) = 3 + 3x^2 + 3x^3 + 2x^4 + 3x^5 + x^6 + 4x^8 + 4x^12 + x^13
+middle_coefficient_a_6 = -34
+canonical_presentation_index = 626
+
+[856]
+f(x) = 4 + x^2 + 2x^3 + x^4 + 3x^5 + 2x^6 + 2x^8 + 2x^12 + x^13
+middle_coefficient_a_6 = -34
+canonical_presentation_index = 625
+
+[857]
+f(x) = 1 + x^2 + x^3 + x^4 + 4x^5 + 4x^7 + 2x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 857
+
+[858]
+f(x) = 2 + 3x^2 + 4x^3 + 2x^4 + 4x^5 + x^7 + 2x^9 + x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 858
+
+[859]
+f(x) = 3 + 2x^2 + 4x^3 + 3x^4 + 4x^5 + x^7 + 2x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 858
+
+[860]
+f(x) = 4 + 4x^2 + x^3 + 4x^4 + 4x^5 + 4x^7 + 2x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 857
+
+[861]
+f(x) = 1 + 3x^2 + x^3 + 3x^4 + 4x^5 + 2x^7 + 3x^10 + x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 321
+
+[862]
+f(x) = 2 + 4x^2 + 4x^3 + x^4 + 4x^5 + 3x^7 + 4x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 322
+
+[863]
+f(x) = 3 + x^2 + 4x^3 + 4x^4 + 4x^5 + 3x^7 + x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 322
+
+[864]
+f(x) = 4 + 2x^2 + x^3 + 2x^4 + 4x^5 + 2x^7 + 2x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 321
+
+[865]
+f(x) = 1 + 2x^2 + x^3 + 3x^4 + 2x^5 + 2x^8 + 4x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 78
+
+[866]
+f(x) = 2 + x^2 + 4x^3 + x^4 + 2x^5 + 4x^8 + 2x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 77
+
+[867]
+f(x) = 3 + 4x^2 + 4x^3 + 4x^4 + 2x^5 + x^8 + 3x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 77
+
+[868]
+f(x) = 4 + 3x^2 + x^3 + 2x^4 + 2x^5 + 3x^8 + x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -170
+canonical_presentation_index = 78
+
+[869]
+f(x) = 1 + 3x^2 + 3x^3 + 4x^4 + x^6 + x^7 + x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 869
+
+[870]
+f(x) = 2 + 4x^2 + 2x^3 + 3x^4 + 3x^6 + 4x^7 + x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 870
+
+[871]
+f(x) = 3 + x^2 + 2x^3 + 2x^4 + 2x^6 + 4x^7 + x^9 + x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 870
+
+[872]
+f(x) = 4 + 2x^2 + 3x^3 + x^4 + 4x^6 + x^7 + x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 869
+
+[873]
+f(x) = 1 + x^2 + 2x^3 + 3x^4 + 3x^6 + 2x^8 + 3x^9 + x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 873
+
+[874]
+f(x) = 2 + 3x^2 + 3x^3 + x^4 + 4x^6 + 4x^8 + 3x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 874
+
+[875]
+f(x) = 3 + 2x^2 + 3x^3 + 4x^4 + x^6 + x^8 + 3x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 874
+
+[876]
+f(x) = 4 + 4x^2 + 2x^3 + 2x^4 + 2x^6 + 3x^8 + 3x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 873
+
+[877]
+f(x) = 1 + 2x^2 + 3x^3 + 3x^4 + 3x^6 + x^10 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = -2
+canonical_presentation_index = 877
+
+[878]
+f(x) = 2 + x^2 + 2x^3 + x^4 + 4x^6 + 3x^10 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -2
+canonical_presentation_index = 878
+
+[879]
+f(x) = 3 + 4x^2 + 2x^3 + 4x^4 + x^6 + 2x^10 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -2
+canonical_presentation_index = 878
+
+[880]
+f(x) = 4 + 3x^2 + 3x^3 + 2x^4 + 2x^6 + 4x^10 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -2
+canonical_presentation_index = 877
+
+[881]
+f(x) = 1 + 2x^2 + 2x^3 + x^4 + 2x^7 + x^8 + 3x^9 + 3x^10 + x^13
+middle_coefficient_a_6 = -122
+canonical_presentation_index = 690
+
+[882]
+f(x) = 2 + x^2 + 3x^3 + 2x^4 + 3x^7 + 2x^8 + 3x^9 + 4x^10 + x^13
+middle_coefficient_a_6 = -122
+canonical_presentation_index = 692
+
+[883]
+f(x) = 3 + 4x^2 + 3x^3 + 3x^4 + 3x^7 + 3x^8 + 3x^9 + x^10 + x^13
+middle_coefficient_a_6 = -122
+canonical_presentation_index = 692
+
+[884]
+f(x) = 4 + 3x^2 + 2x^3 + 4x^4 + 2x^7 + 4x^8 + 3x^9 + 2x^10 + x^13
+middle_coefficient_a_6 = -122
+canonical_presentation_index = 690
+
+[885]
+f(x) = 1 + x^2 + x^3 + 3x^4 + x^7 + x^8 + 3x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 564
+
+[886]
+f(x) = 2 + 3x^2 + 4x^3 + x^4 + 4x^7 + 2x^8 + 3x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 562
+
+[887]
+f(x) = 3 + 2x^2 + 4x^3 + 4x^4 + 4x^7 + 3x^8 + 3x^9 + x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 562
+
+[888]
+f(x) = 4 + 4x^2 + x^3 + 2x^4 + x^7 + 4x^8 + 3x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 564
+
+[889]
+f(x) = 1 + 4x^2 + 3x^3 + x^4 + 2x^7 + 3x^9 + x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 10
+canonical_presentation_index = 889
+
+[890]
+f(x) = 2 + 2x^2 + 2x^3 + 2x^4 + 3x^7 + 3x^9 + 3x^10 + x^11 + x^13
+middle_coefficient_a_6 = 10
+canonical_presentation_index = 890
+
+[891]
+f(x) = 3 + 3x^2 + 2x^3 + 3x^4 + 3x^7 + 3x^9 + 2x^10 + x^11 + x^13
+middle_coefficient_a_6 = 10
+canonical_presentation_index = 890
+
+[892]
+f(x) = 4 + x^2 + 3x^3 + 4x^4 + 2x^7 + 3x^9 + 4x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 10
+canonical_presentation_index = 889
+
+[893]
+f(x) = 1 + 4x^2 + x^3 + 2x^5 + 2x^6 + x^7 + 2x^8 + x^9 + x^13
+middle_coefficient_a_6 = 104
+canonical_presentation_index = 893
+
+[894]
+f(x) = 2 + 2x^2 + 4x^3 + 2x^5 + x^6 + 4x^7 + 4x^8 + x^9 + x^13
+middle_coefficient_a_6 = 104
+canonical_presentation_index = 894
+
+[895]
+f(x) = 3 + 3x^2 + 4x^3 + 2x^5 + 4x^6 + 4x^7 + x^8 + x^9 + x^13
+middle_coefficient_a_6 = 104
+canonical_presentation_index = 894
+
+[896]
+f(x) = 4 + x^2 + x^3 + 2x^5 + 3x^6 + x^7 + 3x^8 + x^9 + x^13
+middle_coefficient_a_6 = 104
+canonical_presentation_index = 893
+
+[897]
+f(x) = 1 + 2x^2 + x^3 + 3x^5 + 2x^6 + 2x^7 + x^8 + 4x^12 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 210
+
+[898]
+f(x) = 2 + x^2 + 4x^3 + 3x^5 + x^6 + 3x^7 + 2x^8 + 3x^12 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 209
+
+[899]
+f(x) = 3 + 4x^2 + 4x^3 + 3x^5 + 4x^6 + 3x^7 + 3x^8 + 2x^12 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 209
+
+[900]
+f(x) = 4 + 3x^2 + x^3 + 3x^5 + 3x^6 + 2x^7 + 4x^8 + x^12 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 210
+
+[901]
+f(x) = 1 + 3x^2 + 3x^3 + 4x^5 + 3x^6 + x^8 + 2x^9 + 4x^10 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 901
+
+[902]
+f(x) = 2 + 4x^2 + 2x^3 + 4x^5 + 4x^6 + 2x^8 + 2x^9 + 2x^10 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 902
+
+[903]
+f(x) = 3 + x^2 + 2x^3 + 4x^5 + x^6 + 3x^8 + 2x^9 + 3x^10 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 902
+
+[904]
+f(x) = 4 + 2x^2 + 3x^3 + 4x^5 + 2x^6 + 4x^8 + 2x^9 + x^10 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 901
+
+[905]
+f(x) = 1 + 2x^2 + 2x^3 + 4x^5 + 3x^6 + 4x^9 + x^10 + x^11 + x^13
+middle_coefficient_a_6 = -134
+canonical_presentation_index = 905
+
+[906]
+f(x) = 2 + x^2 + 3x^3 + 4x^5 + 4x^6 + 4x^9 + 3x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -134
+canonical_presentation_index = 906
+
+[907]
+f(x) = 3 + 4x^2 + 3x^3 + 4x^5 + x^6 + 4x^9 + 2x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -134
+canonical_presentation_index = 906
+
+[908]
+f(x) = 4 + 3x^2 + 2x^3 + 4x^5 + 2x^6 + 4x^9 + 4x^10 + x^11 + x^13
+middle_coefficient_a_6 = -134
+canonical_presentation_index = 905
+
+[909]
+f(x) = 1 + 3x^2 + 4x^3 + 3x^5 + 3x^7 + 4x^9 + 4x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -130
+canonical_presentation_index = 909
+
+[910]
+f(x) = 2 + 4x^2 + x^3 + 3x^5 + 2x^7 + 4x^9 + 2x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -130
+canonical_presentation_index = 910
+
+[911]
+f(x) = 3 + x^2 + x^3 + 3x^5 + 2x^7 + 4x^9 + 3x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -130
+canonical_presentation_index = 910
+
+[912]
+f(x) = 4 + 2x^2 + 4x^3 + 3x^5 + 3x^7 + 4x^9 + x^10 + x^12 + x^13
+middle_coefficient_a_6 = -130
+canonical_presentation_index = 909
+
+[913]
+f(x) = 1 + 3x^2 + x^3 + 3x^5 + x^7 + 4x^10 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 62
+canonical_presentation_index = 178
+
+[914]
+f(x) = 2 + 4x^2 + 4x^3 + 3x^5 + 4x^7 + 2x^10 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 62
+canonical_presentation_index = 177
+
+[915]
+f(x) = 3 + x^2 + 4x^3 + 3x^5 + 4x^7 + 3x^10 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 62
+canonical_presentation_index = 177
+
+[916]
+f(x) = 4 + 2x^2 + x^3 + 3x^5 + x^7 + x^10 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = 62
+canonical_presentation_index = 178
+
+[917]
+f(x) = 1 + 2x^2 + 3x^3 + 4x^5 + 4x^8 + 2x^9 + 2x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = 194
+canonical_presentation_index = 513
+
+[918]
+f(x) = 2 + x^2 + 2x^3 + 4x^5 + 3x^8 + 2x^9 + x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = 194
+canonical_presentation_index = 514
+
+[919]
+f(x) = 3 + 4x^2 + 2x^3 + 4x^5 + 2x^8 + 2x^9 + 4x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = 194
+canonical_presentation_index = 514
+
+[920]
+f(x) = 4 + 3x^2 + 3x^3 + 4x^5 + x^8 + 2x^9 + 3x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = 194
+canonical_presentation_index = 513
+
+[921]
+f(x) = 1 + 2x^2 + x^3 + 3x^6 + x^7 + 3x^8 + 4x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = 174
+canonical_presentation_index = 921
+
+[922]
+f(x) = 2 + x^2 + 4x^3 + 4x^6 + 4x^7 + x^8 + 4x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = 174
+canonical_presentation_index = 922
+
+[923]
+f(x) = 3 + 4x^2 + 4x^3 + x^6 + 4x^7 + 4x^8 + 4x^9 + x^12 + x^13
+middle_coefficient_a_6 = 174
+canonical_presentation_index = 922
+
+[924]
+f(x) = 4 + 3x^2 + x^3 + 2x^6 + x^7 + 2x^8 + 4x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = 174
+canonical_presentation_index = 921
+
+[925]
+f(x) = 1 + 2x^2 + 3x^3 + 3x^6 + 4x^7 + x^8 + 4x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 142
+
+[926]
+f(x) = 2 + x^2 + 2x^3 + 4x^6 + x^7 + 2x^8 + 2x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 141
+
+[927]
+f(x) = 3 + 4x^2 + 2x^3 + x^6 + x^7 + 3x^8 + 3x^10 + x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 141
+
+[928]
+f(x) = 4 + 3x^2 + 3x^3 + 2x^6 + 4x^7 + 4x^8 + x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 142
+
+[929]
+f(x) = 1 + 3x^2 + 3x^3 + 2x^8 + 4x^9 + x^10 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 36
+canonical_presentation_index = 362
+
+[930]
+f(x) = 2 + 4x^2 + 2x^3 + 4x^8 + 4x^9 + 3x^10 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 36
+canonical_presentation_index = 361
+
+[931]
+f(x) = 3 + x^2 + 2x^3 + x^8 + 4x^9 + 2x^10 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = 36
+canonical_presentation_index = 361
+
+[932]
+f(x) = 4 + 2x^2 + 3x^3 + 3x^8 + 4x^9 + 4x^10 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 36
+canonical_presentation_index = 362
+
+[933]
+f(x) = 1 + 3x^2 + 2x^4 + 4x^5 + 4x^6 + 4x^7 + 2x^8 + 4x^9 + x^13
+middle_coefficient_a_6 = -154
+canonical_presentation_index = 933
+
+[934]
+f(x) = 2 + 4x^2 + 4x^4 + 4x^5 + 2x^6 + x^7 + 4x^8 + 4x^9 + x^13
+middle_coefficient_a_6 = -154
+canonical_presentation_index = 934
+
+[935]
+f(x) = 3 + x^2 + x^4 + 4x^5 + 3x^6 + x^7 + x^8 + 4x^9 + x^13
+middle_coefficient_a_6 = -154
+canonical_presentation_index = 934
+
+[936]
+f(x) = 4 + 2x^2 + 3x^4 + 4x^5 + x^6 + 4x^7 + 3x^8 + 4x^9 + x^13
+middle_coefficient_a_6 = -154
+canonical_presentation_index = 933
+
+[937]
+f(x) = 1 + 3x^2 + 2x^4 + x^5 + 2x^6 + 2x^7 + 3x^9 + x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 937
+
+[938]
+f(x) = 2 + 4x^2 + 4x^4 + x^5 + x^6 + 3x^7 + 3x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 938
+
+[939]
+f(x) = 3 + x^2 + x^4 + x^5 + 4x^6 + 3x^7 + 3x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 938
+
+[940]
+f(x) = 4 + 2x^2 + 3x^4 + x^5 + 3x^6 + 2x^7 + 3x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 937
+
+[941]
+f(x) = 1 + 2x^2 + 4x^4 + 4x^5 + 3x^6 + 4x^7 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -166
+canonical_presentation_index = 941
+
+[942]
+f(x) = 2 + x^2 + 3x^4 + 4x^5 + 4x^6 + x^7 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -166
+canonical_presentation_index = 942
+
+[943]
+f(x) = 3 + 4x^2 + 2x^4 + 4x^5 + x^6 + x^7 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -166
+canonical_presentation_index = 942
+
+[944]
+f(x) = 4 + 3x^2 + x^4 + 4x^5 + 2x^6 + 4x^7 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = -166
+canonical_presentation_index = 941
+
+[945]
+f(x) = 1 + x^2 + 4x^4 + x^5 + x^6 + 4x^9 + 3x^10 + x^12 + x^13
+middle_coefficient_a_6 = -208
+canonical_presentation_index = 257
+
+[946]
+f(x) = 2 + 3x^2 + 3x^4 + x^5 + 3x^6 + 4x^9 + 4x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -208
+canonical_presentation_index = 258
+
+[947]
+f(x) = 3 + 2x^2 + 2x^4 + x^5 + 2x^6 + 4x^9 + x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -208
+canonical_presentation_index = 258
+
+[948]
+f(x) = 4 + 4x^2 + x^4 + x^5 + 4x^6 + 4x^9 + 2x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -208
+canonical_presentation_index = 257
+
+[949]
+f(x) = 1 + 3x^2 + 3x^4 + x^5 + x^7 + x^8 + 3x^9 + x^10 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 949
+
+[950]
+f(x) = 2 + 4x^2 + x^4 + x^5 + 4x^7 + 2x^8 + 3x^9 + 3x^10 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 950
+
+[951]
+f(x) = 3 + x^2 + 4x^4 + x^5 + 4x^7 + 3x^8 + 3x^9 + 2x^10 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 950
+
+[952]
+f(x) = 4 + 2x^2 + 2x^4 + x^5 + x^7 + 4x^8 + 3x^9 + 4x^10 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 949
+
+[953]
+f(x) = 1 + 3x^2 + x^4 + 3x^5 + 2x^8 + 3x^9 + 4x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 0
+canonical_presentation_index = 953
+
+[954]
+f(x) = 2 + 4x^2 + 2x^4 + 3x^5 + 4x^8 + 3x^9 + 2x^10 + x^11 + x^13
+middle_coefficient_a_6 = 0
+canonical_presentation_index = 954
+
+[955]
+f(x) = 3 + x^2 + 3x^4 + 3x^5 + x^8 + 3x^9 + 3x^10 + x^11 + x^13
+middle_coefficient_a_6 = 0
+canonical_presentation_index = 954
+
+[956]
+f(x) = 4 + 2x^2 + 4x^4 + 3x^5 + 3x^8 + 3x^9 + x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 0
+canonical_presentation_index = 953
+
+[957]
+f(x) = 1 + 4x^2 + 3x^4 + 2x^5 + 2x^8 + 2x^9 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -122
+canonical_presentation_index = 957
+
+[958]
+f(x) = 2 + 2x^2 + x^4 + 2x^5 + 4x^8 + 2x^9 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -122
+canonical_presentation_index = 958
+
+[959]
+f(x) = 3 + 3x^2 + 4x^4 + 2x^5 + x^8 + 2x^9 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -122
+canonical_presentation_index = 958
+
+[960]
+f(x) = 4 + x^2 + 2x^4 + 2x^5 + 3x^8 + 2x^9 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = -122
+canonical_presentation_index = 957
+
+[961]
+f(x) = 1 + 2x^2 + 4x^4 + x^5 + 4x^8 + 4x^10 + 4x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 613
+
+[962]
+f(x) = 2 + x^2 + 3x^4 + x^5 + 3x^8 + 2x^10 + x^11 + x^12 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 614
+
+[963]
+f(x) = 3 + 4x^2 + 2x^4 + x^5 + 2x^8 + 3x^10 + x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 614
+
+[964]
+f(x) = 4 + 3x^2 + x^4 + x^5 + x^8 + x^10 + 4x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 613
+
+[965]
+f(x) = 1 + 4x^2 + x^4 + 2x^6 + x^7 + 4x^8 + x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 818
+
+[966]
+f(x) = 2 + 2x^2 + 2x^4 + x^6 + 4x^7 + 3x^8 + x^9 + x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 817
+
+[967]
+f(x) = 3 + 3x^2 + 3x^4 + 4x^6 + 4x^7 + 2x^8 + x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 817
+
+[968]
+f(x) = 4 + x^2 + 4x^4 + 3x^6 + x^7 + x^8 + x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 818
+
+[969]
+f(x) = 1 + 2x^2 + 2x^4 + 2x^6 + 2x^7 + 2x^10 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -56
+canonical_presentation_index = 630
+
+[970]
+f(x) = 2 + x^2 + 4x^4 + x^6 + 3x^7 + x^10 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -56
+canonical_presentation_index = 629
+
+[971]
+f(x) = 3 + 4x^2 + x^4 + 4x^6 + 3x^7 + 4x^10 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = -56
+canonical_presentation_index = 629
+
+[972]
+f(x) = 4 + 3x^2 + 3x^4 + 3x^6 + 2x^7 + 3x^10 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -56
+canonical_presentation_index = 630
+
+[973]
+f(x) = 1 + x^2 + 2x^4 + 3x^6 + 4x^9 + x^10 + x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 973
+
+[974]
+f(x) = 2 + 3x^2 + 4x^4 + 4x^6 + 4x^9 + 3x^10 + 4x^11 + x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 974
+
+[975]
+f(x) = 3 + 2x^2 + x^4 + x^6 + 4x^9 + 2x^10 + 4x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 974
+
+[976]
+f(x) = 4 + 4x^2 + 3x^4 + 2x^6 + 4x^9 + 4x^10 + x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -10
+canonical_presentation_index = 973
+
+[977]
+f(x) = 1 + 3x^2 + 3x^4 + 3x^7 + x^8 + x^9 + 3x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = 102
+canonical_presentation_index = 977
+
+[978]
+f(x) = 2 + 4x^2 + x^4 + 2x^7 + 2x^8 + x^9 + 4x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = 102
+canonical_presentation_index = 978
+
+[979]
+f(x) = 3 + x^2 + 4x^4 + 2x^7 + 3x^8 + x^9 + x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = 102
+canonical_presentation_index = 978
+
+[980]
+f(x) = 4 + 2x^2 + 2x^4 + 3x^7 + 4x^8 + x^9 + 2x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = 102
+canonical_presentation_index = 977
+
+[981]
+f(x) = 1 + 3x^2 + x^4 + 2x^7 + 3x^8 + 3x^9 + 4x^10 + x^12 + x^13
+middle_coefficient_a_6 = -246
+canonical_presentation_index = 101
+
+[982]
+f(x) = 2 + 4x^2 + 2x^4 + 3x^7 + x^8 + 3x^9 + 2x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -246
+canonical_presentation_index = 101
+
+[983]
+f(x) = 3 + x^2 + 3x^4 + 3x^7 + 4x^8 + 3x^9 + 3x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -246
+canonical_presentation_index = 101
+
+[984]
+f(x) = 4 + 2x^2 + 4x^4 + 2x^7 + 2x^8 + 3x^9 + x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -246
+canonical_presentation_index = 101
+
+[985]
+f(x) = 1 + x^2 + x^4 + 3x^7 + 2x^8 + 4x^10 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 142
+canonical_presentation_index = 19
+
+[986]
+f(x) = 2 + 3x^2 + 2x^4 + 2x^7 + 4x^8 + 2x^10 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = 142
+canonical_presentation_index = 19
+
+[987]
+f(x) = 3 + 2x^2 + 3x^4 + 2x^7 + x^8 + 3x^10 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 142
+canonical_presentation_index = 19
+
+[988]
+f(x) = 4 + 4x^2 + 4x^4 + 3x^7 + 3x^8 + x^10 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 142
+canonical_presentation_index = 19
+
+[989]
+f(x) = 1 + x^2 + 4x^5 + 3x^6 + 4x^7 + 2x^8 + x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 229
+
+[990]
+f(x) = 1 + 2x^2 + 3x^5 + 4x^6 + 2x^7 + x^8 + x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 41
+
+[991]
+f(x) = 2 + x^2 + 3x^5 + 2x^6 + 3x^7 + 2x^8 + 3x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 42
+
+[992]
+f(x) = 2 + 3x^2 + 4x^5 + 4x^6 + x^7 + 4x^8 + 3x^10 + x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 230
+
+[993]
+f(x) = 3 + 2x^2 + 4x^5 + x^6 + x^7 + x^8 + 2x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 230
+
+[994]
+f(x) = 3 + 4x^2 + 3x^5 + 3x^6 + 3x^7 + 3x^8 + 2x^10 + x^12 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 42
+
+[995]
+f(x) = 4 + 3x^2 + 3x^5 + x^6 + 2x^7 + 4x^8 + 4x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 41
+
+[996]
+f(x) = 4 + 4x^2 + 4x^5 + 2x^6 + 4x^7 + 3x^8 + 4x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 229
+
+[997]
+f(x) = 1 + 3x^2 + 2x^5 + 4x^6 + 2x^7 + 4x^9 + 4x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 38
+canonical_presentation_index = 997
+
+[998]
+f(x) = 2 + 4x^2 + 2x^5 + 2x^6 + 3x^7 + 4x^9 + 2x^10 + x^11 + x^13
+middle_coefficient_a_6 = 38
+canonical_presentation_index = 998
+
+[999]
+f(x) = 3 + x^2 + 2x^5 + 3x^6 + 3x^7 + 4x^9 + 3x^10 + x^11 + x^13
+middle_coefficient_a_6 = 38
+canonical_presentation_index = 998
+
+[1000]
+f(x) = 4 + 2x^2 + 2x^5 + x^6 + 2x^7 + 4x^9 + x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 38
+canonical_presentation_index = 997
+
+[1001]
+f(x) = 1 + 2x^2 + 3x^5 + 2x^6 + 3x^7 + 3x^9 + x^10 + x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 1001
+
+[1002]
+f(x) = 2 + x^2 + 3x^5 + x^6 + 2x^7 + 3x^9 + 3x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 1002
+
+[1003]
+f(x) = 3 + 4x^2 + 3x^5 + 4x^6 + 2x^7 + 3x^9 + 2x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 1002
+
+[1004]
+f(x) = 4 + 3x^2 + 3x^5 + 3x^6 + 3x^7 + 3x^9 + 4x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 1001
+
+[1005]
+f(x) = 1 + 3x^2 + x^5 + 4x^6 + 2x^8 + x^9 + 3x^10 + x^12 + x^13
+middle_coefficient_a_6 = 78
+canonical_presentation_index = 1005
+
+[1006]
+f(x) = 2 + 4x^2 + x^5 + 2x^6 + 4x^8 + x^9 + 4x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 78
+canonical_presentation_index = 1006
+
+[1007]
+f(x) = 3 + x^2 + x^5 + 3x^6 + x^8 + x^9 + x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 78
+canonical_presentation_index = 1006
+
+[1008]
+f(x) = 4 + 2x^2 + x^5 + x^6 + 3x^8 + x^9 + 2x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 78
+canonical_presentation_index = 1005
+
+[1009]
+f(x) = 1 + 2x^2 + 2x^5 + 4x^6 + 2x^8 + x^9 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 1009
+
+[1010]
+f(x) = 2 + x^2 + 2x^5 + 2x^6 + 4x^8 + x^9 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 1010
+
+[1011]
+f(x) = 3 + 4x^2 + 2x^5 + 3x^6 + x^8 + x^9 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 1010
+
+[1012]
+f(x) = 4 + 3x^2 + 2x^5 + x^6 + 3x^8 + x^9 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 1009
+
+[1013]
+f(x) = 1 + 3x^2 + x^5 + 3x^7 + 3x^8 + 3x^9 + 2x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 1013
+
+[1014]
+f(x) = 1 + 3x^2 + 3x^5 + 4x^7 + x^8 + 4x^9 + 2x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 337
+
+[1015]
+f(x) = 2 + 4x^2 + x^5 + 2x^7 + x^8 + 3x^9 + x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 1013
+
+[1016]
+f(x) = 2 + 4x^2 + 3x^5 + x^7 + 2x^8 + 4x^9 + x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 338
+
+[1017]
+f(x) = 3 + x^2 + x^5 + 2x^7 + 4x^8 + 3x^9 + 4x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 1013
+
+[1018]
+f(x) = 3 + x^2 + 3x^5 + x^7 + 3x^8 + 4x^9 + 4x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 338
+
+[1019]
+f(x) = 4 + 2x^2 + x^5 + 3x^7 + 2x^8 + 3x^9 + 3x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 1013
+
+[1020]
+f(x) = 4 + 2x^2 + 3x^5 + 4x^7 + 4x^8 + 4x^9 + 3x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 337
+
+[1021]
+f(x) = 1 + 2x^2 + 3x^6 + 3x^7 + 4x^8 + x^9 + x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -78
+canonical_presentation_index = 1021
+
+[1022]
+f(x) = 2 + x^2 + 4x^6 + 2x^7 + 3x^8 + x^9 + 3x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -78
+canonical_presentation_index = 1022
+
+[1023]
+f(x) = 3 + 4x^2 + x^6 + 2x^7 + 2x^8 + x^9 + 2x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -78
+canonical_presentation_index = 1022
+
+[1024]
+f(x) = 4 + 3x^2 + 2x^6 + 3x^7 + x^8 + x^9 + 4x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -78
+canonical_presentation_index = 1021
+
+[1025]
+f(x) = 1 + x^2 + 2x^6 + x^7 + 2x^8 + 4x^10 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = 62
+canonical_presentation_index = 177
+
+[1026]
+f(x) = 2 + 3x^2 + x^6 + 4x^7 + 4x^8 + 2x^10 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 62
+canonical_presentation_index = 178
+
+[1027]
+f(x) = 3 + 2x^2 + 4x^6 + 4x^7 + x^8 + 3x^10 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 62
+canonical_presentation_index = 178
+
+[1028]
+f(x) = 4 + 4x^2 + 3x^6 + x^7 + 3x^8 + x^10 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 62
+canonical_presentation_index = 177
+
+[1029]
+f(x) = 1 + x^3 + 4x^4 + 4x^5 + x^6 + 3x^7 + x^8 + 4x^10 + x^13
+middle_coefficient_a_6 = -98
+canonical_presentation_index = 1029
+
+[1030]
+f(x) = 2 + 4x^3 + 3x^4 + 4x^5 + 3x^6 + 2x^7 + 2x^8 + 2x^10 + x^13
+middle_coefficient_a_6 = -98
+canonical_presentation_index = 1030
+
+[1031]
+f(x) = 3 + 4x^3 + 2x^4 + 4x^5 + 2x^6 + 2x^7 + 3x^8 + 3x^10 + x^13
+middle_coefficient_a_6 = -98
+canonical_presentation_index = 1030
+
+[1032]
+f(x) = 4 + x^3 + x^4 + 4x^5 + 4x^6 + 3x^7 + 4x^8 + x^10 + x^13
+middle_coefficient_a_6 = -98
+canonical_presentation_index = 1029
+
+[1033]
+f(x) = 1 + x^3 + 3x^4 + 2x^5 + x^6 + x^7 + 2x^9 + 4x^10 + x^13
+middle_coefficient_a_6 = 130
+canonical_presentation_index = 1033
+
+[1034]
+f(x) = 2 + 4x^3 + x^4 + 2x^5 + 3x^6 + 4x^7 + 2x^9 + 2x^10 + x^13
+middle_coefficient_a_6 = 130
+canonical_presentation_index = 1034
+
+[1035]
+f(x) = 3 + 4x^3 + 4x^4 + 2x^5 + 2x^6 + 4x^7 + 2x^9 + 3x^10 + x^13
+middle_coefficient_a_6 = 130
+canonical_presentation_index = 1034
+
+[1036]
+f(x) = 4 + x^3 + 2x^4 + 2x^5 + 4x^6 + x^7 + 2x^9 + x^10 + x^13
+middle_coefficient_a_6 = 130
+canonical_presentation_index = 1033
+
+[1037]
+f(x) = 1 + x^3 + x^4 + 4x^5 + x^6 + 4x^7 + x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 34
+canonical_presentation_index = 1037
+
+[1038]
+f(x) = 2 + 4x^3 + 2x^4 + 4x^5 + 3x^6 + x^7 + 4x^11 + x^12 + x^13
+middle_coefficient_a_6 = 34
+canonical_presentation_index = 1038
+
+[1039]
+f(x) = 3 + 4x^3 + 3x^4 + 4x^5 + 2x^6 + x^7 + 4x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 34
+canonical_presentation_index = 1038
+
+[1040]
+f(x) = 4 + x^3 + 4x^4 + 4x^5 + 4x^6 + 4x^7 + x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 34
+canonical_presentation_index = 1037
+
+[1041]
+f(x) = 1 + 3x^3 + x^4 + x^5 + x^7 + 3x^8 + 3x^9 + x^12 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 557
+
+[1042]
+f(x) = 2 + 2x^3 + 2x^4 + x^5 + 4x^7 + x^8 + 3x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 558
+
+[1043]
+f(x) = 3 + 2x^3 + 3x^4 + x^5 + 4x^7 + 4x^8 + 3x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 558
+
+[1044]
+f(x) = 4 + 3x^3 + 4x^4 + x^5 + x^7 + 2x^8 + 3x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = -74
+canonical_presentation_index = 557
+
+[1045]
+f(x) = 1 + x^3 + x^4 + 2x^5 + 2x^7 + 2x^8 + 4x^10 + x^11 + x^13
+middle_coefficient_a_6 = -22
+canonical_presentation_index = 1045
+
+[1046]
+f(x) = 2 + 4x^3 + 2x^4 + 2x^5 + 3x^7 + 4x^8 + 2x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -22
+canonical_presentation_index = 1046
+
+[1047]
+f(x) = 3 + 4x^3 + 3x^4 + 2x^5 + 3x^7 + x^8 + 3x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -22
+canonical_presentation_index = 1046
+
+[1048]
+f(x) = 4 + x^3 + 4x^4 + 2x^5 + 2x^7 + 3x^8 + x^10 + x^11 + x^13
+middle_coefficient_a_6 = -22
+canonical_presentation_index = 1045
+
+[1049]
+f(x) = 1 + x^3 + x^4 + 4x^5 + 2x^7 + 3x^8 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = 230
+canonical_presentation_index = 1049
+
+[1050]
+f(x) = 2 + 4x^3 + 2x^4 + 4x^5 + 3x^7 + x^8 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 230
+canonical_presentation_index = 1050
+
+[1051]
+f(x) = 3 + 4x^3 + 3x^4 + 4x^5 + 3x^7 + 4x^8 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 230
+canonical_presentation_index = 1050
+
+[1052]
+f(x) = 4 + x^3 + 4x^4 + 4x^5 + 2x^7 + 2x^8 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 230
+canonical_presentation_index = 1049
+
+[1053]
+f(x) = 1 + 2x^3 + 4x^4 + 2x^5 + 3x^8 + 3x^9 + 4x^10 + x^12 + x^13
+middle_coefficient_a_6 = 106
+canonical_presentation_index = 1053
+
+[1054]
+f(x) = 2 + 3x^3 + 3x^4 + 2x^5 + x^8 + 3x^9 + 2x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 106
+canonical_presentation_index = 1054
+
+[1055]
+f(x) = 3 + 3x^3 + 2x^4 + 2x^5 + 4x^8 + 3x^9 + 3x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 106
+canonical_presentation_index = 1054
+
+[1056]
+f(x) = 4 + 2x^3 + x^4 + 2x^5 + 2x^8 + 3x^9 + x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 106
+canonical_presentation_index = 1053
+
+[1057]
+f(x) = 1 + 4x^3 + 3x^4 + x^6 + 2x^7 + 3x^9 + 2x^10 + x^11 + x^13
+middle_coefficient_a_6 = 22
+canonical_presentation_index = 1057
+
+[1058]
+f(x) = 2 + x^3 + x^4 + 3x^6 + 3x^7 + 3x^9 + x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 22
+canonical_presentation_index = 1058
+
+[1059]
+f(x) = 3 + x^3 + 4x^4 + 2x^6 + 3x^7 + 3x^9 + 4x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 22
+canonical_presentation_index = 1058
+
+[1060]
+f(x) = 4 + 4x^3 + 2x^4 + 4x^6 + 2x^7 + 3x^9 + 3x^10 + x^11 + x^13
+middle_coefficient_a_6 = 22
+canonical_presentation_index = 1057
+
+[1061]
+f(x) = 1 + 4x^3 + 2x^4 + 4x^7 + x^9 + 3x^10 + x^11 + x^12 + x^13
+middle_coefficient_a_6 = -174
+canonical_presentation_index = 1061
+
+[1062]
+f(x) = 2 + x^3 + 4x^4 + x^7 + x^9 + 4x^10 + 4x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -174
+canonical_presentation_index = 1062
+
+[1063]
+f(x) = 3 + x^3 + x^4 + x^7 + x^9 + x^10 + 4x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -174
+canonical_presentation_index = 1062
+
+[1064]
+f(x) = 4 + 4x^3 + 3x^4 + 4x^7 + x^9 + 2x^10 + x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -174
+canonical_presentation_index = 1061
+
+[1065]
+f(x) = 1 + x^3 + 4x^5 + x^6 + 2x^7 + x^8 + 2x^9 + x^11 + x^13
+middle_coefficient_a_6 = 212
+canonical_presentation_index = 216
+
+[1066]
+f(x) = 2 + 4x^3 + 4x^5 + 3x^6 + 3x^7 + 2x^8 + 2x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = 212
+canonical_presentation_index = 214
+
+[1067]
+f(x) = 3 + 4x^3 + 4x^5 + 2x^6 + 3x^7 + 3x^8 + 2x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = 212
+canonical_presentation_index = 214
+
+[1068]
+f(x) = 4 + x^3 + 4x^5 + 4x^6 + 2x^7 + 4x^8 + 2x^9 + x^11 + x^13
+middle_coefficient_a_6 = 212
+canonical_presentation_index = 216
+
+[1069]
+f(x) = 1 + 2x^3 + 2x^5 + 3x^6 + 4x^7 + 3x^9 + 2x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 38
+canonical_presentation_index = 1069
+
+[1070]
+f(x) = 2 + 3x^3 + 2x^5 + 4x^6 + x^7 + 3x^9 + x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 38
+canonical_presentation_index = 1070
+
+[1071]
+f(x) = 3 + 3x^3 + 2x^5 + x^6 + x^7 + 3x^9 + 4x^10 + x^12 + x^13
+middle_coefficient_a_6 = 38
+canonical_presentation_index = 1070
+
+[1072]
+f(x) = 4 + 2x^3 + 2x^5 + 2x^6 + 4x^7 + 3x^9 + 3x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 38
+canonical_presentation_index = 1069
+
+[1073]
+f(x) = 1 + 3x^3 + 4x^5 + 4x^7 + 2x^8 + x^10 + 4x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 365
+
+[1074]
+f(x) = 2 + 2x^3 + 4x^5 + x^7 + 4x^8 + 3x^10 + x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 366
+
+[1075]
+f(x) = 3 + 2x^3 + 4x^5 + x^7 + x^8 + 2x^10 + x^11 + x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 366
+
+[1076]
+f(x) = 4 + 3x^3 + 4x^5 + 4x^7 + 3x^8 + 4x^10 + 4x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 365
+
+[1077]
+f(x) = 1 + 4x^3 + x^6 + 4x^7 + 3x^8 + x^9 + x^10 + x^11 + x^13
+middle_coefficient_a_6 = -144
+canonical_presentation_index = 1077
+
+[1078]
+f(x) = 2 + x^3 + 3x^6 + x^7 + x^8 + x^9 + 3x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -144
+canonical_presentation_index = 1078
+
+[1079]
+f(x) = 3 + x^3 + 2x^6 + x^7 + 4x^8 + x^9 + 2x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -144
+canonical_presentation_index = 1078
+
+[1080]
+f(x) = 4 + 4x^3 + 4x^6 + 4x^7 + 2x^8 + x^9 + 4x^10 + x^11 + x^13
+middle_coefficient_a_6 = -144
+canonical_presentation_index = 1077
+
+[1081]
+f(x) = 1 + x^3 + 2x^6 + 3x^7 + x^8 + 2x^10 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 393
+
+[1082]
+f(x) = 2 + 4x^3 + x^6 + 2x^7 + 2x^8 + x^10 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 396
+
+[1083]
+f(x) = 3 + 4x^3 + 4x^6 + 2x^7 + 3x^8 + 4x^10 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 396
+
+[1084]
+f(x) = 4 + x^3 + 3x^6 + 3x^7 + 4x^8 + 3x^10 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 393
+
+[1085]
+f(x) = 1 + 3x^4 + 2x^5 + x^6 + 3x^7 + x^8 + x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 1085
+
+[1086]
+f(x) = 2 + x^4 + 2x^5 + 3x^6 + 2x^7 + 2x^8 + x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 1086
+
+[1087]
+f(x) = 3 + 4x^4 + 2x^5 + 2x^6 + 2x^7 + 3x^8 + x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 1086
+
+[1088]
+f(x) = 4 + 2x^4 + 2x^5 + 4x^6 + 3x^7 + 4x^8 + x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 1085
+
+[1089]
+f(x) = 1 + 4x^4 + 3x^5 + 4x^6 + x^7 + x^8 + x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 549
+
+[1090]
+f(x) = 2 + 3x^4 + 3x^5 + 2x^6 + 4x^7 + 2x^8 + 3x^10 + x^11 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 550
+
+[1091]
+f(x) = 3 + 2x^4 + 3x^5 + 3x^6 + 4x^7 + 3x^8 + 2x^10 + x^11 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 550
+
+[1092]
+f(x) = 4 + x^4 + 3x^5 + x^6 + x^7 + 4x^8 + 4x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 549
+
+[1093]
+f(x) = 1 + 2x^4 + 2x^5 + x^6 + 4x^9 + 3x^10 + x^11 + x^12 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 1093
+
+[1094]
+f(x) = 1 + 4x^4 + 2x^5 + x^6 + x^9 + 3x^10 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -144
+canonical_presentation_index = 1078
+
+[1095]
+f(x) = 2 + 3x^4 + 2x^5 + 3x^6 + x^9 + 4x^10 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -144
+canonical_presentation_index = 1077
+
+[1096]
+f(x) = 2 + 4x^4 + 2x^5 + 3x^6 + 4x^9 + 4x^10 + 4x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 1096
+
+[1097]
+f(x) = 3 + x^4 + 2x^5 + 2x^6 + 4x^9 + x^10 + 4x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 1096
+
+[1098]
+f(x) = 3 + 2x^4 + 2x^5 + 2x^6 + x^9 + x^10 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = -144
+canonical_presentation_index = 1077
+
+[1099]
+f(x) = 4 + x^4 + 2x^5 + 4x^6 + x^9 + 2x^10 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -144
+canonical_presentation_index = 1078
+
+[1100]
+f(x) = 4 + 3x^4 + 2x^5 + 4x^6 + 4x^9 + 2x^10 + x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 166
+canonical_presentation_index = 1093
+
+[1101]
+f(x) = 1 + x^4 + 3x^5 + 2x^7 + 3x^8 + 3x^9 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 550
+
+[1102]
+f(x) = 2 + 2x^4 + 3x^5 + 3x^7 + x^8 + 3x^9 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 549
+
+[1103]
+f(x) = 3 + 3x^4 + 3x^5 + 3x^7 + 4x^8 + 3x^9 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 549
+
+[1104]
+f(x) = 4 + 4x^4 + 3x^5 + 2x^7 + 2x^8 + 3x^9 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 550
+
+[1105]
+f(x) = 1 + 4x^4 + 4x^6 + 2x^7 + x^8 + 2x^9 + 4x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 1105
+
+[1106]
+f(x) = 2 + 3x^4 + 2x^6 + 3x^7 + 2x^8 + 2x^9 + 2x^10 + x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 1106
+
+[1107]
+f(x) = 3 + 2x^4 + 3x^6 + 3x^7 + 3x^8 + 2x^9 + 3x^10 + x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 1106
+
+[1108]
+f(x) = 4 + x^4 + x^6 + 2x^7 + 4x^8 + 2x^9 + x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 1105
+
+[1109]
+f(x) = 1 + 2x^4 + 3x^6 + 2x^7 + 4x^8 + 3x^9 + 3x^10 + x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 429
+
+[1110]
+f(x) = 2 + 4x^4 + 4x^6 + 3x^7 + 3x^8 + 3x^9 + 4x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 429
+
+[1111]
+f(x) = 3 + x^4 + x^6 + 3x^7 + 2x^8 + 3x^9 + x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 429
+
+[1112]
+f(x) = 4 + 3x^4 + 2x^6 + 2x^7 + x^8 + 3x^9 + 2x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 429
+
+[1113]
+f(x) = 1 + 2x^4 + x^6 + x^8 + 3x^9 + x^10 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 134
+canonical_presentation_index = 1113
+
+[1114]
+f(x) = 2 + 4x^4 + 3x^6 + 2x^8 + 3x^9 + 3x^10 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 134
+canonical_presentation_index = 1114
+
+[1115]
+f(x) = 3 + x^4 + 2x^6 + 3x^8 + 3x^9 + 2x^10 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = 134
+canonical_presentation_index = 1114
+
+[1116]
+f(x) = 4 + 3x^4 + 4x^6 + 4x^8 + 3x^9 + 4x^10 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 134
+canonical_presentation_index = 1113
+
+[1117]
+f(x) = 1 + 4x^5 + x^6 + x^7 + 4x^9 + 3x^10 + 4x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 1117
+
+[1118]
+f(x) = 2 + 4x^5 + 3x^6 + 4x^7 + 4x^9 + 4x^10 + x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 1118
+
+[1119]
+f(x) = 3 + 4x^5 + 2x^6 + 4x^7 + 4x^9 + x^10 + x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 1118
+
+[1120]
+f(x) = 4 + 4x^5 + 4x^6 + x^7 + 4x^9 + 2x^10 + 4x^11 + x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 1117
+
+[1121]
+f(x) = 2x + x^2 + x^3 + x^4 + 3x^5 + 2x^6 + 3x^7 + 3x^10 + x^13
+middle_coefficient_a_6 = -172
+canonical_presentation_index = 634
+
+[1122]
+f(x) = 2x + 2x^2 + 4x^3 + 3x^4 + 3x^5 + 4x^6 + 2x^7 + x^10 + x^13
+middle_coefficient_a_6 = -172
+canonical_presentation_index = 633
+
+[1123]
+f(x) = 2x + 3x^2 + 4x^3 + 2x^4 + 3x^5 + x^6 + 2x^7 + 4x^10 + x^13
+middle_coefficient_a_6 = -172
+canonical_presentation_index = 633
+
+[1124]
+f(x) = 2x + 4x^2 + x^3 + 4x^4 + 3x^5 + 3x^6 + 3x^7 + 2x^10 + x^13
+middle_coefficient_a_6 = -172
+canonical_presentation_index = 634
+
+[1125]
+f(x) = 2x + x^2 + 3x^3 + 3x^4 + 2x^5 + 3x^6 + 4x^7 + 2x^11 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 729
+
+[1126]
+f(x) = 2x + 2x^2 + 2x^3 + 4x^4 + 2x^5 + x^6 + x^7 + 3x^11 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 730
+
+[1127]
+f(x) = 2x + 3x^2 + 2x^3 + x^4 + 2x^5 + 4x^6 + x^7 + 3x^11 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 730
+
+[1128]
+f(x) = 2x + 4x^2 + 3x^3 + 2x^4 + 2x^5 + 2x^6 + 4x^7 + 2x^11 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 729
+
+[1129]
+f(x) = 4x + x^2 + 3x^3 + 3x^4 + 3x^5 + x^6 + 2x^9 + x^12 + x^13
+middle_coefficient_a_6 = 154
+canonical_presentation_index = 561
+
+[1130]
+f(x) = 4x + 2x^2 + 2x^3 + 4x^4 + 3x^5 + 2x^6 + 2x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = 154
+canonical_presentation_index = 563
+
+[1131]
+f(x) = 4x + 3x^2 + 2x^3 + x^4 + 3x^5 + 3x^6 + 2x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = 154
+canonical_presentation_index = 563
+
+[1132]
+f(x) = 4x + 4x^2 + 3x^3 + 2x^4 + 3x^5 + 4x^6 + 2x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = 154
+canonical_presentation_index = 561
+
+[1133]
+f(x) = 3x + x^2 + 4x^3 + 3x^4 + 4x^5 + 4x^7 + 3x^8 + 3x^10 + x^13
+middle_coefficient_a_6 = 120
+canonical_presentation_index = 1133
+
+[1134]
+f(x) = 3x + 2x^2 + x^3 + 4x^4 + 4x^5 + x^7 + 4x^8 + x^10 + x^13
+middle_coefficient_a_6 = 120
+canonical_presentation_index = 1134
+
+[1135]
+f(x) = 3x + 3x^2 + x^3 + x^4 + 4x^5 + x^7 + x^8 + 4x^10 + x^13
+middle_coefficient_a_6 = 120
+canonical_presentation_index = 1134
+
+[1136]
+f(x) = 3x + 4x^2 + 4x^3 + 2x^4 + 4x^5 + 4x^7 + 2x^8 + 2x^10 + x^13
+middle_coefficient_a_6 = 120
+canonical_presentation_index = 1133
+
+[1137]
+f(x) = 4x + x^2 + 3x^3 + x^4 + 3x^5 + 2x^7 + 2x^9 + x^12 + x^13
+middle_coefficient_a_6 = 74
+canonical_presentation_index = 1137
+
+[1138]
+f(x) = 4x + 2x^2 + 2x^3 + 3x^4 + 3x^5 + 3x^7 + 2x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = 74
+canonical_presentation_index = 1138
+
+[1139]
+f(x) = 4x + 3x^2 + 2x^3 + 2x^4 + 3x^5 + 3x^7 + 2x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = 74
+canonical_presentation_index = 1138
+
+[1140]
+f(x) = 4x + 4x^2 + 3x^3 + 4x^4 + 3x^5 + 2x^7 + 2x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = 74
+canonical_presentation_index = 1137
+
+[1141]
+f(x) = x + x^2 + 3x^3 + 4x^4 + 4x^5 + x^9 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -38
+canonical_presentation_index = 1141
+
+[1142]
+f(x) = x + 2x^2 + 2x^3 + 2x^4 + 4x^5 + x^9 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -38
+canonical_presentation_index = 1142
+
+[1143]
+f(x) = x + 3x^2 + 2x^3 + 3x^4 + 4x^5 + x^9 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -38
+canonical_presentation_index = 1142
+
+[1144]
+f(x) = x + 4x^2 + 3x^3 + x^4 + 4x^5 + x^9 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = -38
+canonical_presentation_index = 1141
+
+[1145]
+f(x) = 2x + x^2 + 3x^3 + 4x^4 + 4x^5 + x^9 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -32
+canonical_presentation_index = 165
+
+[1146]
+f(x) = 2x + 2x^2 + 2x^3 + 2x^4 + 4x^5 + x^9 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -32
+canonical_presentation_index = 166
+
+[1147]
+f(x) = 2x + 3x^2 + 2x^3 + 3x^4 + 4x^5 + x^9 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -32
+canonical_presentation_index = 166
+
+[1148]
+f(x) = 2x + 4x^2 + 3x^3 + x^4 + 4x^5 + x^9 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = -32
+canonical_presentation_index = 165
+
+[1149]
+f(x) = x + x^2 + 2x^3 + 3x^4 + 4x^5 + 2x^10 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = -154
+canonical_presentation_index = 934
+
+[1150]
+f(x) = x + 2x^2 + 3x^3 + 4x^4 + 4x^5 + 4x^10 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -154
+canonical_presentation_index = 933
+
+[1151]
+f(x) = x + 3x^2 + 3x^3 + x^4 + 4x^5 + x^10 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -154
+canonical_presentation_index = 933
+
+[1152]
+f(x) = x + 4x^2 + 2x^3 + 2x^4 + 4x^5 + 3x^10 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -154
+canonical_presentation_index = 934
+
+[1153]
+f(x) = x + x^2 + x^3 + 4x^4 + 4x^6 + 2x^7 + 3x^9 + 2x^10 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 1153
+
+[1154]
+f(x) = x + 2x^2 + 4x^3 + 2x^4 + 3x^6 + 3x^7 + 3x^9 + 4x^10 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 1154
+
+[1155]
+f(x) = x + 3x^2 + 4x^3 + 3x^4 + 2x^6 + 3x^7 + 3x^9 + x^10 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 1154
+
+[1156]
+f(x) = x + 4x^2 + x^3 + x^4 + x^6 + 2x^7 + 3x^9 + 3x^10 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 1153
+
+[1157]
+f(x) = 3x + x^2 + 3x^3 + 2x^4 + x^6 + 2x^7 + 3x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 41
+
+[1158]
+f(x) = 3x + 2x^2 + 2x^3 + x^4 + 2x^6 + 3x^7 + 3x^9 + x^12 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 42
+
+[1159]
+f(x) = 3x + 3x^2 + 2x^3 + 4x^4 + 3x^6 + 3x^7 + 3x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 42
+
+[1160]
+f(x) = 3x + 4x^2 + 3x^3 + 3x^4 + 4x^6 + 2x^7 + 3x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 41
+
+[1161]
+f(x) = 4x + x^2 + 4x^3 + x^4 + 4x^6 + x^7 + 2x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 178
+canonical_presentation_index = 62
+
+[1162]
+f(x) = 4x + 2x^2 + x^3 + 3x^4 + 3x^6 + 4x^7 + 4x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 178
+canonical_presentation_index = 61
+
+[1163]
+f(x) = 4x + 3x^2 + x^3 + 2x^4 + 2x^6 + 4x^7 + x^10 + x^12 + x^13
+middle_coefficient_a_6 = 178
+canonical_presentation_index = 61
+
+[1164]
+f(x) = 4x + 4x^2 + 4x^3 + 4x^4 + x^6 + x^7 + 3x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 178
+canonical_presentation_index = 62
+
+[1165]
+f(x) = 2x + x^2 + 4x^3 + 2x^4 + 2x^6 + 2x^8 + 2x^9 + x^11 + x^13
+middle_coefficient_a_6 = -122
+canonical_presentation_index = 957
+
+[1166]
+f(x) = 2x + 2x^2 + x^3 + x^4 + 4x^6 + x^8 + 2x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = -122
+canonical_presentation_index = 958
+
+[1167]
+f(x) = 2x + 3x^2 + x^3 + 4x^4 + x^6 + 4x^8 + 2x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = -122
+canonical_presentation_index = 958
+
+[1168]
+f(x) = 2x + 4x^2 + 4x^3 + 3x^4 + 3x^6 + 3x^8 + 2x^9 + x^11 + x^13
+middle_coefficient_a_6 = -122
+canonical_presentation_index = 957
+
+[1169]
+f(x) = 4x + x^2 + 2x^3 + 2x^4 + x^6 + 3x^8 + 3x^10 + x^11 + x^13
+middle_coefficient_a_6 = 250
+canonical_presentation_index = 1169
+
+[1170]
+f(x) = 4x + 2x^2 + 3x^3 + x^4 + 2x^6 + 4x^8 + x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 250
+canonical_presentation_index = 1170
+
+[1171]
+f(x) = 4x + 3x^2 + 3x^3 + 4x^4 + 3x^6 + x^8 + 4x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 250
+canonical_presentation_index = 1170
+
+[1172]
+f(x) = 4x + 4x^2 + 2x^3 + 3x^4 + 4x^6 + 2x^8 + 2x^10 + x^11 + x^13
+middle_coefficient_a_6 = 250
+canonical_presentation_index = 1169
+
+[1173]
+f(x) = 2x + x^2 + 4x^3 + 3x^4 + x^6 + 3x^8 + x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -82
+canonical_presentation_index = 149
+
+[1174]
+f(x) = 2x + 2x^2 + x^3 + 4x^4 + 2x^6 + 4x^8 + 4x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -82
+canonical_presentation_index = 150
+
+[1175]
+f(x) = 2x + 3x^2 + x^3 + x^4 + 3x^6 + x^8 + 4x^11 + x^12 + x^13
+middle_coefficient_a_6 = -82
+canonical_presentation_index = 150
+
+[1176]
+f(x) = 2x + 4x^2 + 4x^3 + 2x^4 + 4x^6 + 2x^8 + x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -82
+canonical_presentation_index = 149
+
+[1177]
+f(x) = 2x + x^2 + 4x^3 + 4x^4 + 4x^6 + 2x^9 + 2x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 136
+canonical_presentation_index = 289
+
+[1178]
+f(x) = 2x + 2x^2 + x^3 + 2x^4 + 3x^6 + 2x^9 + 4x^10 + x^12 + x^13
+middle_coefficient_a_6 = 136
+canonical_presentation_index = 290
+
+[1179]
+f(x) = 2x + 3x^2 + x^3 + 3x^4 + 2x^6 + 2x^9 + x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 136
+canonical_presentation_index = 290
+
+[1180]
+f(x) = 2x + 4x^2 + 4x^3 + x^4 + x^6 + 2x^9 + 3x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 136
+canonical_presentation_index = 289
+
+[1181]
+f(x) = 4x + x^2 + 2x^3 + 3x^4 + 3x^7 + 3x^8 + x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = 130
+canonical_presentation_index = 353
+
+[1182]
+f(x) = 4x + 2x^2 + 3x^3 + 4x^4 + 2x^7 + 4x^8 + x^9 + x^11 + x^13
+middle_coefficient_a_6 = 130
+canonical_presentation_index = 354
+
+[1183]
+f(x) = 4x + 3x^2 + 3x^3 + x^4 + 2x^7 + x^8 + x^9 + x^11 + x^13
+middle_coefficient_a_6 = 130
+canonical_presentation_index = 354
+
+[1184]
+f(x) = 4x + 4x^2 + 2x^3 + 2x^4 + 3x^7 + 2x^8 + x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = 130
+canonical_presentation_index = 353
+
+[1185]
+f(x) = x + x^2 + 4x^3 + x^4 + x^7 + 2x^8 + 4x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = 198
+canonical_presentation_index = 546
+
+[1186]
+f(x) = x + 2x^2 + x^3 + 3x^4 + 4x^7 + x^8 + 4x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = 198
+canonical_presentation_index = 545
+
+[1187]
+f(x) = x + 3x^2 + x^3 + 2x^4 + 4x^7 + 4x^8 + 4x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = 198
+canonical_presentation_index = 545
+
+[1188]
+f(x) = x + 4x^2 + 4x^3 + 4x^4 + x^7 + 3x^8 + 4x^9 + x^12 + x^13
+middle_coefficient_a_6 = 198
+canonical_presentation_index = 546
+
+[1189]
+f(x) = 4x + x^2 + 2x^3 + x^4 + x^7 + 3x^8 + x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 582
+
+[1190]
+f(x) = 4x + 2x^2 + 3x^3 + 3x^4 + 4x^7 + 4x^8 + 4x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 581
+
+[1191]
+f(x) = 4x + 3x^2 + 3x^3 + 2x^4 + 4x^7 + x^8 + 4x^11 + x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 581
+
+[1192]
+f(x) = 4x + 4x^2 + 2x^3 + 4x^4 + x^7 + 2x^8 + x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 582
+
+[1193]
+f(x) = 4x + x^2 + 2x^3 + 2x^4 + 4x^7 + x^10 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 102
+canonical_presentation_index = 1193
+
+[1194]
+f(x) = 4x + 2x^2 + 3x^3 + x^4 + x^7 + 2x^10 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = 102
+canonical_presentation_index = 1193
+
+[1195]
+f(x) = 4x + 3x^2 + 3x^3 + 4x^4 + x^7 + 3x^10 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 102
+canonical_presentation_index = 1193
+
+[1196]
+f(x) = 4x + 4x^2 + 2x^3 + 3x^4 + 4x^7 + 4x^10 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 102
+canonical_presentation_index = 1193
+
+[1197]
+f(x) = x + x^2 + 3x^3 + 4x^4 + x^8 + 3x^9 + 4x^10 + x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 726
+
+[1198]
+f(x) = x + 2x^2 + 2x^3 + 2x^4 + 3x^8 + 3x^9 + 3x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 725
+
+[1199]
+f(x) = x + 3x^2 + 2x^3 + 3x^4 + 2x^8 + 3x^9 + 2x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 725
+
+[1200]
+f(x) = x + 4x^2 + 3x^3 + x^4 + 4x^8 + 3x^9 + x^10 + x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 726
+
+[1201]
+f(x) = x + x^2 + 3x^3 + 2x^4 + 4x^9 + 3x^10 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = -154
+canonical_presentation_index = 934
+
+[1202]
+f(x) = x + 2x^2 + 2x^3 + x^4 + 4x^9 + x^10 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -154
+canonical_presentation_index = 933
+
+[1203]
+f(x) = x + 3x^2 + 2x^3 + 4x^4 + 4x^9 + 4x^10 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -154
+canonical_presentation_index = 933
+
+[1204]
+f(x) = x + 4x^2 + 3x^3 + 3x^4 + 4x^9 + 2x^10 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -154
+canonical_presentation_index = 934
+
+[1205]
+f(x) = x + x^2 + 2x^3 + 3x^5 + x^6 + x^7 + x^8 + 3x^12 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 1205
+
+[1206]
+f(x) = x + 2x^2 + 3x^3 + 3x^5 + 2x^6 + 4x^7 + 3x^8 + 4x^12 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 1206
+
+[1207]
+f(x) = x + 3x^2 + 3x^3 + 3x^5 + 3x^6 + 4x^7 + 2x^8 + x^12 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 1206
+
+[1208]
+f(x) = x + 4x^2 + 2x^3 + 3x^5 + 4x^6 + x^7 + 4x^8 + 2x^12 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 1205
+
+[1209]
+f(x) = 2x + x^2 + x^3 + x^5 + x^6 + 2x^7 + 3x^10 + x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 38
+
+[1210]
+f(x) = 2x + 2x^2 + 4x^3 + x^5 + 2x^6 + 3x^7 + x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 37
+
+[1211]
+f(x) = 2x + 3x^2 + 4x^3 + x^5 + 3x^6 + 3x^7 + 4x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 37
+
+[1212]
+f(x) = 2x + 4x^2 + x^3 + x^5 + 4x^6 + 2x^7 + 2x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 38
+
+[1213]
+f(x) = 2x + x^2 + 2x^3 + 3x^5 + x^6 + 2x^7 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -92
+canonical_presentation_index = 70
+
+[1214]
+f(x) = 2x + 2x^2 + 3x^3 + 3x^5 + 2x^6 + 3x^7 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -92
+canonical_presentation_index = 69
+
+[1215]
+f(x) = 2x + 3x^2 + 3x^3 + 3x^5 + 3x^6 + 3x^7 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = -92
+canonical_presentation_index = 69
+
+[1216]
+f(x) = 2x + 4x^2 + 2x^3 + 3x^5 + 4x^6 + 2x^7 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -92
+canonical_presentation_index = 70
+
+[1217]
+f(x) = 2x + x^2 + 3x^3 + 4x^5 + 4x^6 + 4x^9 + 4x^11 + x^12 + x^13
+middle_coefficient_a_6 = 212
+canonical_presentation_index = 1217
+
+[1218]
+f(x) = 2x + 2x^2 + 2x^3 + 4x^5 + 3x^6 + 4x^9 + x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 212
+canonical_presentation_index = 1218
+
+[1219]
+f(x) = 2x + 3x^2 + 2x^3 + 4x^5 + 2x^6 + 4x^9 + x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 212
+canonical_presentation_index = 1218
+
+[1220]
+f(x) = 2x + 4x^2 + 3x^3 + 4x^5 + x^6 + 4x^9 + 4x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 212
+canonical_presentation_index = 1217
+
+[1221]
+f(x) = 3x + x^2 + 2x^3 + 3x^5 + 3x^7 + 3x^8 + x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 230
+
+[1222]
+f(x) = 3x + 2x^2 + 3x^3 + 3x^5 + 2x^7 + 4x^8 + 4x^11 + x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 229
+
+[1223]
+f(x) = 3x + 3x^2 + 3x^3 + 3x^5 + 2x^7 + x^8 + 4x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 229
+
+[1224]
+f(x) = 3x + 4x^2 + 2x^3 + 3x^5 + 3x^7 + 2x^8 + x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 230
+
+[1225]
+f(x) = 2x + x^2 + 4x^3 + 2x^5 + 4x^7 + 2x^9 + x^10 + x^11 + x^13
+middle_coefficient_a_6 = 116
+canonical_presentation_index = 1225
+
+[1226]
+f(x) = 2x + 2x^2 + x^3 + 2x^5 + x^7 + 2x^9 + 2x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 116
+canonical_presentation_index = 1226
+
+[1227]
+f(x) = 2x + 3x^2 + x^3 + 2x^5 + x^7 + 2x^9 + 3x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 116
+canonical_presentation_index = 1226
+
+[1228]
+f(x) = 2x + 4x^2 + 4x^3 + 2x^5 + 4x^7 + 2x^9 + 4x^10 + x^11 + x^13
+middle_coefficient_a_6 = 116
+canonical_presentation_index = 1225
+
+[1229]
+f(x) = 4x + x^2 + 3x^3 + 3x^5 + 2x^8 + 3x^9 + 2x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 102
+canonical_presentation_index = 797
+
+[1230]
+f(x) = 4x + 2x^2 + 2x^3 + 3x^5 + x^8 + 3x^9 + 4x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 102
+canonical_presentation_index = 800
+
+[1231]
+f(x) = 4x + 3x^2 + 2x^3 + 3x^5 + 4x^8 + 3x^9 + x^10 + x^12 + x^13
+middle_coefficient_a_6 = 102
+canonical_presentation_index = 800
+
+[1232]
+f(x) = 4x + 4x^2 + 3x^3 + 3x^5 + 3x^8 + 3x^9 + 3x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 102
+canonical_presentation_index = 797
+
+[1233]
+f(x) = 3x + x^2 + 3x^3 + 2x^5 + x^8 + 2x^9 + x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 212
+canonical_presentation_index = 1217
+
+[1234]
+f(x) = 3x + 2x^2 + 2x^3 + 2x^5 + 3x^8 + 2x^9 + 4x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 212
+canonical_presentation_index = 1218
+
+[1235]
+f(x) = 3x + 3x^2 + 2x^3 + 2x^5 + 2x^8 + 2x^9 + 4x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 212
+canonical_presentation_index = 1218
+
+[1236]
+f(x) = 3x + 4x^2 + 3x^3 + 2x^5 + 4x^8 + 2x^9 + x^11 + x^12 + x^13
+middle_coefficient_a_6 = 212
+canonical_presentation_index = 1217
+
+[1237]
+f(x) = x + x^2 + 2x^3 + x^5 + 4x^9 + x^10 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -38
+canonical_presentation_index = 1141
+
+[1238]
+f(x) = x + 2x^2 + 3x^3 + x^5 + 4x^9 + 2x^10 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -38
+canonical_presentation_index = 1142
+
+[1239]
+f(x) = x + 3x^2 + 3x^3 + x^5 + 4x^9 + 3x^10 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -38
+canonical_presentation_index = 1142
+
+[1240]
+f(x) = x + 4x^2 + 2x^3 + x^5 + 4x^9 + 4x^10 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = -38
+canonical_presentation_index = 1141
+
+[1241]
+f(x) = 3x + x^2 + 4x^3 + 3x^5 + 2x^9 + x^10 + x^11 + x^12 + x^13
+middle_coefficient_a_6 = -32
+canonical_presentation_index = 165
+
+[1242]
+f(x) = 3x + 2x^2 + x^3 + 3x^5 + 2x^9 + 2x^10 + 4x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -32
+canonical_presentation_index = 166
+
+[1243]
+f(x) = 3x + 3x^2 + x^3 + 3x^5 + 2x^9 + 3x^10 + 4x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -32
+canonical_presentation_index = 166
+
+[1244]
+f(x) = 3x + 4x^2 + 4x^3 + 3x^5 + 2x^9 + 4x^10 + x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -32
+canonical_presentation_index = 165
+
+[1245]
+f(x) = 2x + x^2 + 2x^3 + 4x^6 + 3x^7 + 2x^8 + 4x^9 + 3x^12 + x^13
+middle_coefficient_a_6 = 96
+canonical_presentation_index = 202
+
+[1246]
+f(x) = 2x + 2x^2 + 3x^3 + 3x^6 + 2x^7 + x^8 + 4x^9 + 4x^12 + x^13
+middle_coefficient_a_6 = 96
+canonical_presentation_index = 201
+
+[1247]
+f(x) = 2x + 3x^2 + 3x^3 + 2x^6 + 2x^7 + 4x^8 + 4x^9 + x^12 + x^13
+middle_coefficient_a_6 = 96
+canonical_presentation_index = 201
+
+[1248]
+f(x) = 2x + 4x^2 + 2x^3 + x^6 + 3x^7 + 3x^8 + 4x^9 + 2x^12 + x^13
+middle_coefficient_a_6 = 96
+canonical_presentation_index = 202
+
+[1249]
+f(x) = 4x + x^2 + 2x^3 + x^6 + x^7 + 2x^8 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 293
+
+[1250]
+f(x) = 4x + 2x^2 + 3x^3 + 2x^6 + 4x^7 + x^8 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 293
+
+[1251]
+f(x) = 4x + 3x^2 + 3x^3 + 3x^6 + 4x^7 + 4x^8 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 293
+
+[1252]
+f(x) = 4x + 4x^2 + 2x^3 + 4x^6 + x^7 + 3x^8 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 6
+canonical_presentation_index = 293
+
+[1253]
+f(x) = 2x + x^2 + 2x^3 + 4x^6 + x^7 + x^9 + 4x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 229
+
+[1254]
+f(x) = 2x + 2x^2 + 3x^3 + 3x^6 + 4x^7 + x^9 + x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 230
+
+[1255]
+f(x) = 2x + 3x^2 + 3x^3 + 2x^6 + 4x^7 + x^9 + x^11 + x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 230
+
+[1256]
+f(x) = 2x + 4x^2 + 2x^3 + x^6 + x^7 + x^9 + 4x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 229
+
+[1257]
+f(x) = 4x + x^2 + x^3 + x^6 + x^7 + 2x^10 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 581
+
+[1258]
+f(x) = 4x + 2x^2 + 4x^3 + 2x^6 + 4x^7 + 4x^10 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 582
+
+[1259]
+f(x) = 4x + 3x^2 + 4x^3 + 3x^6 + 4x^7 + x^10 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 582
+
+[1260]
+f(x) = 4x + 4x^2 + x^3 + 4x^6 + x^7 + 3x^10 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -58
+canonical_presentation_index = 581
+
+[1261]
+f(x) = 3x + x^2 + 3x^3 + x^6 + 2x^8 + x^10 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -82
+canonical_presentation_index = 150
+
+[1262]
+f(x) = 3x + 2x^2 + 2x^3 + 2x^6 + x^8 + 2x^10 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = -82
+canonical_presentation_index = 149
+
+[1263]
+f(x) = 3x + 3x^2 + 2x^3 + 3x^6 + 4x^8 + 3x^10 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -82
+canonical_presentation_index = 149
+
+[1264]
+f(x) = 3x + 4x^2 + 3x^3 + 4x^6 + 3x^8 + 4x^10 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -82
+canonical_presentation_index = 150
+
+[1265]
+f(x) = 3x + x^2 + x^3 + x^7 + 2x^8 + 4x^9 + x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -92
+canonical_presentation_index = 69
+
+[1266]
+f(x) = 3x + 2x^2 + 4x^3 + 4x^7 + x^8 + 4x^9 + 4x^11 + x^12 + x^13
+middle_coefficient_a_6 = -92
+canonical_presentation_index = 70
+
+[1267]
+f(x) = 3x + 3x^2 + 4x^3 + 4x^7 + 4x^8 + 4x^9 + 4x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -92
+canonical_presentation_index = 70
+
+[1268]
+f(x) = 3x + 4x^2 + x^3 + x^7 + 3x^8 + 4x^9 + x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -92
+canonical_presentation_index = 69
+
+[1269]
+f(x) = x + x^2 + 4x^4 + 3x^5 + 2x^6 + 4x^7 + 2x^8 + 3x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 1269
+
+[1270]
+f(x) = x + 2x^2 + 2x^4 + 3x^5 + 4x^6 + x^7 + x^8 + 4x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 1270
+
+[1271]
+f(x) = x + 3x^2 + 3x^4 + 3x^5 + x^6 + x^7 + 4x^8 + x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 1270
+
+[1272]
+f(x) = x + 4x^2 + x^4 + 3x^5 + 3x^6 + 4x^7 + 3x^8 + 2x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 1269
+
+[1273]
+f(x) = 4x + x^2 + 2x^4 + 4x^5 + 2x^6 + 2x^8 + x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 1273
+
+[1274]
+f(x) = 4x + 2x^2 + x^4 + 4x^5 + 4x^6 + x^8 + 2x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 1274
+
+[1275]
+f(x) = 4x + 3x^2 + 4x^4 + 4x^5 + x^6 + 4x^8 + 3x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 1274
+
+[1276]
+f(x) = 4x + 4x^2 + 3x^4 + 4x^5 + 3x^6 + 3x^8 + 4x^10 + x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 1273
+
+[1277]
+f(x) = 4x + x^2 + x^4 + 2x^5 + 4x^6 + 2x^9 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 102
+canonical_presentation_index = 800
+
+[1278]
+f(x) = 4x + 2x^2 + 3x^4 + 2x^5 + 3x^6 + 2x^9 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 102
+canonical_presentation_index = 797
+
+[1279]
+f(x) = 4x + 3x^2 + 2x^4 + 2x^5 + 2x^6 + 2x^9 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = 102
+canonical_presentation_index = 797
+
+[1280]
+f(x) = 4x + 4x^2 + 4x^4 + 2x^5 + x^6 + 2x^9 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 102
+canonical_presentation_index = 800
+
+[1281]
+f(x) = 4x + x^2 + x^4 + x^5 + 3x^7 + 2x^8 + 2x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = -90
+canonical_presentation_index = 1281
+
+[1282]
+f(x) = 4x + 2x^2 + 3x^4 + x^5 + 2x^7 + x^8 + 2x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = -90
+canonical_presentation_index = 1282
+
+[1283]
+f(x) = 4x + 3x^2 + 2x^4 + x^5 + 2x^7 + 4x^8 + 2x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = -90
+canonical_presentation_index = 1282
+
+[1284]
+f(x) = 4x + 4x^2 + 4x^4 + x^5 + 3x^7 + 3x^8 + 2x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = -90
+canonical_presentation_index = 1281
+
+[1285]
+f(x) = 4x + x^2 + 3x^4 + 4x^5 + 3x^7 + x^9 + 4x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 58
+canonical_presentation_index = 1285
+
+[1286]
+f(x) = 4x + 2x^2 + 4x^4 + 4x^5 + 2x^7 + x^9 + 3x^10 + x^12 + x^13
+middle_coefficient_a_6 = 58
+canonical_presentation_index = 1285
+
+[1287]
+f(x) = 4x + 3x^2 + x^4 + 4x^5 + 2x^7 + x^9 + 2x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 58
+canonical_presentation_index = 1285
+
+[1288]
+f(x) = 4x + 4x^2 + 2x^4 + 4x^5 + 3x^7 + x^9 + x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 58
+canonical_presentation_index = 1285
+
+[1289]
+f(x) = 2x + x^2 + 4x^4 + 3x^5 + 3x^8 + 2x^9 + 4x^10 + x^11 + x^13
+middle_coefficient_a_6 = -84
+canonical_presentation_index = 1289
+
+[1290]
+f(x) = 2x + 2x^2 + 2x^4 + 3x^5 + 4x^8 + 2x^9 + 3x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -84
+canonical_presentation_index = 1290
+
+[1291]
+f(x) = 2x + 3x^2 + 3x^4 + 3x^5 + x^8 + 2x^9 + 2x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = -84
+canonical_presentation_index = 1290
+
+[1292]
+f(x) = 2x + 4x^2 + x^4 + 3x^5 + 2x^8 + 2x^9 + x^10 + x^11 + x^13
+middle_coefficient_a_6 = -84
+canonical_presentation_index = 1289
+
+[1293]
+f(x) = 3x + x^2 + x^4 + x^5 + 2x^8 + 2x^10 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 136
+canonical_presentation_index = 290
+
+[1294]
+f(x) = 3x + 2x^2 + 3x^4 + x^5 + x^8 + 4x^10 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 136
+canonical_presentation_index = 289
+
+[1295]
+f(x) = 3x + 3x^2 + 2x^4 + x^5 + 4x^8 + x^10 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = 136
+canonical_presentation_index = 289
+
+[1296]
+f(x) = 3x + 4x^2 + 4x^4 + x^5 + 3x^8 + 3x^10 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 136
+canonical_presentation_index = 290
+
+[1297]
+f(x) = 4x + x^2 + 2x^4 + 4x^6 + 3x^7 + 2x^8 + 4x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 505
+
+[1298]
+f(x) = 4x + 2x^2 + x^4 + 3x^6 + 2x^7 + x^8 + 3x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 505
+
+[1299]
+f(x) = 4x + 3x^2 + 4x^4 + 2x^6 + 2x^7 + 4x^8 + 2x^10 + x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 505
+
+[1300]
+f(x) = 4x + 4x^2 + 3x^4 + x^6 + 3x^7 + 3x^8 + x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 505
+
+[1301]
+f(x) = 4x + x^2 + 4x^4 + 3x^6 + 3x^8 + x^9 + 3x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 1273
+
+[1302]
+f(x) = 4x + 2x^2 + 2x^4 + x^6 + 4x^8 + x^9 + x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 1274
+
+[1303]
+f(x) = 4x + 3x^2 + 3x^4 + 4x^6 + x^8 + x^9 + 4x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 1274
+
+[1304]
+f(x) = 4x + 4x^2 + x^4 + 2x^6 + 2x^8 + x^9 + 2x^10 + x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 1273
+
+[1305]
+f(x) = 3x + x^2 + 2x^4 + 4x^7 + 4x^8 + 3x^9 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 38
+
+[1306]
+f(x) = 3x + 2x^2 + x^4 + x^7 + 2x^8 + 3x^9 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 37
+
+[1307]
+f(x) = 3x + 3x^2 + 4x^4 + x^7 + 3x^8 + 3x^9 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 37
+
+[1308]
+f(x) = 3x + 4x^2 + 3x^4 + 4x^7 + x^8 + 3x^9 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = 70
+canonical_presentation_index = 38
+
+[1309]
+f(x) = 4x + x^2 + x^4 + x^7 + 2x^8 + 2x^10 + 4x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 178
+canonical_presentation_index = 61
+
+[1310]
+f(x) = 4x + 2x^2 + 3x^4 + 4x^7 + x^8 + 4x^10 + x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 178
+canonical_presentation_index = 62
+
+[1311]
+f(x) = 4x + 3x^2 + 2x^4 + 4x^7 + 4x^8 + x^10 + x^11 + x^12 + x^13
+middle_coefficient_a_6 = 178
+canonical_presentation_index = 62
+
+[1312]
+f(x) = 4x + 4x^2 + 4x^4 + x^7 + 3x^8 + 3x^10 + 4x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 178
+canonical_presentation_index = 61
+
+[1313]
+f(x) = 3x + x^2 + 2x^5 + 4x^6 + 4x^7 + 3x^8 + x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 96
+canonical_presentation_index = 201
+
+[1314]
+f(x) = 3x + 2x^2 + 2x^5 + 3x^6 + x^7 + 4x^8 + 4x^11 + x^12 + x^13
+middle_coefficient_a_6 = 96
+canonical_presentation_index = 202
+
+[1315]
+f(x) = 3x + 3x^2 + 2x^5 + 2x^6 + x^7 + x^8 + 4x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 96
+canonical_presentation_index = 202
+
+[1316]
+f(x) = 3x + 4x^2 + 2x^5 + x^6 + 4x^7 + 2x^8 + x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 96
+canonical_presentation_index = 201
+
+[1317]
+f(x) = x + x^2 + 4x^5 + 3x^6 + x^7 + 4x^10 + 4x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 198
+canonical_presentation_index = 546
+
+[1318]
+f(x) = x + 2x^2 + 4x^5 + x^6 + 4x^7 + 3x^10 + x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 198
+canonical_presentation_index = 545
+
+[1319]
+f(x) = x + 3x^2 + 4x^5 + 4x^6 + 4x^7 + 2x^10 + x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 198
+canonical_presentation_index = 545
+
+[1320]
+f(x) = x + 4x^2 + 4x^5 + 2x^6 + x^7 + x^10 + 4x^11 + x^12 + x^13
+middle_coefficient_a_6 = 198
+canonical_presentation_index = 546
+
+[1321]
+f(x) = 2x + x^2 + x^5 + 4x^7 + 3x^8 + x^10 + x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 42
+
+[1322]
+f(x) = 2x + 2x^2 + x^5 + x^7 + 4x^8 + 2x^10 + 4x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 41
+
+[1323]
+f(x) = 2x + 3x^2 + x^5 + x^7 + x^8 + 3x^10 + 4x^11 + x^12 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 41
+
+[1324]
+f(x) = 2x + 4x^2 + x^5 + 4x^7 + 2x^8 + 4x^10 + x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 42
+
+[1325]
+f(x) = 4x + x^2 + 3x^5 + 3x^7 + 2x^9 + x^10 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = 74
+canonical_presentation_index = 1137
+
+[1326]
+f(x) = 4x + 2x^2 + 3x^5 + 2x^7 + 2x^9 + 2x^10 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 74
+canonical_presentation_index = 1138
+
+[1327]
+f(x) = 4x + 3x^2 + 3x^5 + 2x^7 + 2x^9 + 3x^10 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 74
+canonical_presentation_index = 1138
+
+[1328]
+f(x) = 4x + 4x^2 + 3x^5 + 3x^7 + 2x^9 + 4x^10 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 74
+canonical_presentation_index = 1137
+
+[1329]
+f(x) = 4x + x^2 + 3x^5 + x^8 + 2x^9 + 3x^10 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = 154
+canonical_presentation_index = 561
+
+[1330]
+f(x) = 4x + 2x^2 + 3x^5 + 3x^8 + 2x^9 + x^10 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 154
+canonical_presentation_index = 563
+
+[1331]
+f(x) = 4x + 3x^2 + 3x^5 + 2x^8 + 2x^9 + 4x^10 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 154
+canonical_presentation_index = 563
+
+[1332]
+f(x) = 4x + 4x^2 + 3x^5 + 4x^8 + 2x^9 + 2x^10 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 154
+canonical_presentation_index = 561
+
+[1333]
+f(x) = x + x^2 + 4x^6 + x^7 + x^8 + 3x^9 + 3x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 1270
+
+[1334]
+f(x) = x + 2x^2 + 3x^6 + 4x^7 + 3x^8 + 3x^9 + x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 1269
+
+[1335]
+f(x) = x + 3x^2 + 2x^6 + 4x^7 + 2x^8 + 3x^9 + 4x^10 + x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 1269
+
+[1336]
+f(x) = x + 4x^2 + x^6 + x^7 + 4x^8 + 3x^9 + 2x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = 118
+canonical_presentation_index = 1270
+
+[1337]
+f(x) = x + x^2 + 2x^6 + 4x^7 + 3x^8 + 3x^9 + 3x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 1206
+
+[1338]
+f(x) = x + 2x^2 + 4x^6 + x^7 + 4x^8 + 3x^9 + 2x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 1205
+
+[1339]
+f(x) = x + 3x^2 + x^6 + x^7 + x^8 + 3x^9 + 2x^11 + x^12 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 1205
+
+[1340]
+f(x) = x + 4x^2 + 3x^6 + 4x^7 + 2x^8 + 3x^9 + 3x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 86
+canonical_presentation_index = 1206
+
+[1341]
+f(x) = 4x + 2x^3 + 2x^4 + 4x^5 + x^6 + 4x^7 + x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = -94
+canonical_presentation_index = 814
+
+[1342]
+f(x) = 4x + 2x^3 + 3x^4 + 4x^5 + 4x^6 + 4x^7 + x^9 + 4x^11 + x^13
+middle_coefficient_a_6 = -94
+canonical_presentation_index = 814
+
+[1343]
+f(x) = 4x + 3x^3 + x^4 + 4x^5 + 2x^6 + x^7 + x^9 + x^11 + x^13
+middle_coefficient_a_6 = -94
+canonical_presentation_index = 813
+
+[1344]
+f(x) = 4x + 3x^3 + 4x^4 + 4x^5 + 3x^6 + x^7 + x^9 + x^11 + x^13
+middle_coefficient_a_6 = -94
+canonical_presentation_index = 813
+
+[1345]
+f(x) = 3x + 2x^3 + x^4 + x^5 + 3x^6 + 4x^9 + 4x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -84
+canonical_presentation_index = 1289
+
+[1346]
+f(x) = 3x + 2x^3 + 4x^4 + x^5 + 2x^6 + 4x^9 + x^10 + x^12 + x^13
+middle_coefficient_a_6 = -84
+canonical_presentation_index = 1289
+
+[1347]
+f(x) = 3x + 3x^3 + 2x^4 + x^5 + 4x^6 + 4x^9 + 2x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -84
+canonical_presentation_index = 1290
+
+[1348]
+f(x) = 3x + 3x^3 + 3x^4 + x^5 + x^6 + 4x^9 + 3x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -84
+canonical_presentation_index = 1290
+
+[1349]
+f(x) = x + x^3 + x^4 + 3x^5 + 4x^6 + x^10 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 726
+
+[1350]
+f(x) = x + x^3 + 4x^4 + 3x^5 + x^6 + 4x^10 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 726
+
+[1351]
+f(x) = x + 4x^3 + 2x^4 + 3x^5 + 2x^6 + 3x^10 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 725
+
+[1352]
+f(x) = x + 4x^3 + 3x^4 + 3x^5 + 3x^6 + 2x^10 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 725
+
+[1353]
+f(x) = 2x + x^3 + 2x^4 + x^5 + 2x^7 + 4x^8 + x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 321
+
+[1354]
+f(x) = 2x + x^3 + 3x^4 + x^5 + 2x^7 + x^8 + 4x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 321
+
+[1355]
+f(x) = 2x + 4x^3 + x^4 + x^5 + 3x^7 + 2x^8 + 2x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 322
+
+[1356]
+f(x) = 2x + 4x^3 + 4x^4 + x^5 + 3x^7 + 3x^8 + 3x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 322
+
+[1357]
+f(x) = 4x + 2x^3 + 2x^4 + 3x^5 + x^7 + 2x^9 + 4x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -118
+canonical_presentation_index = 785
+
+[1358]
+f(x) = 4x + 2x^3 + 3x^4 + 3x^5 + x^7 + 2x^9 + x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -118
+canonical_presentation_index = 785
+
+[1359]
+f(x) = 4x + 3x^3 + x^4 + 3x^5 + 4x^7 + 2x^9 + 3x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -118
+canonical_presentation_index = 785
+
+[1360]
+f(x) = 4x + 3x^3 + 4x^4 + 3x^5 + 4x^7 + 2x^9 + 2x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -118
+canonical_presentation_index = 785
+
+[1361]
+f(x) = 3x + 2x^3 + x^4 + x^5 + 3x^7 + x^9 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = 116
+canonical_presentation_index = 1225
+
+[1362]
+f(x) = 3x + 2x^3 + 4x^4 + x^5 + 3x^7 + x^9 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 116
+canonical_presentation_index = 1225
+
+[1363]
+f(x) = 3x + 3x^3 + 2x^4 + x^5 + 2x^7 + x^9 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 116
+canonical_presentation_index = 1226
+
+[1364]
+f(x) = 3x + 3x^3 + 3x^4 + x^5 + 2x^7 + x^9 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 116
+canonical_presentation_index = 1226
+
+[1365]
+f(x) = 4x + x^3 + 2x^4 + x^6 + 2x^7 + 3x^8 + 2x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 1365
+
+[1366]
+f(x) = 4x + x^3 + 3x^4 + 4x^6 + 2x^7 + 2x^8 + 2x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 1365
+
+[1367]
+f(x) = 4x + 4x^3 + x^4 + 2x^6 + 3x^7 + 4x^8 + 2x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 1367
+
+[1368]
+f(x) = 4x + 4x^3 + 4x^4 + 3x^6 + 3x^7 + x^8 + 2x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 1367
+
+[1369]
+f(x) = 3x + x^3 + x^4 + x^6 + 4x^7 + 3x^9 + 3x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 321
+
+[1370]
+f(x) = 3x + x^3 + 4x^4 + 4x^6 + 4x^7 + 3x^9 + 2x^10 + 2x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 321
+
+[1371]
+f(x) = 3x + 4x^3 + 2x^4 + 3x^6 + x^7 + 3x^9 + 4x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 322
+
+[1372]
+f(x) = 3x + 4x^3 + 3x^4 + 2x^6 + x^7 + 3x^9 + x^10 + 3x^11 + x^13
+middle_coefficient_a_6 = -26
+canonical_presentation_index = 322
+
+[1373]
+f(x) = 4x + x^3 + x^4 + 4x^6 + 2x^8 + x^10 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 250
+canonical_presentation_index = 1170
+
+[1374]
+f(x) = 4x + x^3 + 4x^4 + x^6 + 3x^8 + 4x^10 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 250
+canonical_presentation_index = 1170
+
+[1375]
+f(x) = 4x + 4x^3 + 2x^4 + 2x^6 + 4x^8 + 3x^10 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 250
+canonical_presentation_index = 1169
+
+[1376]
+f(x) = 4x + 4x^3 + 3x^4 + 3x^6 + x^8 + 2x^10 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = 250
+canonical_presentation_index = 1169
+
+[1377]
+f(x) = 4x + 2x^3 + 4x^5 + x^6 + 2x^7 + 2x^8 + x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = 74
+canonical_presentation_index = 1377
+
+[1378]
+f(x) = 4x + 2x^3 + 4x^5 + 2x^6 + 3x^7 + 4x^8 + x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 1378
+
+[1379]
+f(x) = 4x + 2x^3 + 4x^5 + 3x^6 + 3x^7 + x^8 + x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 1378
+
+[1380]
+f(x) = 4x + 2x^3 + 4x^5 + 4x^6 + 2x^7 + 3x^8 + x^9 + 2x^11 + x^13
+middle_coefficient_a_6 = 74
+canonical_presentation_index = 1377
+
+[1381]
+f(x) = 4x + 3x^3 + 4x^5 + x^6 + 2x^7 + 3x^8 + x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 1378
+
+[1382]
+f(x) = 4x + 3x^3 + 4x^5 + 2x^6 + 3x^7 + x^8 + x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = 74
+canonical_presentation_index = 1377
+
+[1383]
+f(x) = 4x + 3x^3 + 4x^5 + 3x^6 + 3x^7 + 4x^8 + x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = 74
+canonical_presentation_index = 1377
+
+[1384]
+f(x) = 4x + 3x^3 + 4x^5 + 4x^6 + 2x^7 + 2x^8 + x^9 + 3x^11 + x^13
+middle_coefficient_a_6 = 46
+canonical_presentation_index = 1378
+
+[1385]
+f(x) = 4x + 2x^3 + 3x^5 + 2x^6 + 3x^7 + 4x^8 + 3x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 1365
+
+[1386]
+f(x) = 4x + 2x^3 + 3x^5 + 3x^6 + 3x^7 + x^8 + 2x^10 + 4x^11 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 1365
+
+[1387]
+f(x) = 4x + 3x^3 + 3x^5 + x^6 + 2x^7 + 3x^8 + 4x^10 + x^11 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 1367
+
+[1388]
+f(x) = 4x + 3x^3 + 3x^5 + 4x^6 + 2x^7 + 2x^8 + x^10 + x^11 + x^13
+middle_coefficient_a_6 = 54
+canonical_presentation_index = 1367
+
+[1389]
+f(x) = 4x + 2x^3 + 3x^5 + x^6 + 3x^7 + 4x^9 + 3x^10 + 2x^12 + x^13
+middle_coefficient_a_6 = -90
+canonical_presentation_index = 1282
+
+[1390]
+f(x) = 4x + 2x^3 + 3x^5 + 4x^6 + 3x^7 + 4x^9 + 2x^10 + 3x^12 + x^13
+middle_coefficient_a_6 = -90
+canonical_presentation_index = 1282
+
+[1391]
+f(x) = 4x + 3x^3 + 3x^5 + 2x^6 + 2x^7 + 4x^9 + x^10 + x^12 + x^13
+middle_coefficient_a_6 = -90
+canonical_presentation_index = 1281
+
+[1392]
+f(x) = 4x + 3x^3 + 3x^5 + 3x^6 + 2x^7 + 4x^9 + 4x^10 + 4x^12 + x^13
+middle_coefficient_a_6 = -90
+canonical_presentation_index = 1281
+
+[1393]
+f(x) = 4x + x^3 + 4x^5 + 2x^6 + 2x^7 + 2x^10 + 3x^11 + 4x^12 + x^13
+middle_coefficient_a_6 = 130
+canonical_presentation_index = 353
+
+[1394]
+f(x) = 4x + x^3 + 4x^5 + 3x^6 + 2x^7 + 3x^10 + 3x^11 + x^12 + x^13
+middle_coefficient_a_6 = 130
+canonical_presentation_index = 353
+
+[1395]
+f(x) = 4x + 4x^3 + 4x^5 + x^6 + 3x^7 + x^10 + 2x^11 + 3x^12 + x^13
+middle_coefficient_a_6 = 130
+canonical_presentation_index = 354
+
+[1396]
+f(x) = 4x + 4x^3 + 4x^5 + 4x^6 + 3x^7 + 4x^10 + 2x^11 + 2x^12 + x^13
+middle_coefficient_a_6 = 130
+canonical_presentation_index = 354
+

@@ -1,0 +1,275 @@
+Hyperelliptic curves with trinomial L-polynomial
+========================================================
+p = 3
+g = 13
+base field: F_3
+presentation reduction: pgl2save
+monic enforced: False
+nonmonic leading square class included: True
+hasse-witt prefilter: True
+reduction class count: 24
+isomorphism class count: 24
+search status: interrupted
+complete list: False
+total presentations found: 52
+
+[1]
+f(x) = x + 2x^3 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 1
+
+[2]
+f(x) = 2x + 2x^3 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 2
+
+[3]
+f(x) = x + 2x^9 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 3
+
+[4]
+f(x) = 2x + x^9 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 4
+
+[5]
+f(x) = x + 2x^19 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 3
+
+[6]
+f(x) = 2x + 2x^19 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 4
+
+[7]
+f(x) = x + 2x^25 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 1
+
+[8]
+f(x) = 2x + x^25 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 2
+
+[9]
+f(x) = 1 + x + 2x^3 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 1
+
+[10]
+f(x) = 1 + 2x + 2x^3 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 2
+
+[11]
+f(x) = 2 + x + 2x^3 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 1
+
+[12]
+f(x) = 2 + 2x + 2x^3 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 2
+
+[13]
+f(x) = 1 + x + 2x^9 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 3
+
+[14]
+f(x) = 1 + 2x + x^9 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 4
+
+[15]
+f(x) = 2 + x + 2x^9 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 3
+
+[16]
+f(x) = 2 + 2x + x^9 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 4
+
+[17]
+f(x) = x + x^3 + 2x^9 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 17
+
+[18]
+f(x) = x + 2x^3 + x^9 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 18
+
+[19]
+f(x) = 2x + x^3 + x^9 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 19
+
+[20]
+f(x) = 2x + 2x^3 + 2x^9 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 20
+
+[21]
+f(x) = x + x^19 + 2x^25 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 18
+
+[22]
+f(x) = x + 2x^19 + x^25 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 17
+
+[23]
+f(x) = 2x + x^19 + x^25 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 20
+
+[24]
+f(x) = 2x + 2x^19 + 2x^25 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 19
+
+[25]
+f(x) = 1 + x + x^3 + 2x^9 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 17
+
+[26]
+f(x) = 1 + x + 2x^3 + x^9 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 18
+
+[27]
+f(x) = 1 + 2x + x^3 + x^9 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 19
+
+[28]
+f(x) = 1 + 2x + 2x^3 + 2x^9 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 20
+
+[29]
+f(x) = 2 + x + x^3 + 2x^9 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 17
+
+[30]
+f(x) = 2 + x + 2x^3 + x^9 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 18
+
+[31]
+f(x) = 2 + 2x + x^3 + x^9 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 19
+
+[32]
+f(x) = 2 + 2x + 2x^3 + 2x^9 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 20
+
+[33]
+f(x) = 1 + x^9 + x^10 + 2x^18 + 2x^19 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 3
+
+[34]
+f(x) = 2 + x^9 + 2x^10 + x^18 + 2x^19 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 3
+
+[35]
+f(x) = 1 + x + x^2 + x^3 + 2x^14 + x^15 + x^27
+middle_coefficient_a_13 = 676
+canonical_presentation_index = 35
+
+[36]
+f(x) = 1 + x + 2x^2 + x^3 + x^14 + x^15 + x^27
+middle_coefficient_a_13 = 1808
+canonical_presentation_index = 36
+
+[37]
+f(x) = 2 + x + x^2 + x^3 + 2x^14 + x^15 + x^27
+middle_coefficient_a_13 = -1808
+canonical_presentation_index = 37
+
+[38]
+f(x) = 2 + x + 2x^2 + x^3 + x^14 + x^15 + x^27
+middle_coefficient_a_13 = -676
+canonical_presentation_index = 38
+
+[39]
+f(x) = 1 + x + x^5 + x^9 + x^14 + 2x^18 + x^27
+middle_coefficient_a_13 = -1540
+canonical_presentation_index = 39
+
+[40]
+f(x) = 1 + x + x^5 + x^9 + 2x^14 + x^18 + x^27
+middle_coefficient_a_13 = -404
+canonical_presentation_index = 40
+
+[41]
+f(x) = 2 + x + x^5 + x^9 + x^14 + 2x^18 + x^27
+middle_coefficient_a_13 = 404
+canonical_presentation_index = 41
+
+[42]
+f(x) = 2 + x + x^5 + x^9 + 2x^14 + x^18 + x^27
+middle_coefficient_a_13 = 1540
+canonical_presentation_index = 42
+
+[43]
+f(x) = 1 + x + x^9 + 2x^10 + x^18 + 2x^19 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 4
+
+[44]
+f(x) = 2 + x + x^9 + x^10 + 2x^18 + 2x^19 + x^27
+middle_coefficient_a_13 = 0
+canonical_presentation_index = 4
+
+[45]
+f(x) = 1 + x^9 + 2x^13 + x^18 + x^22 + x^26 + x^27
+middle_coefficient_a_13 = 404
+canonical_presentation_index = 45
+
+[46]
+f(x) = 1 + 2x^9 + x^13 + x^18 + x^22 + x^26 + x^27
+middle_coefficient_a_13 = -1540
+canonical_presentation_index = 46
+
+[47]
+f(x) = 2 + x^9 + 2x^13 + 2x^18 + 2x^22 + 2x^26 + x^27
+middle_coefficient_a_13 = -404
+canonical_presentation_index = 47
+
+[48]
+f(x) = 2 + 2x^9 + x^13 + 2x^18 + 2x^22 + 2x^26 + x^27
+middle_coefficient_a_13 = 1540
+canonical_presentation_index = 48
+
+[49]
+f(x) = 1 + x^12 + x^13 + x^24 + 2x^25 + x^26 + x^27
+middle_coefficient_a_13 = 1808
+canonical_presentation_index = 49
+
+[50]
+f(x) = 1 + x^12 + 2x^13 + x^24 + x^25 + x^26 + x^27
+middle_coefficient_a_13 = -676
+canonical_presentation_index = 50
+
+[51]
+f(x) = 2 + 2x^12 + x^13 + 2x^24 + 2x^25 + 2x^26 + x^27
+middle_coefficient_a_13 = -1808
+canonical_presentation_index = 51
+
+[52]
+f(x) = 2 + 2x^12 + 2x^13 + 2x^24 + x^25 + 2x^26 + x^27
+middle_coefficient_a_13 = 676
+canonical_presentation_index = 52
+

@@ -114,7 +114,16 @@ struct RandomPatternState {
     std::uint64_t leading_count = 1;
     cpp_int presentations = 0;
     std::uint64_t attempts = 0;
+    std::uint64_t hasse_witt_passes = 0;
+    std::uint64_t exact_rejections = 0;
     std::uint64_t sparse_hits = 0;
+};
+
+enum class CandidateOutcome {
+    HasseWittRejected,
+    Duplicate,
+    ExactRejected,
+    Sparse,
 };
 
 unsigned long mod_pow(unsigned long base, unsigned long exponent, unsigned long p) {
@@ -1557,15 +1566,22 @@ std::string random_pattern_progress_summary(const std::vector<RandomPatternState
             best = &state;
             continue;
         }
-        double lhs = static_cast<double>(state.sparse_hits) / static_cast<double>(state.attempts);
-        double rhs = static_cast<double>(best->sparse_hits) / static_cast<double>(best->attempts);
-        if (lhs > rhs || (lhs == rhs && state.sparse_hits > best->sparse_hits)) best = &state;
+        double lhs_sparse = static_cast<double>(state.sparse_hits) / static_cast<double>(state.attempts);
+        double rhs_sparse = static_cast<double>(best->sparse_hits) / static_cast<double>(best->attempts);
+        double lhs_hw = static_cast<double>(state.hasse_witt_passes) / static_cast<double>(state.attempts);
+        double rhs_hw = static_cast<double>(best->hasse_witt_passes) / static_cast<double>(best->attempts);
+        if (lhs_sparse > rhs_sparse ||
+            (lhs_sparse == rhs_sparse && lhs_hw > rhs_hw) ||
+            (lhs_sparse == rhs_sparse && lhs_hw == rhs_hw && state.sparse_hits > best->sparse_hits)) {
+            best = &state;
+        }
     }
     std::ostringstream out;
     out << states.size();
     if (best) {
         out << " best=" << random_pattern_label(*best)
             << " attempts=" << best->attempts
+            << " hw_pass=" << best->hasse_witt_passes
             << " sparse=" << best->sparse_hits;
     }
     return out.str();
@@ -1582,6 +1598,9 @@ std::size_t choose_random_pattern(
     for (const auto& state : states) {
         double attempts = static_cast<double>(state.attempts);
         double sparse_hits = static_cast<double>(state.sparse_hits);
+        double hasse_witt_pass_rate = state.attempts == 0
+            ? 0.0
+            : static_cast<double>(state.hasse_witt_passes) / attempts;
         double factor_prior = 1.0 / static_cast<double>(
             state.factor_count * state.factor_count * state.factor_count
         );
@@ -1590,7 +1609,15 @@ std::size_t choose_random_pattern(
         double hit_boost = state.sparse_hits == 0
             ? 1.0
             : 1.0 + std::min(20.0, 4.0 * std::sqrt(sparse_hits));
-        weights.push_back(factor_prior * (0.02 + smoothed_hit_rate + 0.20 * exploration) * hit_boost);
+        double hasse_witt_boost = state.sparse_hits == 0
+            ? 1.0 + std::min(10.0, 0.25 * std::sqrt(static_cast<double>(state.hasse_witt_passes)))
+            : 1.0;
+        weights.push_back(
+            factor_prior *
+            (0.02 + smoothed_hit_rate + 30.0 * hasse_witt_pass_rate + 0.20 * exploration) *
+            hit_boost *
+            hasse_witt_boost
+        );
     }
     std::discrete_distribution<std::size_t> dist(weights.begin(), weights.end());
     return dist(rng);
@@ -1612,23 +1639,23 @@ int sparsity_without_last(const std::vector<cpp_int>& coeffs) {
     return sparsity;
 }
 
-bool process_candidate(Context& ctx, SqliteWriter& writer, const BranchCandidate& candidate, Stats& stats) {
+CandidateOutcome process_candidate(Context& ctx, SqliteWriter& writer, const BranchCandidate& candidate, Stats& stats) {
     std::vector<int> modp = ctx.lpoly_mod_p(candidate);
     if (ctx.opts.max_sparsity >= 0 && sparsity_without_last(modp) > ctx.opts.max_sparsity) {
         ++stats.rejected_hasse_witt;
-        return true;
+        return CandidateOutcome::HasseWittRejected;
     }
 
     BranchKey branch_key = ctx.branch_key(candidate);
     if (ctx.exact_branch_result.count(branch_key)) {
         ++stats.duplicate;
-        return true;
+        return CandidateOutcome::Duplicate;
     }
 
     if (ctx.branch_orbit_cache.find(branch_key) != ctx.branch_orbit_cache.end()) {
         ++stats.duplicate;
         ctx.exact_branch_result.insert(std::move(branch_key));
-        return true;
+        return CandidateOutcome::Duplicate;
     }
 
     std::optional<std::vector<cpp_int>> exact;
@@ -1638,7 +1665,7 @@ bool process_candidate(Context& ctx, SqliteWriter& writer, const BranchCandidate
         if (!exact) {
             ++stats.rejected_exact;
             ctx.exact_branch_result.insert(std::move(branch_key));
-            return true;
+            return CandidateOutcome::ExactRejected;
         }
     }
 
@@ -1651,7 +1678,7 @@ bool process_candidate(Context& ctx, SqliteWriter& writer, const BranchCandidate
         if (!inserted_branch.second) {
             ++stats.duplicate;
             ctx.exact_branch_result.insert(std::move(branch_key));
-            return true;
+            return CandidateOutcome::Duplicate;
         }
     } else {
         orbit_size = ctx.normalized_branch_orbit_size(candidate, branch_key);
@@ -1662,7 +1689,7 @@ bool process_candidate(Context& ctx, SqliteWriter& writer, const BranchCandidate
     if (ctx.seen_canonical.count(canonical)) {
         ++stats.duplicate;
         ctx.exact_branch_result.insert(std::move(branch_key));
-        return true;
+        return CandidateOutcome::Duplicate;
     }
     ctx.seen_canonical.insert(canonical);
     ++stats.canonicalized;
@@ -1672,7 +1699,7 @@ bool process_candidate(Context& ctx, SqliteWriter& writer, const BranchCandidate
         if (!exact) {
             ++stats.rejected_exact;
             ctx.exact_branch_result.insert(std::move(branch_key));
-            return true;
+            return CandidateOutcome::ExactRejected;
         }
     }
 
@@ -1681,7 +1708,7 @@ bool process_candidate(Context& ctx, SqliteWriter& writer, const BranchCandidate
     stats.sparse_presentations += orbit_size;
     writer.insert_sparse(canonical, affine, candidate, *exact, sparsity, ctx.rational_branch_count(candidate));
     ctx.exact_branch_result.insert(std::move(branch_key));
-    return true;
+    return CandidateOutcome::Sparse;
 }
 
 std::string run_status(const Stats& stats) {
@@ -1953,11 +1980,15 @@ void random_mode(Context& ctx, SqliteWriter& writer, Stats& stats) {
         std::size_t pattern_index = choose_random_pattern(patterns, stats.processed, rng);
         RandomPatternState& pattern_state = patterns[pattern_index];
         BranchCandidate candidate = random_candidate_from_pattern(ctx, pattern_state, rng);
-        std::uint64_t sparse_before = stats.sparse;
-        process_candidate(ctx, writer, candidate, stats);
+        CandidateOutcome outcome = process_candidate(ctx, writer, candidate, stats);
         ++pattern_state.attempts;
-        if (stats.sparse > sparse_before) {
-            pattern_state.sparse_hits += stats.sparse - sparse_before;
+        if (outcome != CandidateOutcome::HasseWittRejected) {
+            ++pattern_state.hasse_witt_passes;
+        }
+        if (outcome == CandidateOutcome::ExactRejected) {
+            ++pattern_state.exact_rejections;
+        } else if (outcome == CandidateOutcome::Sparse) {
+            ++pattern_state.sparse_hits;
         }
         ++stats.processed;
         if (ctx.opts.progress_interval > 0 && stats.processed % static_cast<std::uint64_t>(ctx.opts.progress_interval) == 0) {
@@ -1970,8 +2001,9 @@ void random_mode(Context& ctx, SqliteWriter& writer, Stats& stats) {
 
 std::filesystem::path default_out_path(const Options& opts) {
     std::string sparsity = opts.max_sparsity < 0 ? "all" : "s_" + std::to_string(opts.max_sparsity);
+    std::string suffix = opts.mode == "enumerate" ? "cpp" : opts.mode + "_cpp";
     return std::filesystem::path("results") /
-        ("p" + std::to_string(opts.p) + "_g" + std::to_string(opts.genus) + "_" + sparsity + "_cpp.sqlite");
+        ("p" + std::to_string(opts.p) + "_g" + std::to_string(opts.genus) + "_" + sparsity + "_" + suffix + ".sqlite");
 }
 
 Options parse_args(int argc, char** argv) {
@@ -2001,7 +2033,9 @@ Options parse_args(int argc, char** argv) {
         }
     }
     if (opts.p < 3 || opts.p % 2 == 0) throw std::runtime_error("--p must be an odd prime");
-    if (opts.mode != "enumerate" && opts.mode != "random") throw std::runtime_error("--enumeration-mode must be enumerate or random");
+    if (opts.mode != "enumerate" && opts.mode != "random") {
+        throw std::runtime_error("--enumeration-mode must be enumerate or random");
+    }
     return opts;
 }
 
@@ -2047,7 +2081,8 @@ int main(int argc, char** argv) {
                 Options one = opts;
                 one.genus = g;
                 std::string sparsity = one.max_sparsity < 0 ? "all" : "s_" + std::to_string(one.max_sparsity);
-                one.out = one.out_dir / ("p" + std::to_string(one.p) + "_g" + std::to_string(g) + "_" + sparsity + "_cpp.sqlite");
+                std::string suffix = one.mode == "enumerate" ? "cpp" : one.mode + "_cpp";
+                one.out = one.out_dir / ("p" + std::to_string(one.p) + "_g" + std::to_string(g) + "_" + sparsity + "_" + suffix + ".sqlite");
                 std::cout << "batch: p=" << one.p << " genus=" << g << " out=" << one.out << std::endl;
                 run_one(one);
                 if (stop_requested()) return 130;

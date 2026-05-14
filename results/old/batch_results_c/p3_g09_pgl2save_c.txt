@@ -1,0 +1,235 @@
+Hyperelliptic curves with trinomial L-polynomial
+========================================================
+p = 3
+g = 9
+base field: F_3
+presentation reduction: pgl2save
+monic enforced: False
+nonmonic leading square class included: True
+hasse-witt prefilter: True
+reduction class count: 14
+isomorphism class count: 14
+search status: interrupted
+complete list: False
+total presentations found: 44
+
+[1]
+f(x) = 1 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 1
+
+[2]
+f(x) = 2 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 2
+
+[3]
+f(x) = x + x^2 + 2x^10 + 2x^11 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 2
+
+[4]
+f(x) = x + 2x^2 + x^10 + 2x^11 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 1
+
+[5]
+f(x) = x + 2x^9 + x^10 + 2x^18 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 1
+
+[6]
+f(x) = x + 2x^9 + 2x^10 + x^18 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 2
+
+[7]
+f(x) = 1 + x + 2x^5 + 2x^14 + x^18 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 7
+
+[8]
+f(x) = 2 + x + 2x^5 + x^14 + 2x^18 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 8
+
+[9]
+f(x) = 1 + x + 2x^9 + x^10 + 2x^18 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 2
+
+[10]
+f(x) = 2 + x + 2x^9 + 2x^10 + x^18 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 1
+
+[11]
+f(x) = 1 + x + 2x^10 + 2x^11 + x^18 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 2
+
+[12]
+f(x) = 2 + x + x^10 + 2x^11 + 2x^18 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 1
+
+[13]
+f(x) = x + x^3 + 2x^5 + 2x^7 + x^9 + 2x^11 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 13
+
+[14]
+f(x) = 2x + x^3 + x^5 + 2x^7 + 2x^9 + 2x^11 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 14
+
+[15]
+f(x) = x + 2x^9 + x^11 + 2x^13 + 2x^15 + x^17 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 13
+
+[16]
+f(x) = 2x + x^9 + x^11 + x^13 + 2x^15 + 2x^17 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 14
+
+[17]
+f(x) = 1 + 2x + x^2 + 2x^9 + x^10 + 2x^11 + x^18 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 1
+
+[18]
+f(x) = 2 + 2x + 2x^2 + 2x^9 + 2x^10 + 2x^11 + 2x^18 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 2
+
+[19]
+f(x) = 1 + 2x + x^5 + x^6 + 2x^7 + 2x^11 + 2x^18 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 14
+
+[20]
+f(x) = 2 + 2x + x^5 + 2x^6 + 2x^7 + 2x^11 + x^18 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 14
+
+[21]
+f(x) = 1 + x + 2x^9 + x^11 + 2x^13 + 2x^15 + x^17 + x^19
+middle_coefficient_a_9 = 76
+canonical_presentation_index = 21
+
+[22]
+f(x) = 2 + x + 2x^9 + x^11 + 2x^13 + 2x^15 + x^17 + x^19
+middle_coefficient_a_9 = -76
+canonical_presentation_index = 22
+
+[23]
+f(x) = x + x^3 + 2x^5 + x^7 + x^9 + 2x^11 + 2x^13 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 23
+
+[24]
+f(x) = 2x + x^3 + x^5 + x^7 + 2x^9 + 2x^11 + x^13 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 24
+
+[25]
+f(x) = 2x + x^6 + x^7 + x^8 + 2x^9 + x^10 + 2x^11 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 8
+
+[26]
+f(x) = 2x + 2x^6 + x^7 + 2x^8 + 2x^9 + 2x^10 + 2x^11 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 7
+
+[27]
+f(x) = x + 2x^7 + 2x^9 + x^11 + x^13 + 2x^15 + x^17 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 23
+
+[28]
+f(x) = 2x + 2x^7 + x^9 + x^11 + 2x^13 + 2x^15 + 2x^17 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 24
+
+[29]
+f(x) = 2x + x^9 + x^10 + x^11 + x^12 + 2x^13 + x^14 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 8
+
+[30]
+f(x) = 2x + x^9 + 2x^10 + x^11 + 2x^12 + 2x^13 + 2x^14 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 7
+
+[31]
+f(x) = 1 + 2x + 2x^5 + 2x^8 + x^9 + 2x^10 + 2x^11 + 2x^18 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 7
+
+[32]
+f(x) = 2 + 2x + 2x^5 + x^8 + x^9 + x^10 + 2x^11 + x^18 + x^19
+middle_coefficient_a_9 = 0
+canonical_presentation_index = 8
+
+[33]
+f(x) = 1 + 2x + x^10 + 2x^13 + x^14 + 2x^15 + x^16 + x^17 + x^19
+middle_coefficient_a_9 = 76
+canonical_presentation_index = 21
+
+[34]
+f(x) = 2 + 2x + 2x^10 + 2x^13 + 2x^14 + 2x^15 + 2x^16 + x^17 + x^19
+middle_coefficient_a_9 = -76
+canonical_presentation_index = 22
+
+[35]
+f(x) = 1 + 2x + 2x^3 + 2x^4 + 2x^8 + x^9 + x^12 + x^13 + x^18 + x^19
+middle_coefficient_a_9 = -152
+canonical_presentation_index = 35
+
+[36]
+f(x) = 2 + 2x + 2x^3 + x^4 + x^8 + x^9 + 2x^12 + x^13 + 2x^18 + x^19
+middle_coefficient_a_9 = 152
+canonical_presentation_index = 36
+
+[37]
+f(x) = x + x^2 + 2x^3 + 2x^5 + x^6 + 2x^7 + x^8 + x^9 + x^13 + x^19
+middle_coefficient_a_9 = 152
+canonical_presentation_index = 36
+
+[38]
+f(x) = x + 2x^2 + 2x^3 + 2x^5 + 2x^6 + 2x^7 + 2x^8 + x^9 + x^13 + x^19
+middle_coefficient_a_9 = -152
+canonical_presentation_index = 35
+
+[39]
+f(x) = 2x + x^2 + 2x^4 + x^5 + 2x^6 + 2x^8 + 2x^9 + 2x^10 + 2x^13 + x^19
+middle_coefficient_a_9 = 152
+canonical_presentation_index = 39
+
+[40]
+f(x) = 2x + 2x^2 + x^4 + x^5 + x^6 + x^8 + 2x^9 + x^10 + 2x^13 + x^19
+middle_coefficient_a_9 = -152
+canonical_presentation_index = 40
+
+[41]
+f(x) = 2x + x^7 + x^10 + x^11 + x^12 + x^14 + 2x^15 + x^16 + 2x^18 + x^19
+middle_coefficient_a_9 = -152
+canonical_presentation_index = 40
+
+[42]
+f(x) = 2x + x^7 + 2x^10 + x^11 + 2x^12 + 2x^14 + 2x^15 + 2x^16 + x^18 + x^19
+middle_coefficient_a_9 = 152
+canonical_presentation_index = 39
+
+[43]
+f(x) = x + x^7 + x^11 + x^12 + 2x^13 + x^14 + 2x^15 + 2x^17 + x^18 + x^19
+middle_coefficient_a_9 = 152
+canonical_presentation_index = 36
+
+[44]
+f(x) = x + x^7 + x^11 + 2x^12 + 2x^13 + 2x^14 + 2x^15 + 2x^17 + 2x^18 + x^19
+middle_coefficient_a_9 = -152
+canonical_presentation_index = 35
+

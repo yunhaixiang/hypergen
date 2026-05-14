@@ -1,0 +1,29 @@
+{
+  "p": 11,
+  "g": 6,
+  "field": "F_11",
+  "presentation_reduction": "pgl2save",
+  "monic_enforced": false,
+  "allow_nonmonic": true,
+  "hasse_witt_prefilter": true,
+  "workers": 1,
+  "worker_index": 0,
+  "reduction_class_count": 1,
+  "isomorphism_class_count": 1,
+  "search_status": "incomplete",
+  "complete_list": false,
+  "total_presentations_found": 1,
+  "curves": [
+    {
+      "index": 1,
+      "f_coeffs": [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "f_polynomial": "1 + x^13",
+      "middle_coefficient": 0,
+      "canonical_presentation_index": 1,
+      "canonical_f_coeffs": [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "canonical_f_polynomial": "1 + x^13",
+      "reduction_key": [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+      "reused_l_polynomial": false
+    }
+  ]
+}

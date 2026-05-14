@@ -5,7 +5,9 @@
 ```text
 cpp/                              C++ source and CMake file
 legacy/python_prototype/           frozen old Python prototype, reference only
-results/p3_enumerate_batch/        generated SQLite data through genus 8
+results/p*_enumerate/              deterministic branch-divisor data by prime
+results/p*_random/                 random sparse-search data by prime
+scripts/                           batch-run helper scripts
 ```
 
 The Python prototype is kept only as a legacy snapshot and is not updated. The
@@ -45,7 +47,7 @@ cpp/build-release/hyperelliptic_cpp \
   --genus 7 \
   --enumeration-mode enumerate \
   --max-sparsity 1 \
-  --out results/p3_enumerate_batch/p3_g7_s_1.sqlite
+  --out results/p3_enumerate/p3_g7_s_1.sqlite
 ```
 
 Batch run over a genus range:
@@ -57,7 +59,7 @@ cpp/build-release/hyperelliptic_cpp \
   --genus-end 10 \
   --enumeration-mode enumerate \
   --max-sparsity 1 \
-  --out-dir results/p3_enumerate_batch
+  --out-dir results/p3_enumerate
 ```
 
 Random sparse search:
@@ -69,7 +71,7 @@ cpp/build-release/hyperelliptic_cpp \
   --enumeration-mode random \
   --max-sparsity 1 \
   --limit 10000 \
-  --out results/p5_g11_s_1_random.sqlite
+  --out results/p5_random/p5_g11_s_1_random.sqlite
 ```
 
 If `--out` is omitted, single-genus runs write under `results/`. If `--out-dir` is omitted, batch runs write under `results/`.
@@ -80,6 +82,11 @@ If `--out` is omitted, single-genus runs write under `results/`. If `--out-dir` 
 
 `--enumeration-mode random` samples random factorized branch divisors for higher-genus sparse search. It first builds all feasible factorization-pattern strata, then adaptively gives more samples to patterns whose previous samples produced sparse curves. The optional `--random-max-factors N` restricts this to patterns with at most `N` irreducible factors; if omitted, there is no hard factor-count cap. Even without a cap, the sampling weights strongly favor patterns with fewer irreducible factors. If `--limit` is omitted, random mode runs until interrupted.
 
+When no exact sparse curves have been found yet, random mode also uses
+Hasse-Witt pass rates as a proxy signal for choosing factorization patterns.
+This matters in higher genus, where exact sparse hits can be rare enough that
+the sampler otherwise has no early feedback.
+
 `--limit N` has mode-dependent meaning:
 
 - in `enumerate` mode, stop after processing `N` deterministic candidates
@@ -87,7 +94,7 @@ If `--out` is omitted, single-genus runs write under `results/`. If `--out-dir` 
 
 Both modes use Hasse-Witt filtering before exact point counts when `--max-sparsity` is supplied. Exact L-polynomial coefficients are computed by point counting over extension fields and Newton identities.
 
-Random-mode progress includes a `random_patterns` line showing the number of active strata and the currently best observed pattern by sparse-hit rate.
+Random-mode progress includes a `random_patterns` line showing the number of active strata and the currently best observed pattern by sparse-hit rate, breaking ties by Hasse-Witt pass rate.
 
 ## Memory Budget
 
@@ -109,7 +116,8 @@ For a genus `g` curve, the runner computes the stored part of the L-polynomial
 
 and records only `a_1, ..., a_g`; the remaining coefficients are determined by
 Poincare duality. The `sparsity` of a curve is the number of nonzero entries
-among `a_1, ..., a_g`.
+among `a_1, ..., a_{g-1}`. The middle coefficient `a_g` is still stored in the
+L-polynomial data, but it is not counted toward sparsity.
 
 `--max-sparsity N` keeps only curves with sparsity at most `N`. The value used
 for a run is recorded in `enumeration_summary.max_sparsity`, while each stored
@@ -153,36 +161,74 @@ removes transient `*.sqlite-wal` and `*.sqlite-shm` sidecar files.
 
 ## Included Data
 
-Current included data is under:
+Current generated data is under:
 
 ```text
-results/p3_enumerate_batch/
+results/p3_enumerate/
+results/p3_random/
+results/p5_enumerate/
+results/p5_random/
+results/p7_enumerate/
+results/p11_enumerate/
+results/p13_enumerate/
+results/p17_enumerate/
 ```
 
-Summary:
+All rows below use `max_sparsity = 1`.
+
+Complete deterministic `enumerate` outputs:
+
+| prime | genus | file | total processed | sparse presentations | sparse classes |
+| --- | ---: | --- | ---: | ---: | ---: |
+| 3 | 2 | `results/p3_enumerate/p3_g2_s_1.sqlite` | 560 | 538 | 69 |
+| 3 | 3 | `results/p3_enumerate/p3_g3_s_1.sqlite` | 5,124 | 1,652 | 140 |
+| 3 | 4 | `results/p3_enumerate/p3_g4_s_1.sqlite` | 46,296 | 3,789 | 340 |
+| 3 | 5 | `results/p3_enumerate/p3_g5_s_1.sqlite` | 416,972 | 2,858 | 255 |
+| 3 | 7 | `results/p3_enumerate/p3_g7_s_1.sqlite` | 33,779,604 | 7,878 | 1,022 |
+| 3 | 8 | `results/p3_enumerate/p3_g8_s_1.sqlite` | 304,017,320 | 12,554 | 1,542 |
+| 5 | 2 | `results/p5_enumerate/p5_g2_s_1.sqlite` | 12,460 | 11,855 | 285 |
+| 5 | 3 | `results/p5_enumerate/p5_g3_s_1.sqlite` | 313,390 | 88,678 | 1,378 |
+| 5 | 4 | `results/p5_enumerate/p5_g4_s_1.sqlite` | 7,841,152 | 363,490 | 6,355 |
+| 5 | 5 | `results/p5_enumerate/p5_g5_s_1.sqlite` | 196,044,530 | 491,152 | 11,470 |
+| 7 | 2 | `results/p7_enumerate/p7_g2_s_1.sqlite` | 93,282 | 89,418 | 749 |
+| 7 | 3 | `results/p7_enumerate/p7_g3_s_1.sqlite` | 4,585,140 | 1,165,453 | 6,208 |
+| 7 | 4 | `results/p7_enumerate/p7_g4_s_1.sqlite` | 224,743,932 | 6,482,570 | 39,431 |
+| 11 | 2 | `results/p11_enumerate/p11_g2_s_1.sqlite` | 1,381,380 | 1,337,216 | 2,813 |
+| 11 | 3 | `results/p11_enumerate/p11_g3_s_1.sqlite` | 167,357,190 | 36,163,204 | 47,078 |
+| 13 | 2 | `results/p13_enumerate/p13_g2_s_1.sqlite` | 3,739,580 | 3,631,447 | 4,589 |
+
+Interrupted or legacy partial outputs:
+
+| prime | genus | mode | file | processed | sparse presentations | sparse classes | note |
+| --- | ---: | --- | --- | ---: | ---: | ---: | --- |
+| 5 | 6 | enumerate | `results/p5_enumerate/p5_g6_s_1.sqlite` | 164,519,787 / 4,901,145,620 | 9,549 | 635 | interrupted |
+| 5 | 7 | random | `results/p5_random/p5_g7_s_1_random.sqlite` | 144,698,904 | 121,496 | 2,764 | interrupted |
+| 3 | 9 | random | `results/p3_random/p3_g9_s_1_random.sqlite` | 174,220,000 | 2,742 | 478 | old file with progress rows but no summary row |
+| 3 | 11 | random | `results/p3_random/p3_g11_s_1_random.sqlite` | 141,934,429 / 170,000,000 | 0 | 0 | interrupted |
+| 17 | 2 | enumerate | `results/p17_enumerate/p17_g2_s_1.sqlite` | 100,000 | 102,815 | 690 | old file with progress rows but no summary row |
+
+Files that should be regenerated before being treated as clean:
 
 ```text
-g=2  total=560       sparse_presentations=538   sparse_classes=69
-g=3  total=5124      sparse_presentations=1652  sparse_classes=140
-g=4  total=46296     sparse_presentations=3789  sparse_classes=340
-g=5  total=416972    sparse_presentations=2858  sparse_classes=255
-g=6  total=3753216   sparse_presentations=5911  sparse_classes=763
-g=7  total=33779604  sparse_presentations=7878  sparse_classes=1022
-g=8  total=304017320 sparse_presentations=12554 sparse_classes=1542
+results/p3_enumerate/p3_g6_s_1.sqlite
+results/p3_random/p3_g10_s_1_random.sqlite
 ```
+
+Those two files contain sparse rows, but their `enumeration_summary` metadata
+does not match the filename/content.
 
 ## Useful Inspection Commands
 
 List sparse rows:
 
 ```bash
-sqlite3 results/p3_enumerate_batch/p3_g7_s_1.sqlite \
+sqlite3 results/p3_enumerate/p3_g7_s_1.sqlite \
   "SELECT count(*) FROM sparse_curves;"
 ```
 
 View the run summary:
 
 ```bash
-sqlite3 results/p3_enumerate_batch/p3_g7_s_1.sqlite \
+sqlite3 results/p3_enumerate/p3_g7_s_1.sqlite \
   "SELECT * FROM enumeration_summary;"
 ```

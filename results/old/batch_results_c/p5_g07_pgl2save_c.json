@@ -1,0 +1,18 @@
+{
+  "p": 5,
+  "g": 7,
+  "field": "F_5",
+  "presentation_reduction": "pgl2save",
+  "monic_enforced": false,
+  "allow_nonmonic": true,
+  "hasse_witt_prefilter": true,
+  "workers": 1,
+  "worker_index": 0,
+  "reduction_class_count": 0,
+  "isomorphism_class_count": 0,
+  "search_status": "interrupted",
+  "complete_list": false,
+  "total_presentations_found": 0,
+  "curves": [
+  ]
+}

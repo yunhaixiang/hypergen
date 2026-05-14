@@ -1,0 +1,20 @@
+Hyperelliptic curves with trinomial L-polynomial
+========================================================
+p = 11
+g = 6
+base field: F_11
+presentation reduction: pgl2save
+monic enforced: False
+nonmonic leading square class included: True
+hasse-witt prefilter: True
+reduction class count: 1
+isomorphism class count: 1
+search status: incomplete
+complete list: False
+total presentations found: 1
+
+[1]
+f(x) = 1 + x^13
+middle_coefficient_a_6 = 0
+canonical_presentation_index = 1
+
